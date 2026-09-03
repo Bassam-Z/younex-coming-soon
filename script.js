@@ -10,7 +10,15 @@ const dotsContainer = document.querySelector('.carousel-dots');
 const carousel = document.querySelector('.carousel');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-let currentLanguage = localStorage.getItem('younex-language') || 'ar';
+function getSavedLanguage() {
+  try {
+    return localStorage.getItem('younex-language');
+  } catch {
+    return null;
+  }
+}
+
+let currentLanguage = getSavedLanguage() || 'ar';
 let activeSlide = 0;
 let autoplayTimer;
 let touchStartX = 0;
@@ -35,7 +43,11 @@ function setLanguage(language) {
 
   languageToggle.querySelector('span').textContent = isArabic ? 'EN' : 'عربي';
   languageToggle.setAttribute('aria-label', isArabic ? 'Switch to English' : 'التبديل إلى العربية');
-  localStorage.setItem('younex-language', language);
+  try {
+    localStorage.setItem('younex-language', language);
+  } catch {
+    // The language switch still works when private browsing blocks storage.
+  }
 }
 
 function showView(route, updateHash = true) {
@@ -64,9 +76,14 @@ function showView(route, updateHash = true) {
 }
 
 function renderSlide(index) {
+  if (!slides.length) return;
   activeSlide = (index + slides.length) % slides.length;
-  slides.forEach((slide, slideIndex) => slide.classList.toggle('active', slideIndex === activeSlide));
-  [...dotsContainer.children].forEach((dot, dotIndex) => {
+  slides.forEach((slide, slideIndex) => {
+    const isActive = slideIndex === activeSlide;
+    slide.classList.toggle('is-active', isActive);
+    slide.setAttribute('aria-hidden', String(!isActive));
+  });
+  [...(dotsContainer?.children || [])].forEach((dot, dotIndex) => {
     dot.classList.toggle('active', dotIndex === activeSlide);
     dot.setAttribute('aria-current', dotIndex === activeSlide ? 'true' : 'false');
   });
@@ -74,7 +91,7 @@ function renderSlide(index) {
 
 function restartAutoplay() {
   window.clearInterval(autoplayTimer);
-  if (!reduceMotion && document.visibilityState === 'visible') {
+  if (slides.length > 1 && !reduceMotion && document.visibilityState === 'visible') {
     autoplayTimer = window.setInterval(() => renderSlide(activeSlide + 1), 4600);
   }
 }
@@ -88,7 +105,7 @@ slides.forEach((_, index) => {
     renderSlide(index);
     restartAutoplay();
   });
-  dotsContainer.appendChild(dot);
+  dotsContainer?.appendChild(dot);
 });
 
 routeLinks.forEach((link) => {
@@ -104,21 +121,21 @@ menuToggle.addEventListener('click', () => {
   menuToggle.setAttribute('aria-expanded', String(open));
 });
 
-document.querySelector('[data-carousel="previous"]').addEventListener('click', () => {
+document.querySelector('[data-carousel="previous"]')?.addEventListener('click', () => {
   renderSlide(activeSlide - 1);
   restartAutoplay();
 });
-document.querySelector('[data-carousel="next"]').addEventListener('click', () => {
+document.querySelector('[data-carousel="next"]')?.addEventListener('click', () => {
   renderSlide(activeSlide + 1);
   restartAutoplay();
 });
 
-carousel.addEventListener('mouseenter', () => window.clearInterval(autoplayTimer));
-carousel.addEventListener('mouseleave', restartAutoplay);
-carousel.addEventListener('focusin', () => window.clearInterval(autoplayTimer));
-carousel.addEventListener('focusout', restartAutoplay);
-carousel.addEventListener('touchstart', (event) => { touchStartX = event.changedTouches[0].clientX; }, { passive: true });
-carousel.addEventListener('touchend', (event) => {
+carousel?.addEventListener('mouseenter', () => window.clearInterval(autoplayTimer));
+carousel?.addEventListener('mouseleave', restartAutoplay);
+carousel?.addEventListener('focusin', () => window.clearInterval(autoplayTimer));
+carousel?.addEventListener('focusout', restartAutoplay);
+carousel?.addEventListener('touchstart', (event) => { touchStartX = event.changedTouches[0].clientX; }, { passive: true });
+carousel?.addEventListener('touchend', (event) => {
   const distance = event.changedTouches[0].clientX - touchStartX;
   if (Math.abs(distance) > 45) renderSlide(activeSlide + (distance < 0 ? 1 : -1));
   restartAutoplay();

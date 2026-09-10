@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css?v=2" />
-    <script src="script.js?v=2" defer></script>
+    <link rel="stylesheet" href="style.css?v=4" />
+    <script src="products-data.js?v=4" defer></script>
+    <script src="script.js?v=4" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content" data-ar="انتقل إلى المحتوى" data-en="Skip to content">انتقل إلى المحتوى</a>
@@ -78,13 +79,13 @@
             <div class="carousel" aria-roledescription="carousel" data-aria-ar="عرض منتجات يونكس" data-aria-en="Younex product showcase">
               <div class="carousel-frame">
                 <article class="slide is-active" aria-hidden="false">
-                  <img src="assets/images/rotary-hammer.webp" alt="AL-42HH Rotary Hammer" fetchpriority="high" loading="eager" decoding="async" />
+                  <img src="assets/products/corded/al-42hh/1.webp" alt="AL-42HH Rotary Hammer" fetchpriority="high" loading="eager" decoding="async" />
                 </article>
-                <article class="slide" aria-hidden="true"><img src="assets/images/generator-5kw.webp" alt="Younex 5 kW Generator" loading="eager" decoding="async" /></article>
-                <article class="slide" aria-hidden="true"><img src="assets/images/pump-jet80.webp" alt="Younex JET-80 Water Pump" loading="eager" decoding="async" /></article>
-                <article class="slide" aria-hidden="true"><img src="assets/images/angle-grinder-230mm.webp" alt="AL-61186 Angle Grinder" loading="eager" decoding="async" /></article>
-                <article class="slide" aria-hidden="true"><img src="assets/images/demolition-hammer-g40.webp" alt="AL-G40 Demolition Hammer" loading="eager" decoding="async" /></article>
-                <article class="slide" aria-hidden="true"><img src="assets/images/pump-wzb-600a.webp" alt="WZB Series 600A Water Pump" loading="eager" decoding="async" /></article>
+                <article class="slide" aria-hidden="true"><img src="assets/products/generators/younex-5kw/1.webp" alt="Younex 5 kW Generator" loading="eager" decoding="async" /></article>
+                <article class="slide" aria-hidden="true"><img src="assets/products/water-pumps/jet-80/1.webp" alt="Younex JET-80 Water Pump" loading="eager" decoding="async" /></article>
+                <article class="slide" aria-hidden="true"><img src="assets/products/corded/al-61186/1.webp" alt="AL-61186 Angle Grinder" loading="eager" decoding="async" /></article>
+                <article class="slide" aria-hidden="true"><img src="assets/products/corded/al-g40/1.webp" alt="AL-G40 Demolition Hammer" loading="eager" decoding="async" /></article>
+                <article class="slide" aria-hidden="true"><img src="assets/products/water-pumps/wzb-600a/1.webp" alt="WZB Series 600A Water Pump" loading="eager" decoding="async" /></article>
               </div>
               <button class="carousel-control previous" type="button" data-carousel="previous" data-aria-ar="الصورة السابقة" data-aria-en="Previous image">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
@@ -115,30 +116,13 @@
       </section>
 
       <section id="products" class="page-view" data-view="products" aria-labelledby="products-title" hidden>
-        <div class="page-hero container">
+        <div id="catalog-intro" class="page-hero container">
           <span class="section-kicker" data-ar="تشكيلة يونكس" data-en="YOUNEX RANGE">تشكيلة يونكس</span>
           <h1 id="products-title" data-ar="منتجاتنا" data-en="Our products">منتجاتنا</h1>
-          <p data-ar="معدات كهربائية، مولدات ومضخات مياه مختارة للعمل المهني والاستخدام اليومي." data-en="Power tools, generators and water pumps selected for professional work and everyday use.">معدات كهربائية، مولدات ومضخات مياه مختارة للعمل المهني والاستخدام اليومي.</p>
+          <p data-ar="اختر الفئة التي تهمك، ثم تصفّح المنتجات والمواصفات والصور التفصيلية." data-en="Choose a category, then explore its products, specifications and detailed images.">اختر الفئة التي تهمك، ثم تصفّح المنتجات والمواصفات والصور التفصيلية.</p>
         </div>
-
-        <div class="product-gallery container">
-          <article class="product-card"><img src="assets/images/rotary-hammer.webp" alt="AL-42HH Rotary Hammer" loading="lazy" /><div><span data-ar="معدات كهربائية" data-en="Power tools">معدات كهربائية</span><h2>AL-42HH</h2></div></article>
-          <article class="product-card"><img src="assets/images/rotary-hammer-al2601.webp" alt="AL-2601 Rotary Hammer" loading="lazy" /><div><span data-ar="معدات كهربائية" data-en="Power tools">معدات كهربائية</span><h2>AL-2601</h2></div></article>
-          <article class="product-card"><img src="assets/images/demolition-hammer-1800w.webp" alt="1800W Demolition Hammer" loading="lazy" /><div><span data-ar="مطرقة هدم" data-en="Demolition hammer">مطرقة هدم</span><h2>1800W · 55J</h2></div></article>
-          <article class="product-card"><img src="assets/images/demolition-hammer-ak911.webp" alt="AL-AK911 Demolition Hammer" loading="lazy" /><div><span data-ar="مطرقة هدم" data-en="Demolition hammer">مطرقة هدم</span><h2>AL-AK911</h2></div></article>
-          <article class="product-card"><img src="assets/images/demolition-hammer-g40.webp" alt="AL-G40 Demolition Hammer" loading="lazy" /><div><span data-ar="مطرقة هدم" data-en="Demolition hammer">مطرقة هدم</span><h2>AL-G40</h2></div></article>
-          <article class="product-card"><img src="assets/images/demolition-hammer-g500.webp" alt="AL-G500 Demolition Hammer" loading="lazy" /><div><span data-ar="مطرقة هدم" data-en="Demolition hammer">مطرقة هدم</span><h2>AL-G500</h2></div></article>
-          <article class="product-card"><img src="assets/images/angle-grinder-230mm.webp" alt="AL-61186 Angle Grinder" loading="lazy" /><div><span data-ar="جلّاخة زاوية" data-en="Angle grinder">جلّاخة زاوية</span><h2>AL-61186</h2></div></article>
-          <article class="product-card"><img src="assets/images/angle-grinder-125mm.webp" alt="AL-A61167 Angle Grinder" loading="lazy" /><div><span data-ar="جلّاخة زاوية" data-en="Angle grinder">جلّاخة زاوية</span><h2>AL-A61167</h2></div></article>
-          <article class="product-card"><img src="assets/images/cut-off-saw.webp" alt="AL-AK198 Cut-off Saw" loading="lazy" /><div><span data-ar="قاطع معدني" data-en="Cut-off saw">قاطع معدني</span><h2>AL-AK198</h2></div></article>
-          <article class="product-card"><img src="assets/images/generator-3kw.webp" alt="Younex 3 kW Generator" loading="lazy" /><div><span data-ar="مولد بنزين" data-en="Gasoline generator">مولد بنزين</span><h2>3 kW</h2></div></article>
-          <article class="product-card"><img src="assets/images/generator-5kw.webp" alt="Younex 5 kW Generator" loading="lazy" /><div><span data-ar="مولد بنزين" data-en="Gasoline generator">مولد بنزين</span><h2>5 kW</h2></div></article>
-          <article class="product-card"><img src="assets/images/pump-jet80.webp" alt="Younex JET-80 Water Pump" loading="lazy" /><div><span data-ar="مضخة مياه" data-en="Water pump">مضخة مياه</span><h2>JET-80</h2></div></article>
-          <article class="product-card"><img src="assets/images/pump-qb70.webp" alt="Younex QB70 Water Pump" loading="lazy" /><div><span data-ar="مضخة مياه" data-en="Water pump">مضخة مياه</span><h2>QB70</h2></div></article>
-          <article class="product-card"><img src="assets/images/pump-wzb-400a.webp" alt="WZB Series 400A Water Pump" loading="lazy" /><div><span data-ar="مضخة ذاتية التحضير" data-en="Self-priming pump">مضخة ذاتية التحضير</span><h2>WZB 400A</h2></div></article>
-          <article class="product-card"><img src="assets/images/pump-wzb-600a.webp" alt="WZB Series 600A Water Pump" loading="lazy" /><div><span data-ar="مضخة ذاتية التحضير" data-en="Self-priming pump">مضخة ذاتية التحضير</span><h2>WZB 600A</h2></div></article>
-          <article class="product-card"><img src="assets/images/pump-wzb-800a.webp" alt="WZB Series 800A Water Pump" loading="lazy" /><div><span data-ar="مضخة ذاتية التحضير" data-en="Self-priming pump">مضخة ذاتية التحضير</span><h2>WZB 800A</h2></div></article>
-        </div>
+        <div id="catalog-content" class="catalog-content container" aria-live="polite"></div>
+        <noscript><p class="catalog-noscript container">يرجى تفعيل JavaScript لعرض كتالوج المنتجات.</p></noscript>
       </section>
 
       <section id="about" class="page-view" data-view="about" aria-labelledby="about-title" hidden>

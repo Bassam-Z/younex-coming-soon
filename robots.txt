@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://younexpower.com/sitemap.xml

@@ -18,6 +18,7 @@ let currentRoute = 'home';
 let activeSlide = 0;
 let autoplayTimer;
 let touchStartX = 0;
+let suppressCarouselClick = false;
 let activeProductImage = 0;
 let productTouchStartX = 0;
 
@@ -224,7 +225,7 @@ function renderSlide(index) {
 
 function restartAutoplay() {
   window.clearInterval(autoplayTimer);
-  if (slides.length > 1 && !reduceMotion && document.visibilityState === 'visible') autoplayTimer = window.setInterval(() => renderSlide(activeSlide + 1), 4600);
+  if (slides.length > 1 && !reduceMotion && document.visibilityState === 'visible') autoplayTimer = window.setInterval(() => renderSlide(activeSlide + 1), 5000);
 }
 
 slides.forEach((_, index) => {
@@ -261,10 +262,23 @@ carousel?.addEventListener('mouseenter', () => window.clearInterval(autoplayTime
 carousel?.addEventListener('mouseleave', restartAutoplay);
 carousel?.addEventListener('focusin', () => window.clearInterval(autoplayTimer));
 carousel?.addEventListener('focusout', restartAutoplay);
-carousel?.addEventListener('touchstart', (event) => { touchStartX = event.changedTouches[0].clientX; }, { passive: true });
+carousel?.addEventListener('click', (event) => {
+  if (suppressCarouselClick && event.target instanceof Element && event.target.closest('.slide-link')) {
+    event.preventDefault();
+  }
+}, true);
+
+carousel?.addEventListener('touchstart', (event) => {
+  touchStartX = event.changedTouches[0].clientX;
+  suppressCarouselClick = false;
+}, { passive: true });
 carousel?.addEventListener('touchend', (event) => {
   const distance = event.changedTouches[0].clientX - touchStartX;
-  if (Math.abs(distance) > 45) renderSlide(activeSlide + (distance < 0 ? 1 : -1));
+  if (Math.abs(distance) > 45) {
+    suppressCarouselClick = true;
+    renderSlide(activeSlide + (distance < 0 ? 1 : -1));
+    window.setTimeout(() => { suppressCarouselClick = false; }, 400);
+  }
   restartAutoplay();
 }, { passive: true });
 

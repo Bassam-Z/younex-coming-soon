@@ -101,7 +101,7 @@ html[dir="rtl"] .hero-copy h1 { letter-spacing: -.025em; }
 html[dir="rtl"] .carousel-control.previous { right: -22px; left: auto; }
 html[dir="rtl"] .carousel-control.next { left: -22px; right: auto; }
 html[dir="rtl"] .carousel-control svg { transform: scaleX(-1); }
-.carousel-dots { position: absolute; z-index: 3; display: flex; gap: 7px; inset-inline-start: 50%; bottom: -34px; transform: translateX(-50%); }
+.carousel-dots { position: absolute; z-index: 3; display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; width: calc(100% - 70px); max-width: 440px; inset-inline-start: 50%; bottom: -44px; transform: translateX(-50%); }
 html[dir="rtl"] .carousel-dots { transform: translateX(50%); }
 .carousel-dot { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 99px; background: #58697e; cursor: pointer; transition: width .25s, background .25s; }
 .carousel-dot.active { width: 28px; background: var(--sky-400); }

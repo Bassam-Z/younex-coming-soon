@@ -5,12 +5,33 @@ const navLinks = [...document.querySelectorAll('.nav-link')];
 const languageToggle = document.querySelector('.language-toggle');
 const menuToggle = document.querySelector('.menu-toggle');
 const primaryNav = document.querySelector('.primary-nav');
+const catalog = window.YOUNEX_CATALOG || { categories: [], products: [] };
+const carouselFrame = document.querySelector('.carousel-frame');
+
+function homepageSlideMarkup(product, index) {
+  const arabicName = product.name?.ar || product.model;
+  const englishName = product.name?.en || product.model;
+  const loadAttributes = index === 0
+    ? 'fetchpriority="high" loading="eager"'
+    : 'loading="lazy"';
+
+  return `<article class="slide${index === 0 ? ' is-active' : ''}" aria-hidden="${index === 0 ? 'false' : 'true'}">
+    <a class="slide-link" href="/products/${escapeHtml(product.slug)}/" data-aria-ar="عرض تفاصيل ${escapeHtml(arabicName)} ${escapeHtml(product.model)}" data-aria-en="View ${escapeHtml(product.model)} ${escapeHtml(englishName)} details">
+      <img src="${escapeHtml(product.images[0])}" alt="${escapeHtml(arabicName)} ${escapeHtml(product.model)}" data-alt-ar="${escapeHtml(arabicName)} ${escapeHtml(product.model)}" data-alt-en="${escapeHtml(product.model)} ${escapeHtml(englishName)}" ${loadAttributes} decoding="async" />
+      <span class="slide-cta" data-ar="عرض المنتج" data-en="View product">عرض المنتج</span>
+    </a>
+  </article>`;
+}
+
+if (carouselFrame && catalog.products.length) {
+  carouselFrame.innerHTML = catalog.products.map(homepageSlideMarkup).join('');
+}
+
 const slides = [...document.querySelectorAll('.slide')];
 const dotsContainer = document.querySelector('.carousel-dots');
 const carousel = document.querySelector('.carousel');
 const catalogContent = document.getElementById('catalog-content');
 const catalogIntro = document.getElementById('catalog-intro');
-const catalog = window.YOUNEX_CATALOG || { categories: [], products: [] };
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 let currentLanguage = getSavedLanguage() || 'ar';
@@ -78,6 +99,9 @@ function setLanguage(language) {
   });
   document.querySelectorAll('[data-aria-ar][data-aria-en]').forEach((element) => {
     element.setAttribute('aria-label', isArabic ? element.dataset.ariaAr : element.dataset.ariaEn);
+  });
+  document.querySelectorAll('[data-alt-ar][data-alt-en]').forEach((image) => {
+    image.alt = isArabic ? image.dataset.altAr : image.dataset.altEn;
   });
   languageToggle.querySelector('span').textContent = isArabic ? 'EN' : 'عربي';
   languageToggle.setAttribute('aria-label', isArabic ? 'Switch to English' : 'التبديل إلى العربية');
@@ -221,6 +245,8 @@ function renderSlide(index) {
     dot.classList.toggle('active', dotIndex === activeSlide);
     dot.setAttribute('aria-current', dotIndex === activeSlide ? 'true' : 'false');
   });
+  const nextImage = slides[(activeSlide + 1) % slides.length]?.querySelector('img');
+  if (nextImage) nextImage.loading = 'eager';
 }
 
 function restartAutoplay() {

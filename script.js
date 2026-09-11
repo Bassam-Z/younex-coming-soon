@@ -12,8 +12,6 @@ const catalogContent = document.getElementById('catalog-content');
 const catalogIntro = document.getElementById('catalog-intro');
 const catalog = window.YOUNEX_CATALOG || { categories: [], products: [] };
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const analyticsHosts = new Set(['younexpower.com', 'www.younexpower.com']);
-const analyticsQueue = [];
 
 let currentLanguage = getSavedLanguage() || 'ar';
 let currentRoute = 'home';
@@ -22,66 +20,6 @@ let autoplayTimer;
 let touchStartX = 0;
 let activeProductImage = 0;
 let productTouchStartX = 0;
-let analyticsRetryTimer;
-let analyticsRetryCount = 0;
-
-function analyticsEnabled() {
-  return analyticsHosts.has(window.location.hostname);
-}
-
-function flushAnalyticsQueue() {
-  if (!analyticsEnabled()) {
-    analyticsQueue.length = 0;
-    return;
-  }
-  if (typeof window.goatcounter?.count !== 'function') {
-    if (analyticsRetryCount < 20 && !analyticsRetryTimer) {
-      analyticsRetryCount += 1;
-      analyticsRetryTimer = window.setTimeout(() => {
-        analyticsRetryTimer = undefined;
-        flushAnalyticsQueue();
-      }, 500);
-    }
-    return;
-  }
-  analyticsRetryCount = 0;
-  while (analyticsQueue.length) window.goatcounter.count(analyticsQueue.shift());
-}
-
-function queueAnalytics(payload) {
-  if (!analyticsEnabled()) return;
-  analyticsQueue.push(payload);
-  flushAnalyticsQueue();
-}
-
-function analyticsTitle(route) {
-  if (route.startsWith('product/')) {
-    const product = productBySlug(route.split('/')[1]);
-    return product ? `${product.model} — ${localized(product.name)}` : route;
-  }
-  if (route.startsWith('category/')) {
-    const category = categoryById(route.split('/')[1]);
-    return category ? localized(category.name) : route;
-  }
-  const titles = {
-    home: currentLanguage === 'ar' ? 'الصفحة الرئيسية' : 'Home',
-    products: currentLanguage === 'ar' ? 'المنتجات' : 'Products',
-    about: currentLanguage === 'ar' ? 'من نحن' : 'About us'
-  };
-  return titles[route] || route;
-}
-
-function trackPageView(route) {
-  queueAnalytics({
-    path: `/${route}`,
-    title: analyticsTitle(route),
-    referrer: document.referrer || undefined
-  });
-}
-
-function trackEvent(name, title) {
-  queueAnalytics({ path: name, title, event: true });
-}
 
 function getSavedLanguage() {
   try { return localStorage.getItem('younex-language'); } catch { return null; }
@@ -166,7 +104,6 @@ function showRoute(route, updateHash = true) {
   if (selectedView === 'products') renderCatalogRoute(currentRoute);
   if (updateHash && window.location.hash !== `#${currentRoute}`) history.pushState(null, '', `#${currentRoute}`);
   updateDocumentTitle();
-  trackPageView(currentRoute);
   primaryNav.classList.remove('open');
   menuToggle.setAttribute('aria-expanded', 'false');
   window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
@@ -306,11 +243,6 @@ routeLinks.forEach((link) => link.addEventListener('click', (event) => {
 }));
 
 document.addEventListener('click', (event) => {
-  const whatsappLink = event.target.closest('a[href*="wa.me/"]');
-  if (whatsappLink) {
-    const eventRoute = currentRoute || 'home';
-    trackEvent(`whatsapp/${eventRoute}`, `WhatsApp — ${analyticsTitle(eventRoute)}`);
-  }
   const catalogLink = event.target.closest('[data-catalog-route]');
   if (catalogLink) { event.preventDefault(); showRoute(catalogLink.dataset.catalogRoute); return; }
   const thumbnail = event.target.closest('[data-product-image-index]');
@@ -319,11 +251,7 @@ document.addEventListener('click', (event) => {
   if (control) setProductImage(activeProductImage + (control.dataset.productImage === 'next' ? 1 : -1));
 });
 
-languageToggle.addEventListener('click', () => {
-  const selectedLanguage = currentLanguage === 'ar' ? 'en' : 'ar';
-  setLanguage(selectedLanguage);
-  trackEvent(`language/${selectedLanguage}`, selectedLanguage === 'ar' ? 'Language — Arabic' : 'Language — English');
-});
+languageToggle.addEventListener('click', () => setLanguage(currentLanguage === 'ar' ? 'en' : 'ar'));
 menuToggle.addEventListener('click', () => {
   const open = primaryNav.classList.toggle('open');
   menuToggle.setAttribute('aria-expanded', String(open));
@@ -342,7 +270,6 @@ carousel?.addEventListener('touchend', (event) => {
 }, { passive: true });
 
 document.addEventListener('visibilitychange', restartAutoplay);
-document.getElementById('goatcounter-script')?.addEventListener('load', flushAnalyticsQueue);
 window.addEventListener('popstate', () => showRoute(window.location.hash.slice(1) || 'home', false));
 window.addEventListener('keydown', (event) => {
   if (currentRoute.startsWith('product/')) {

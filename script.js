@@ -63,8 +63,8 @@ function updateDocumentTitle() {
     if (category) { document.title = `${localized(category.name)} | Younex Power Center`; return; }
   }
   document.title = currentLanguage === 'ar'
-    ? 'Younex Power Center | قريبًا أونلاين'
-    : 'Younex Power Center | Online store coming soon';
+    ? 'مركز يونكس للمعدات والطاقة في درعا | Younex Power Center'
+    : 'Younex Power Center in Daraa | Power Tools, Generators & Water Pumps';
 }
 
 function setLanguage(language) {
@@ -115,7 +115,7 @@ function renderCategories() {
   catalogContent.innerHTML = `<div class="category-grid">${catalog.categories.map((category) => {
     const count = catalog.products.filter((product) => product.category === category.id).length;
     const soon = category.status === 'soon';
-    return `<a class="category-card${soon ? ' is-soon' : ''}" href="#category/${category.id}" data-catalog-route="category/${category.id}">
+    return `<a class="category-card${soon ? ' is-soon' : ''}" href="/products/${category.id}/" data-catalog-route="category/${category.id}">
       <div class="category-media">
         ${category.cover ? `<img src="${category.cover}" alt="${escapeHtml(localized(category.name))}" loading="lazy">` : `<div class="category-icon">${categoryIcon(category.id)}</div>`}
         <span class="category-status ${soon ? 'soon' : 'available'}">${soon ? (currentLanguage === 'ar' ? 'قريبًا' : 'Coming soon') : (currentLanguage === 'ar' ? `${count} منتج` : `${count} products`)}</span>
@@ -132,21 +132,20 @@ function renderCategory(categoryId) {
   const products = catalog.products.filter((product) => product.category === category.id);
   const soon = category.status === 'soon';
   catalogContent.innerHTML = `
-    <nav class="catalog-breadcrumb"><a href="#products" data-catalog-route="products">${currentLanguage === 'ar' ? 'منتجاتنا' : 'Products'}</a><span>/</span><strong>${escapeHtml(localized(category.name))}</strong></nav>
+    <nav class="catalog-breadcrumb"><a href="/products/" data-catalog-route="products">${currentLanguage === 'ar' ? 'منتجاتنا' : 'Products'}</a><span>/</span><strong>${escapeHtml(localized(category.name))}</strong></nav>
     <header class="catalog-heading"><div><span class="section-kicker">YOUNEX RANGE</span><h1>${escapeHtml(localized(category.name))}</h1><p>${escapeHtml(localized(category.description))}</p></div>${soon ? `<span class="large-status">${currentLanguage === 'ar' ? 'قريبًا' : 'Coming soon'}</span>` : `<span class="product-count">${currentLanguage === 'ar' ? `${products.length} منتج` : `${products.length} products`}</span>`}</header>
     ${soon ? `<div class="coming-soon-panel"><div class="category-icon">${categoryIcon(category.id)}</div><h2>${currentLanguage === 'ar' ? 'معدات البطاريات ستصل قريبًا' : 'Cordless tools are arriving soon'}</h2><p>${currentLanguage === 'ar' ? 'نعمل على تجهيز تشكيلة أدوات لاسلكية عملية. تواصل معنا عبر واتساب لمعرفة موعد توفرها.' : 'We are preparing a practical cordless tool range. Contact us on WhatsApp for availability.'}</p><a class="button button-whatsapp" href="https://wa.me/963953728253" target="_blank" rel="noopener">${currentLanguage === 'ar' ? 'اسأل عبر واتساب' : 'Ask on WhatsApp'}</a></div>` : `<div class="product-gallery">${products.map((product) => productCard(product)).join('')}</div>`}`;
 }
 
 function productCard(product) {
-  return `<a class="product-card" href="#product/${product.slug}" data-catalog-route="product/${product.slug}">
+  return `<a class="product-card" href="/products/${product.slug}/" data-catalog-route="product/${product.slug}">
     <div class="product-card-media"><img src="${product.images[0]}" alt="${escapeHtml(product.model)}" loading="lazy"></div>
     <div class="product-card-copy"><span>${escapeHtml(localized(product.name))}</span><h2>${escapeHtml(product.model)}</h2><b>${currentLanguage === 'ar' ? 'عرض التفاصيل' : 'View details'} <i aria-hidden="true">←</i></b></div>
   </a>`;
 }
 
 function productShareUrl(product) {
-  const base = window.location.origin === 'null' ? 'https://younexpower.com/' : `${window.location.origin}${window.location.pathname}`;
-  return `${base}#product/${product.slug}`;
+  return `https://younexpower.com/products/${product.slug}/`;
 }
 
 function whatsappUrl(product) {
@@ -163,7 +162,7 @@ function renderProduct(slug) {
   activeProductImage = 0;
   catalogIntro.hidden = true;
   catalogContent.innerHTML = `
-    <nav class="catalog-breadcrumb"><a href="#products" data-catalog-route="products">${currentLanguage === 'ar' ? 'منتجاتنا' : 'Products'}</a><span>/</span><a href="#category/${category.id}" data-catalog-route="category/${category.id}">${escapeHtml(localized(category.name))}</a><span>/</span><strong>${escapeHtml(product.model)}</strong></nav>
+    <nav class="catalog-breadcrumb"><a href="/products/" data-catalog-route="products">${currentLanguage === 'ar' ? 'منتجاتنا' : 'Products'}</a><span>/</span><a href="/products/${category.id}/" data-catalog-route="category/${category.id}">${escapeHtml(localized(category.name))}</a><span>/</span><strong>${escapeHtml(product.model)}</strong></nav>
     <article class="product-detail" data-product-slug="${product.slug}">
       <div class="product-gallery-detail">
         <div class="product-main-media">

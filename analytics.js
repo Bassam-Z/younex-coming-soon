@@ -9,7 +9,10 @@
   if (allowedHosts.indexOf(window.location.hostname) === -1) return;
 
   function routeFromLocation() {
-    return window.location.hash.slice(1) || 'home';
+    var hashRoute = window.location.hash.slice(1);
+    if (hashRoute) return hashRoute;
+    var pathRoute = window.location.pathname.replace(/^\/+|\/+$/g, '');
+    return pathRoute || 'home';
   }
 
   function flushQueue() {

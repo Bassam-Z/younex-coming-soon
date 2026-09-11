@@ -23,8 +23,38 @@ function homepageSlideMarkup(product, index) {
   </article>`;
 }
 
+function shuffleProducts(products) {
+  const shuffled = [...products];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[index]];
+  }
+  return shuffled;
+}
+
+function mixCarouselProducts(products) {
+  const groups = [...new Set(products.map((product) => product.category))].map((category) => ({
+    category,
+    products: shuffleProducts(products.filter((product) => product.category === category))
+  }));
+  const mixedProducts = [];
+  let previousCategory = null;
+
+  while (groups.some((group) => group.products.length)) {
+    let availableGroups = groups.filter((group) => group.products.length && group.category !== previousCategory);
+    if (!availableGroups.length) availableGroups = groups.filter((group) => group.products.length);
+    const largestGroupSize = Math.max(...availableGroups.map((group) => group.products.length));
+    const balancedChoices = availableGroups.filter((group) => group.products.length === largestGroupSize);
+    const selectedGroup = balancedChoices[Math.floor(Math.random() * balancedChoices.length)];
+    mixedProducts.push(selectedGroup.products.pop());
+    previousCategory = selectedGroup.category;
+  }
+
+  return mixedProducts;
+}
+
 if (carouselFrame && catalog.products.length) {
-  carouselFrame.innerHTML = catalog.products.map(homepageSlideMarkup).join('');
+  carouselFrame.innerHTML = mixCarouselProducts(catalog.products).map(homepageSlideMarkup).join('');
 }
 
 const slides = [...document.querySelectorAll('.slide')];

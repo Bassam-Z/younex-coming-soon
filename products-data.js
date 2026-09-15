@@ -132,17 +132,17 @@
     {
       slug: 'jet-60', category: 'water-pumps', model: 'JET-60', name: t('مضخة نفاثة', 'Jet Pump'), description: descriptions.jet,
       images: imageSet('water-pumps', 'jet-60', [1, 2, 3, 4, 5]),
-      specs: [s('القدرة', 'Power', '0.37 kW'), s('القوة الحصانية', 'Horsepower', '0.6 HP'), s('الجهد والتردد', 'Voltage / frequency', '220 V / 50 Hz'), s('أقصى شفط', 'Maximum suction', '9 m'), s('أقصى ارتفاع', 'Maximum head', '30 m'), s('أقصى تدفق', 'Maximum flow', '35 m³/h'), s('السرعة', 'Speed', '2860 rpm'), s('قطر الأنبوب', 'Pipe diameter', '25 mm'), s('أقصى حرارة', 'Maximum temperature', '+40°C')]
+      specs: [s('القدرة', 'Power', '0.37 kW'), s('القوة الحصانية', 'Horsepower', '0.6 HP'), s('الجهد والتردد', 'Voltage / frequency', '220 V / 50 Hz'), s('أقصى شفط', 'Maximum suction', '9 m'), s('أقصى ارتفاع', 'Maximum head', '30 m'), s('أقصى تدفق', 'Maximum flow', '3 m³/h'), s('السرعة', 'Speed', '2860 rpm'), s('قطر الأنبوب', 'Pipe diameter', '25 mm'), s('أقصى حرارة', 'Maximum temperature', '+40°C')]
     },
     {
       slug: 'jet-80', category: 'water-pumps', model: 'JET-80', name: t('مضخة نفاثة', 'Jet Pump'), description: descriptions.jet,
       images: imageSet('water-pumps', 'jet-80', [1, 2, 3, 4, 5]),
-      specs: [s('القدرة', 'Power', '0.55 kW'), s('القوة الحصانية', 'Horsepower', '0.8 HP'), s('الجهد والتردد', 'Voltage / frequency', '220 V / 50 Hz'), s('أقصى شفط', 'Maximum suction', '9 m'), s('أقصى ارتفاع', 'Maximum head', '35 m'), s('أقصى تدفق', 'Maximum flow', '40 m³/h'), s('السرعة', 'Speed', '2860 rpm'), s('قطر الأنبوب', 'Pipe diameter', '25 mm'), s('أقصى حرارة', 'Maximum temperature', '+40°C')]
+      specs: [s('القدرة', 'Power', '0.55 kW'), s('القوة الحصانية', 'Horsepower', '0.8 HP'), s('الجهد والتردد', 'Voltage / frequency', '220 V / 50 Hz'), s('أقصى شفط', 'Maximum suction', '9 m'), s('أقصى ارتفاع', 'Maximum head', '35 m'), s('أقصى تدفق', 'Maximum flow', '4 m³/h'), s('السرعة', 'Speed', '2860 rpm'), s('قطر الأنبوب', 'Pipe diameter', '25 mm'), s('أقصى حرارة', 'Maximum temperature', '+40°C')]
     },
     {
       slug: 'jet-100', category: 'water-pumps', model: 'JET-100', name: t('مضخة نفاثة', 'Jet Pump'), description: descriptions.jet,
       images: imageSet('water-pumps', 'jet-100', [1, 2, 3, 4, 5]),
-      specs: [s('القدرة', 'Power', '0.75 kW'), s('القوة الحصانية', 'Horsepower', '1 HP'), s('الجهد والتردد', 'Voltage / frequency', '220 V / 50 Hz'), s('أقصى شفط', 'Maximum suction', '9 m'), s('أقصى ارتفاع', 'Maximum head', '40 m'), s('أقصى تدفق', 'Maximum flow', '50 m³/h'), s('السرعة', 'Speed', '2860 rpm'), s('قطر الأنبوب', 'Pipe diameter', '25 mm'), s('أقصى حرارة', 'Maximum temperature', '+40°C')]
+      specs: [s('القدرة', 'Power', '0.75 kW'), s('القوة الحصانية', 'Horsepower', '1 HP'), s('الجهد والتردد', 'Voltage / frequency', '220 V / 50 Hz'), s('أقصى شفط', 'Maximum suction', '9 m'), s('أقصى ارتفاع', 'Maximum head', '40 m'), s('أقصى تدفق', 'Maximum flow', '5 m³/h'), s('السرعة', 'Speed', '2860 rpm'), s('قطر الأنبوب', 'Pipe diameter', '25 mm'), s('أقصى حرارة', 'Maximum temperature', '+40°C')]
     }
   ];
 

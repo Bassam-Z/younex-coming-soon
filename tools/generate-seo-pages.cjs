@@ -7,7 +7,7 @@ require('../products-data.js');
 const root = path.resolve(__dirname, '..');
 const catalog = window.YOUNEX_CATALOG;
 const origin = 'https://younexpower.com';
-const updated = '2026-09-11';
+const updated = '2026-09-15';
 
 function esc(value) {
   return String(value ?? '').replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#039;');
@@ -33,7 +33,9 @@ function head({ title, description, canonical, image, type = 'website', schema }
   <meta name="theme-color" content="#07111f">
   <title>${esc(title)}</title>
   <link rel="canonical" href="${canonical}">
-  <link rel="icon" type="image/png" href="/assets/images/favicon.png?v=2">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/images/favicon.png">
   <meta property="og:type" content="${type}">
   <meta property="og:locale" content="ar_SY">
   <meta property="og:locale:alternate" content="en_US">
@@ -208,12 +210,19 @@ write('about/index.html', page({
   titleAr: 'من نحن | مركز يونكس للمعدات والطاقة',
   titleEn: 'About Younex Power Center',
   headTitle: 'من نحن | مركز يونكس للمعدات والطاقة في درعا',
-  description: 'تعرف على مركز يونكس للمعدات والطاقة في الطيبة، درعا: معدات كهربائية، مولدات، مضخات مياه، قطع غيار، صيانة وكفالة.',
+  description: 'مركز يونكس للمعدات والطاقة في الطيبة، درعا، يوفر المعدات الكهربائية والمولدات ومضخات المياه ومعدات البناء، إضافة إلى قطع الغيار والصيانة والكفالة.',
   canonical: aboutCanonical,
   image: `${origin}/assets/images/logo-younex.png`,
   active: 'about',
   schema: { '@context': 'https://schema.org', '@type': 'AboutPage', '@id': aboutCanonical, url: aboutCanonical, name: 'عن مركز يونكس للمعدات والطاقة', inLanguage: ['ar', 'en'], about: { '@type': 'HardwareStore', name: 'Younex Power Center', telephone: '+963953728253', email: 'info@younexpower.com', address: { '@type': 'PostalAddress', streetAddress: 'خلف المخفر', addressLocality: 'الطيبة', addressRegion: 'درعا', addressCountry: 'SY' } } },
-  content: `<div class="about-layout container"><div class="about-copy"><span class="section-kicker" data-ar="من نحن" data-en="ABOUT US">من نحن</span><h1 data-ar="مركز يونكس للمعدات والطاقة" data-en="Younex Power Center">مركز يونكس للمعدات والطاقة</h1><p data-ar="مركز متخصص في المعدات الكهربائية والمولدات ومضخات المياه ومعدات البناء، مع توفير قطع الغيار وخدمات الصيانة والكفالة." data-en="A specialized center for power tools, generators, water pumps and construction equipment, with spare parts, maintenance and warranty services.">مركز متخصص في المعدات الكهربائية والمولدات ومضخات المياه ومعدات البناء، مع توفير قطع الغيار وخدمات الصيانة والكفالة.</p><div class="service-tags"><span data-ar="معدات كهربائية" data-en="Power tools">معدات كهربائية</span><span data-ar="مولدات" data-en="Generators">مولدات</span><span data-ar="مضخات مياه" data-en="Water pumps">مضخات مياه</span><span data-ar="معدات بناء" data-en="Construction equipment">معدات بناء</span><span data-ar="قطع غيار" data-en="Spare parts">قطع غيار</span><span data-ar="صيانة وكفالة" data-en="Service & warranty">صيانة وكفالة</span></div></div><aside class="contact-panel"><img src="/assets/images/logo-younex.png" alt="Younex Power Center"><div class="contact-list"><a href="https://maps.google.com/?q=Al-Taybah,Daraa,Syria" target="_blank" rel="noopener"><span><small data-ar="العنوان" data-en="Address">العنوان</small><strong data-ar="سورية - درعا - الطيبة - خلف المخفر" data-en="Behind the police station, Al-Taybah, Daraa, Syria">سورية - درعا - الطيبة - خلف المخفر</strong></span></a><a href="tel:+963953728253"><span><small data-ar="الهاتف وواتساب" data-en="Phone & WhatsApp">الهاتف وواتساب</small><strong dir="ltr">+963 953 728 253</strong></span></a><a href="mailto:info@younexpower.com"><span><small data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</small><strong>info@younexpower.com</strong></span></a><div><span><small data-ar="ساعات العمل" data-en="Opening hours">ساعات العمل</small><strong data-ar="السبت–الخميس: 9 صباحًا–1 مساءً، ثم 2 مساءً–5 مساءً" data-en="Saturday–Thursday: 9 AM–1 PM, then 2–5 PM">السبت–الخميس: 9 صباحًا–1 مساءً، ثم 2 مساءً–5 مساءً</strong><em data-ar="استراحة: 1–2 مساءً · الجمعة مغلق" data-en="Break: 1–2 PM · Friday: Closed">استراحة: 1–2 مساءً · الجمعة مغلق</em></span></div></div></aside></div>`
+  content: `<div class="about-layout container"><div class="about-copy"><span class="section-kicker" data-ar="من نحن" data-en="ABOUT US">من نحن</span><h1 data-ar="مركز يونكس للمعدات والطاقة" data-en="Younex Power Center">مركز يونكس للمعدات والطاقة</h1><p data-ar="مركز يونكس للمعدات والطاقة في الطيبة، درعا، يوفر المعدات الكهربائية والمولدات ومضخات المياه ومعدات البناء، إضافة إلى قطع الغيار والصيانة والكفالة." data-en="Younex Power Center in Al-Taybah, Daraa, supplies power tools, generators, water pumps and construction equipment, along with spare parts, maintenance and warranty services.">مركز يونكس للمعدات والطاقة في الطيبة، درعا، يوفر المعدات الكهربائية والمولدات ومضخات المياه ومعدات البناء، إضافة إلى قطع الغيار والصيانة والكفالة.</p><div class="service-tags" data-nosnippet>
+    <span data-ar="معدات كهربائية" data-en="Power tools">معدات كهربائية</span>
+    <span data-ar="مولدات" data-en="Generators">مولدات</span>
+    <span data-ar="مضخات مياه" data-en="Water pumps">مضخات مياه</span>
+    <span data-ar="معدات بناء" data-en="Construction equipment">معدات بناء</span>
+    <span data-ar="قطع غيار" data-en="Spare parts">قطع غيار</span>
+    <span data-ar="صيانة وكفالة" data-en="Service & warranty">صيانة وكفالة</span>
+  </div></div><aside class="contact-panel"><img src="/assets/images/logo-younex.png" alt="Younex Power Center"><div class="contact-list"><a href="https://maps.google.com/?q=Al-Taybah,Daraa,Syria" target="_blank" rel="noopener"><span><small data-ar="العنوان" data-en="Address">العنوان</small><strong data-ar="سورية - درعا - الطيبة - خلف المخفر" data-en="Behind the police station, Al-Taybah, Daraa, Syria">سورية - درعا - الطيبة - خلف المخفر</strong></span></a><a href="tel:+963953728253"><span><small data-ar="الهاتف وواتساب" data-en="Phone & WhatsApp">الهاتف وواتساب</small><strong dir="ltr">+963 953 728 253</strong></span></a><a href="mailto:info@younexpower.com"><span><small data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</small><strong>info@younexpower.com</strong></span></a><div><span><small data-ar="ساعات العمل" data-en="Opening hours">ساعات العمل</small><strong data-ar="السبت–الخميس: 9 صباحًا–1 مساءً، ثم 2 مساءً–5 مساءً" data-en="Saturday–Thursday: 9 AM–1 PM, then 2–5 PM">السبت–الخميس: 9 صباحًا–1 مساءً، ثم 2 مساءً–5 مساءً</strong><em data-ar="استراحة: 1–2 مساءً · الجمعة مغلق" data-en="Break: 1–2 PM · Friday: Closed">استراحة: 1–2 مساءً · الجمعة مغلق</em></span></div></div></aside></div>`
 }));
 
 const sitemapUrls = [

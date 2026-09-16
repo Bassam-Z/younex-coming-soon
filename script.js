@@ -314,6 +314,13 @@ routeLinks.forEach((link) => link.addEventListener('click', (event) => {
 }));
 
 document.addEventListener('click', (event) => {
+  const scrollLink = event.target.closest('[data-scroll-target]');
+  if (scrollLink) {
+    event.preventDefault();
+    const target = document.getElementById(scrollLink.dataset.scrollTarget);
+    if (target) target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+    return;
+  }
   const catalogLink = event.target.closest('[data-catalog-route]');
   if (catalogLink) { event.preventDefault(); showRoute(catalogLink.dataset.catalogRoute); return; }
   const thumbnail = event.target.closest('[data-product-image-index]');

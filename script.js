@@ -114,6 +114,12 @@ function updateDocumentTitle() {
     const category = categoryById(currentRoute.split('/')[1]);
     if (category) { document.title = `${localized(category.name)} | Younex Power Center`; return; }
   }
+  if (currentRoute === 'services') {
+    document.title = currentLanguage === 'ar'
+      ? 'خدمات التوريد والتخصيص | مركز يونكس'
+      : 'Sourcing & Customization Services | Younex Power Center';
+    return;
+  }
   document.title = currentLanguage === 'ar'
     ? 'مركز يونكس للمعدات والطاقة في درعا | Younex Power Center'
     : 'Younex Power Center in Daraa | Power Tools, Generators & Water Pumps';
@@ -210,6 +216,14 @@ function whatsappUrl(product) {
   return `https://wa.me/963953728253?text=${encodeURIComponent(message)}`;
 }
 
+function bulkRequestUrl(product) {
+  const params = new URLSearchParams({
+    product: `${product.model} — ${localized(product.name)}`,
+    productUrl: productShareUrl(product)
+  });
+  return `/services/?${params.toString()}#service-request`;
+}
+
 function renderProduct(slug) {
   const product = productBySlug(slug);
   if (!product) { renderCategories(); return; }
@@ -232,6 +246,7 @@ function renderProduct(slug) {
         <h1>${escapeHtml(product.model)}</h1><h2>${escapeHtml(localized(product.name))}</h2><p>${escapeHtml(localized(product.description))}</p>
         <div class="specifications"><h3>${currentLanguage === 'ar' ? 'المواصفات الفنية' : 'Technical specifications'}</h3><dl>${product.specs.map((spec) => `<div><dt>${escapeHtml(localized(spec.label))}</dt><dd dir="ltr">${escapeHtml(spec.value)}</dd></div>`).join('')}</dl></div>
         <div class="purchase-box"><div><strong>${currentLanguage === 'ar' ? 'مهتم بهذا المنتج؟' : 'Interested in this product?'}</strong><span>${currentLanguage === 'ar' ? 'اسألنا عن السعر والكمية والمميزات.' : 'Ask us about price, quantity and features.'}</span></div><a class="button button-whatsapp" href="${whatsappUrl(product)}" target="_blank" rel="noopener">${currentLanguage === 'ar' ? 'استفسر عبر واتساب' : 'Ask on WhatsApp'}</a></div>
+        <div class="bulk-order-box"><div><span class="bulk-order-label">${currentLanguage === 'ar' ? 'للتجار وأصحاب المشاريع' : 'For traders and businesses'}</span><strong>${currentLanguage === 'ar' ? 'هل تحتاج هذا المنتج بكميات تجارية؟' : 'Need this product in commercial quantities?'}</strong><p>${currentLanguage === 'ar' ? 'نوفر الكمية المطلوبة مع خيارات تخصيص اللون وطباعة شعارك أو علامتك التجارية على المنتج والتغليف.' : 'We can source the quantity you need with custom colors, your logo or private label on the product and packaging.'}</p></div><a class="button button-service" href="${bulkRequestUrl(product)}">${currentLanguage === 'ar' ? 'اطلب سعر الكميات' : 'Request a bulk quote'}</a></div>
       </div>
     </article>`;
   const mainMedia = catalogContent.querySelector('.product-main-media');

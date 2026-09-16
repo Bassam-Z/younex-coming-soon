@@ -28,9 +28,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=11" />
+  <link rel="stylesheet" href="style.css?v=12" />
     <script src="products-data.js?v=4" defer></script>
-  <script src="script.js?v=10" defer></script>
+  <script src="script.js?v=12" defer></script>
+    <script src="services.js?v=1" defer></script>
     <script>window.goatcounter = { no_onload: true };</script>
     <script data-goatcounter="https://younexpower.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
     <script src="analytics.js?v=1" defer></script>
@@ -99,6 +100,7 @@
         <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
           <a href="/" data-route="home" class="nav-link active" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
           <a href="/products/" data-route="products" class="nav-link" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a>
+          <a href="/services/" data-route="services" class="nav-link" data-ar="خدمات التوريد" data-en="Sourcing services">خدمات التوريد</a>
           <a href="/about/" data-route="about" class="nav-link" data-ar="من نحن" data-en="About us">من نحن</a>
         </nav>
 
@@ -131,6 +133,7 @@
                   تواصل عبر واتساب
                 </a>
                 <a class="button button-secondary" href="/products/" data-route="products" data-ar="شاهد منتجاتنا" data-en="View our products">شاهد منتجاتنا</a>
+                <a class="button button-service" href="/services/" data-route="services" data-ar="اطلب توريدًا خاصًا" data-en="Request custom sourcing">اطلب توريدًا خاصًا</a>
               </div>
 
               <div class="quick-info">
@@ -184,6 +187,89 @@
               <small data-ar="استراحة: 1–2 مساءً · الجمعة مغلق" data-en="Break: 1–2 PM · Friday closed">استراحة: 1–2 مساءً · الجمعة مغلق</small>
             </div>
           </div>
+        </div>
+
+        <section class="home-services-preview" aria-labelledby="home-services-title">
+          <div class="container home-services-card">
+            <div class="home-services-copy">
+              <span class="section-kicker" data-ar="للتجار وأصحاب المشاريع" data-en="FOR TRADERS & BUSINESSES">للتجار وأصحاب المشاريع</span>
+              <h2 id="home-services-title" data-ar="نوفر منتجاتك بالكميات والمواصفات التي تحتاجها" data-en="Your products, quantities and specifications — sourced for you">نوفر منتجاتك بالكميات والمواصفات التي تحتاجها</h2>
+              <p data-ar="أرسل صورة المنتج أو رابطه وحدد الكمية المطلوبة. نساعدك في التوريد، واختيار اللون، وطباعة شعارك أو علامتك التجارية، ثم توصيل الطلب إلى المكان الذي تحدده داخل سوريا." data-en="Send us a product photo or link and the required quantity. We help with sourcing, custom colors, your logo or private label, and delivery to your chosen location in Syria.">أرسل صورة المنتج أو رابطه وحدد الكمية المطلوبة. نساعدك في التوريد، واختيار اللون، وطباعة شعارك أو علامتك التجارية، ثم توصيل الطلب إلى المكان الذي تحدده داخل سوريا.</p>
+              <a class="button button-primary" href="/services/" data-route="services" data-ar="اكتشف خدماتنا" data-en="Explore our services">اكتشف خدماتنا</a>
+            </div>
+            <img src="assets/images/services/bulk-sourcing.webp" alt="تجهيز طلبية معدات يونكس بكميات تجارية" data-alt-ar="تجهيز طلبية معدات يونكس بكميات تجارية" data-alt-en="A large Younex commercial equipment order" loading="lazy" width="1880" height="836" />
+          </div>
+        </section>
+      </section>
+
+      <section id="services" class="page-view services-page" data-view="services" aria-labelledby="services-title" hidden>
+        <div class="services-hero">
+          <img src="assets/images/services/bulk-sourcing.webp" alt="خدمات التوريد والتخصيص من مركز يونكس" data-alt-ar="خدمات التوريد والتخصيص من مركز يونكس" data-alt-en="Younex sourcing and customization services" width="1880" height="836" />
+          <div class="services-hero-overlay"></div>
+          <div class="container services-hero-copy">
+            <span class="section-kicker" data-ar="للتجار والشركات والمشاريع" data-en="FOR TRADERS, COMPANIES & PROJECTS">للتجار والشركات والمشاريع</span>
+            <h1 id="services-title" data-ar="خدمات التوريد والتخصيص" data-en="Sourcing & customization services">خدمات التوريد والتخصيص</h1>
+            <p data-ar="من اختيار المنتج إلى تسليمه في موقعك: نؤمّن المعدات والآلات بالكميات المطلوبة، مع خيارات تخصيص اللون والشعار والعلامة التجارية والتغليف." data-en="From product selection to delivery at your location: we source equipment and machinery in the quantities you need, with options for custom colors, logos, private labeling and packaging.">من اختيار المنتج إلى تسليمه في موقعك: نؤمّن المعدات والآلات بالكميات المطلوبة، مع خيارات تخصيص اللون والشعار والعلامة التجارية والتغليف.</p>
+            <a class="button button-primary" href="#service-request" data-scroll-target="service-request" data-ar="أرسل طلبك الآن" data-en="Send your request">أرسل طلبك الآن</a>
+          </div>
+        </div>
+
+        <div class="container services-content">
+          <section class="services-intro">
+            <span class="section-kicker" data-ar="حلول مرنة لأعمالك" data-en="FLEXIBLE BUSINESS SOLUTIONS">حلول مرنة لأعمالك</span>
+            <h2 data-ar="أخبرنا بما تحتاجه، ونحن نتولى الباقي" data-en="Tell us what you need — we handle the rest">أخبرنا بما تحتاجه، ونحن نتولى الباقي</h2>
+            <p data-ar="نوفر للتجار والشركات وأصحاب المشاريع المعدات الكهربائية والصناعية، معدات البناء، المولدات، مضخات المياه، الآلات والمعدات الثقيلة. يكفي أن ترسل صورة المنتج أو رابطه مع الكمية والمواصفات المطلوبة." data-en="We help traders, companies and project owners source power tools, industrial equipment, construction machinery, generators, water pumps and heavy equipment. Simply send a product photo or link with the required quantity and specifications.">نوفر للتجار والشركات وأصحاب المشاريع المعدات الكهربائية والصناعية، معدات البناء، المولدات، مضخات المياه، الآلات والمعدات الثقيلة. يكفي أن ترسل صورة المنتج أو رابطه مع الكمية والمواصفات المطلوبة.</p>
+          </section>
+
+          <div class="service-feature-grid">
+            <article class="service-feature-card service-feature-card-wide">
+              <img src="assets/images/services/custom-branding.webp" alt="تخصيص ألوان وشعارات منتجات يونكس" data-alt-ar="تخصيص ألوان وشعارات المنتجات" data-alt-en="Custom product colors, logos and packaging" loading="lazy" width="1280" height="853" />
+              <div><span>01</span><h3 data-ar="تخصيص المنتج والعلامة التجارية" data-en="Product & brand customization">تخصيص المنتج والعلامة التجارية</h3><p data-ar="اختر لون المنتج، وأضف شعار شركتك أو اسم علامتك التجارية على المنتج والملصقات والتغليف حسب رغبتك." data-en="Choose the product color and add your company logo or private label to the product, labels and packaging.">اختر لون المنتج، وأضف شعار شركتك أو اسم علامتك التجارية على المنتج والملصقات والتغليف حسب رغبتك.</p></div>
+            </article>
+            <article class="service-feature-card service-feature-card-wide">
+              <img src="assets/images/services/delivery.webp" alt="توصيل طلبيات المعدات داخل سوريا" data-alt-ar="توصيل طلبيات المعدات داخل سوريا" data-alt-en="Commercial equipment delivery across Syria" loading="lazy" width="1280" height="853" />
+              <div><span>02</span><h3 data-ar="توريد الكميات والتوصيل" data-en="Bulk sourcing & delivery">توريد الكميات والتوصيل</h3><p data-ar="نوفر المنتجات المعروضة في متجرنا أو المنتجات التي تختارها بكميات تجارية، ونسلّمها إلى الموقع الذي تحدده داخل سوريا." data-en="Order products shown in our store—or products you select—in commercial quantities, delivered to your chosen location in Syria.">نوفر المنتجات المعروضة في متجرنا أو المنتجات التي تختارها بكميات تجارية، ونسلّمها إلى الموقع الذي تحدده داخل سوريا.</p></div>
+            </article>
+          </div>
+
+          <section class="service-categories" aria-labelledby="service-categories-title">
+            <h2 id="service-categories-title" data-ar="ماذا يمكننا أن نوفر؟" data-en="What can we source?">ماذا يمكننا أن نوفر؟</h2>
+            <div class="service-category-list">
+              <span data-ar="معدات كهربائية" data-en="Power tools">معدات كهربائية</span>
+              <span data-ar="معدات صناعية" data-en="Industrial equipment">معدات صناعية</span>
+              <span data-ar="معدات بناء" data-en="Construction equipment">معدات بناء</span>
+              <span data-ar="مولدات كهربائية" data-en="Generators">مولدات كهربائية</span>
+              <span data-ar="مضخات مياه" data-en="Water pumps">مضخات مياه</span>
+              <span data-ar="آلات ومعدات ثقيلة" data-en="Machinery & heavy equipment">آلات ومعدات ثقيلة</span>
+            </div>
+          </section>
+
+          <section class="service-process" aria-labelledby="service-process-title">
+            <div class="service-section-heading"><span class="section-kicker" data-ar="خطوات واضحة" data-en="A SIMPLE PROCESS">خطوات واضحة</span><h2 id="service-process-title" data-ar="كيف تطلب خدمة التوريد؟" data-en="How to request sourcing">كيف تطلب خدمة التوريد؟</h2></div>
+            <ol>
+              <li><b>1</b><div><strong data-ar="أرسل المنتج" data-en="Send the product">أرسل المنتج</strong><span data-ar="أرسل صورة المنتج أو رابطه على الإنترنت." data-en="Send a product photo or online link.">أرسل صورة المنتج أو رابطه على الإنترنت.</span></div></li>
+              <li><b>2</b><div><strong data-ar="حدد التفاصيل" data-en="Specify the details">حدد التفاصيل</strong><span data-ar="أخبرنا بالكمية والمواصفات واللون وخيارات الشعار والتغليف." data-en="Tell us the quantity, specifications, color, logo and packaging options.">أخبرنا بالكمية والمواصفات واللون وخيارات الشعار والتغليف.</span></div></li>
+              <li><b>3</b><div><strong data-ar="استلم العرض" data-en="Receive the quote">استلم العرض</strong><span data-ar="نراجع الطلب ونرسل السعر ومدة التوريد والتفاصيل." data-en="We review the request and send the price, lead time and details.">نراجع الطلب ونرسل السعر ومدة التوريد والتفاصيل.</span></div></li>
+              <li><b>4</b><div><strong data-ar="التوريد والتسليم" data-en="Sourcing & delivery">التوريد والتسليم</strong><span data-ar="بعد الاتفاق نتابع الطلب حتى تسليمه في الموقع المحدد." data-en="Once agreed, we manage the order through delivery to your location.">بعد الاتفاق نتابع الطلب حتى تسليمه في الموقع المحدد.</span></div></li>
+            </ol>
+          </section>
+
+          <section id="service-request" class="service-request" aria-labelledby="service-request-title">
+            <div class="service-request-copy"><span class="section-kicker" data-ar="ابدأ طلبك" data-en="START YOUR REQUEST">ابدأ طلبك</span><h2 id="service-request-title" data-ar="اطلب عرض سعر للكميات" data-en="Request a bulk quote">اطلب عرض سعر للكميات</h2><p data-ar="عبّئ المعلومات الأساسية، وسنجهزها لك في رسالة واتساب. يمكنك إرفاق صورة المنتج مباشرة بعد فتح المحادثة." data-en="Fill in the basic details and we will prepare them in a WhatsApp message. You can attach the product photo after the chat opens.">عبّئ المعلومات الأساسية، وسنجهزها لك في رسالة واتساب. يمكنك إرفاق صورة المنتج مباشرة بعد فتح المحادثة.</p><a href="mailto:info@younexpower.com">info@younexpower.com</a></div>
+            <form class="sourcing-form" data-sourcing-form>
+              <div class="form-field"><label for="request-name" data-ar="الاسم أو اسم الشركة" data-en="Name or company">الاسم أو اسم الشركة</label><input id="request-name" name="name" type="text" autocomplete="organization" required /></div>
+              <div class="form-field"><label for="request-phone" data-ar="رقم الهاتف" data-en="Phone number">رقم الهاتف</label><input id="request-phone" name="phone" type="tel" autocomplete="tel" dir="ltr" required /></div>
+              <div class="form-field"><label for="request-product" data-ar="اسم المنتج" data-en="Product name">اسم المنتج</label><input id="request-product" name="product" type="text" required /></div>
+              <div class="form-field"><label for="request-quantity" data-ar="الكمية المطلوبة" data-en="Required quantity">الكمية المطلوبة</label><input id="request-quantity" name="quantity" type="text" required /></div>
+              <div class="form-field form-field-full"><label for="request-link" data-ar="رابط المنتج (اختياري)" data-en="Product link (optional)">رابط المنتج (اختياري)</label><input id="request-link" name="productLink" type="url" inputmode="url" dir="ltr" placeholder="https://" /></div>
+              <div class="form-field"><label for="request-color" data-ar="اللون المطلوب (اختياري)" data-en="Preferred color (optional)">اللون المطلوب (اختياري)</label><input id="request-color" name="color" type="text" /></div>
+              <div class="form-field"><label for="request-branding" data-ar="التخصيص" data-en="Customization">التخصيص</label><select id="request-branding" name="branding"><option value="" data-ar="بدون تخصيص" data-en="No customization">بدون تخصيص</option><option value="logo" data-ar="طباعة شعار أو علامة تجارية" data-en="Logo or private label">طباعة شعار أو علامة تجارية</option><option value="logo-packaging" data-ar="شعار وتغليف مخصص" data-en="Logo and custom packaging">شعار وتغليف مخصص</option></select></div>
+              <div class="form-field form-field-full"><label for="request-delivery" data-ar="مكان التسليم" data-en="Delivery location">مكان التسليم</label><input id="request-delivery" name="delivery" type="text" required /></div>
+              <div class="form-field form-field-full"><label for="request-details" data-ar="المواصفات أو الملاحظات" data-en="Specifications or notes">المواصفات أو الملاحظات</label><textarea id="request-details" name="details" rows="4"></textarea></div>
+              <button class="button button-whatsapp form-submit" type="submit" data-ar="إرسال الطلب عبر واتساب" data-en="Send request on WhatsApp">إرسال الطلب عبر واتساب</button>
+              <p class="form-note" data-ar="لن يتم حفظ بياناتك في الموقع؛ ستُستخدم فقط لتجهيز رسالة واتساب." data-en="Your data is not stored on this website; it is only used to prepare your WhatsApp message.">لن يتم حفظ بياناتك في الموقع؛ ستُستخدم فقط لتجهيز رسالة واتساب.</p>
+            </form>
+          </section>
         </div>
       </section>
 
@@ -248,6 +334,7 @@
           <strong data-ar="روابط سريعة" data-en="Quick links">روابط سريعة</strong>
           <a href="/" data-route="home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
           <a href="/products/" data-route="products" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a>
+          <a href="/services/" data-route="services" data-ar="خدمات التوريد" data-en="Sourcing services">خدمات التوريد</a>
           <a href="/about/" data-route="about" data-ar="من نحن" data-en="About us">من نحن</a>
         </div>
         <div class="footer-contact">

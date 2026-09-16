@@ -22,6 +22,9 @@
     document.querySelectorAll('[data-aria-ar][data-aria-en]').forEach(function (element) {
       element.setAttribute('aria-label', element.getAttribute(arabic ? 'data-aria-ar' : 'data-aria-en'));
     });
+    document.querySelectorAll('[data-alt-ar][data-alt-en]').forEach(function (element) {
+      element.setAttribute('alt', element.getAttribute(arabic ? 'data-alt-ar' : 'data-alt-en'));
+    });
     if (languageToggle) {
       languageToggle.querySelector('span').textContent = arabic ? 'EN' : 'عربي';
       languageToggle.setAttribute('aria-label', arabic ? 'Switch to English' : 'التبديل إلى العربية');

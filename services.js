@@ -41,12 +41,12 @@
 
     if (language === 'en') {
       return [
-        'Hello Younex Power Center, I would like to request a bulk sourcing quote.',
+        'Hello Younex Power Center, I would like to request a sourcing quote.',
         '',
         'Name / company: ' + data.name,
         'Phone: ' + data.phone,
-        'Product: ' + data.product,
-        'Required quantity: ' + data.quantity,
+        'Product or project: ' + data.product,
+        'Quantity or project requirements: ' + data.quantity,
         data.productLink ? 'Product link: ' + data.productLink : '',
         data.color ? 'Preferred color: ' + data.color : '',
         'Customization: ' + data.branding,
@@ -58,12 +58,12 @@
     }
 
     return [
-      'مرحبًا مركز يونكس للمعدات والطاقة، أرغب في طلب عرض سعر للتوريد بالكميات.',
+      'مرحبًا مركز يونكس للمعدات والطاقة، أرغب في طلب عرض للتوريد.',
       '',
       'الاسم / الشركة: ' + data.name,
       'رقم الهاتف: ' + data.phone,
-      'المنتج: ' + data.product,
-      'الكمية المطلوبة: ' + data.quantity,
+      'المنتج أو المشروع: ' + data.product,
+      'الكمية أو الاحتياج المطلوب: ' + data.quantity,
       data.productLink ? 'رابط المنتج: ' + data.productLink : '',
       data.color ? 'اللون المطلوب: ' + data.color : '',
       'التخصيص: ' + data.branding,

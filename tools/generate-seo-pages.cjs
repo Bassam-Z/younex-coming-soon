@@ -58,7 +58,7 @@ function head({ title, description, canonical, image, type = 'website', schema }
   <script data-goatcounter="https://younexpower.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   <script src="/analytics.js?v=2" defer></script>
   <script src="/seo-pages.js?v=2" defer></script>
-  <script src="/services.js?v=2" defer></script>
+  <script src="/services.js?v=3" defer></script>
 </head>`;
 }
 
@@ -252,7 +252,7 @@ for (const product of catalog.products) {
 }
 
 const servicesCanonical = `${origin}/services/`;
-const servicesDescription = 'حلول توريد متكاملة للمعدات والأدوات في سوريا تشمل تخصيص المنتجات والعلامة التجارية، الشحن، التخليص الجمركي والتوصيل إلى موقع العميل.';
+const servicesDescription = 'تأمين المعدات والأدوات وتجهيز المشاريع في سوريا، مع تخصيص المنتجات والشحن والتخليص الجمركي والتوصيل إلى موقع العميل.';
 const servicesSchema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -265,7 +265,7 @@ const servicesSchema = {
       url: servicesCanonical,
       provider: { '@type': 'HardwareStore', '@id': `${origin}/#business`, name: 'Younex Power Center' },
       areaServed: { '@type': 'Country', name: 'Syria' },
-      serviceType: ['Bulk sourcing', 'Product customization', 'Private labeling', 'International shipping', 'Customs clearance', 'Commercial delivery']
+      serviceType: ['Bulk sourcing', 'Project equipment sourcing', 'Product customization', 'Private labeling', 'International shipping', 'Customs clearance', 'Commercial delivery']
     },
     breadcrumbSchema([{ name: 'Younex Power Center', url: `${origin}/` }, { name: 'Sourcing services', url: servicesCanonical }])
   ]
@@ -276,7 +276,7 @@ const serviceRequestForm = `<section id="service-request" class="service-request
 write('services/index.html', page({
   titleAr: 'خدمات التوريد والتخصيص | مركز يونكس',
   titleEn: 'Sourcing & Customization Services | Younex Power Center',
-  headTitle: 'توريد المعدات بالكميات وتخصيص العلامة التجارية | Younex',
+  headTitle: 'خدمات توريد وتجهيز المشاريع والمعدات في سوريا | Younex',
   description: servicesDescription,
   canonical: servicesCanonical,
   image: `${origin}/assets/images/services/bulk-sourcing.webp`,

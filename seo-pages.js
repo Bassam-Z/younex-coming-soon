@@ -56,6 +56,10 @@
     var open = primaryNav && primaryNav.classList.toggle('open');
     menuToggle.setAttribute('aria-expanded', String(Boolean(open)));
   });
+  if (primaryNav) primaryNav.addEventListener('click', function () {
+    primaryNav.classList.remove('open');
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+  });
   document.addEventListener('click', function (event) {
     var skipLink = event.target.closest('.skip-link');
     if (skipLink) {

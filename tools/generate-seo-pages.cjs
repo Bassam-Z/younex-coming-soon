@@ -7,7 +7,7 @@ require('../products-data.js');
 const root = path.resolve(__dirname, '..');
 const catalog = window.YOUNEX_CATALOG;
 const origin = 'https://younexpower.com';
-const updated = '2026-09-16';
+const updated = new Date().toISOString().slice(0, 10);
 
 function esc(value) {
   return String(value ?? '').replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#039;');
@@ -21,7 +21,7 @@ function localizedTag(tag, value, attrs = '') {
   return `<${tag}${attrs} data-ar="${esc(value.ar)}" data-en="${esc(value.en)}">${esc(value.ar)}</${tag}>`;
 }
 
-function head({ title, description, canonical, image, type = 'website', schema }) {
+function head({ title, description, canonical, image, type = 'website', schema, servicesScript = false }) {
   return `<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
@@ -57,16 +57,15 @@ function head({ title, description, canonical, image, type = 'website', schema }
   <script>window.goatcounter = { no_onload: true };</script>
   <script data-goatcounter="https://younexpower.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   <script src="/analytics.js?v=2" defer></script>
-  <script src="/seo-pages.js?v=3" defer></script>
-  <script src="/services.js?v=4" defer></script>
-</head>`;
+  <script src="/seo-pages.js?v=4" defer></script>
+${servicesScript ? '  <script src="/services.js?v=4" defer></script>\n' : ''}</head>`;
 }
 
 function header(active) {
   return `<a class="skip-link" href="#main-content" data-ar="انتقل إلى المحتوى" data-en="Skip to content">انتقل إلى المحتوى</a>
 <header class="site-header">
   <div class="header-inner container">
-    <a class="brand" href="/" aria-label="Younex Power Center - Home"><img src="/assets/images/logo-younex.png" alt="Younex Power Center"></a>
+    <a class="brand" href="/" aria-label="Younex Power Center - Home"><img src="/assets/images/logo-younex.png" alt="Younex Power Center" width="512" height="512"></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-aria-ar="فتح القائمة" data-aria-en="Open menu"><span></span><span></span><span></span></button>
     <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
       <a href="/" class="nav-link${active === 'home' ? ' active' : ''}" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
@@ -82,7 +81,7 @@ function header(active) {
 function footer() {
   return `<footer class="site-footer">
   <div class="container footer-grid">
-    <div class="footer-brand"><img src="/assets/images/logo-younex.png" alt="Younex Power Center"><p data-ar="قوة تثق بها، وخدمة قريبة منك." data-en="Power you can trust, service close to you.">قوة تثق بها، وخدمة قريبة منك.</p></div>
+    <div class="footer-brand"><img src="/assets/images/logo-younex.png" alt="Younex Power Center" width="512" height="512"><p data-ar="قوة تثق بها، وخدمة قريبة منك." data-en="Power you can trust, service close to you.">قوة تثق بها، وخدمة قريبة منك.</p></div>
     <div class="footer-links"><strong data-ar="روابط سريعة" data-en="Quick links">روابط سريعة</strong><a href="/" data-ar="الرئيسية" data-en="Home">الرئيسية</a><a href="/products/" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a><a href="/services/" data-ar="خدمات التوريد" data-en="Sourcing services">خدمات التوريد</a><a href="/about/" data-ar="من نحن" data-en="About us">من نحن</a></div>
     <div class="footer-contact"><strong data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</strong><a href="tel:+963953728253" dir="ltr">+963 953 728 253</a><a href="mailto:info@younexpower.com">info@younexpower.com</a><span>www.younexpower.com</span></div>
   </div>
@@ -110,8 +109,8 @@ function productCard(product) {
   </a>`;
 }
 
-function page({ titleAr, titleEn, headTitle, description, canonical, image, schema, active = 'products', content, type }) {
-  return `${head({ title: headTitle, description, canonical, image, schema, type })}
+function page({ titleAr, titleEn, headTitle, description, canonical, image, schema, active = 'products', content, type, servicesScript = false }) {
+  return `${head({ title: headTitle, description, canonical, image, schema, type, servicesScript })}
 <body data-title-ar="${esc(titleAr)}" data-title-en="${esc(titleEn)}">
 ${header(active)}
 <main id="main-content" class="static-page-main">${content}</main>
@@ -121,50 +120,14 @@ ${footer()}
 `;
 }
 
-function currentServicesContent() {
-  const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-  const startMarker = '      <section id="services" class="page-view services-page" data-view="services" aria-labelledby="services-title" hidden>';
-  const endMarker = '      <section id="about"';
-  const start = homepage.indexOf(startMarker);
-  const end = homepage.indexOf(endMarker, start);
-
-  if (start === -1 || end === -1) throw new Error('Unable to extract the services page from index.html');
-
-  return homepage
-    .slice(start, end)
-    .trim()
-    .replace(startMarker.trim(), '<section class="services-page">')
-    .replaceAll('src="assets/', 'src="/assets/');
-}
-
-function currentAboutContent() {
-  const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-  const startMarker = '      <section id="about" class="page-view" data-view="about" aria-labelledby="about-title" hidden>';
-  const endMarker = '\n      </section>';
-  const start = homepage.indexOf(startMarker);
-  const end = homepage.indexOf(endMarker, start);
-
-  if (start === -1 || end === -1) throw new Error('Unable to extract the about page from index.html');
-
-  return homepage
-    .slice(start + startMarker.length, end)
-    .trim()
-    .replaceAll('src="assets/', 'src="/assets/');
+function currentPageContent(relativePath) {
+  const pageSource = fs.readFileSync(path.join(root, relativePath), 'utf8');
+  const match = pageSource.match(/<main id="main-content"[^>]*>([\s\S]*?)<\/main>/);
+  if (!match) throw new Error(`Unable to extract main content from ${relativePath}`);
+  return match[1];
 }
 
 function write(relativePath, content) {
-  if (relativePath === 'services/index.html') {
-    content = content.replace(
-      /<main id="main-content" class="static-page-main">[\s\S]*?<\/main>/,
-      `<main id="main-content" class="static-page-main">${currentServicesContent()}</main>`
-    );
-  }
-  if (relativePath === 'about/index.html') {
-    content = content.replace(
-      /<main id="main-content" class="static-page-main">[\s\S]*?<\/main>/,
-      `<main id="main-content" class="static-page-main">${currentAboutContent()}</main>`
-    );
-  }
   const target = path.join(root, relativePath);
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, content);
@@ -271,8 +234,6 @@ const servicesSchema = {
   ]
 };
 
-const serviceRequestForm = `<section id="service-request" class="service-request" aria-labelledby="service-request-title"><div class="service-request-copy"><span class="section-kicker" data-ar="ابدأ طلبك" data-en="START YOUR REQUEST">ابدأ طلبك</span><h2 id="service-request-title" data-ar="اطلب عرض سعر للكميات" data-en="Request a bulk quote">اطلب عرض سعر للكميات</h2><p data-ar="عبّئ المعلومات الأساسية، وسنجهزها لك في رسالة واتساب. يمكنك إرفاق صورة المنتج مباشرة بعد فتح المحادثة." data-en="Fill in the basic details and we will prepare them in a WhatsApp message. You can attach the product photo after the chat opens.">عبّئ المعلومات الأساسية، وسنجهزها لك في رسالة واتساب. يمكنك إرفاق صورة المنتج مباشرة بعد فتح المحادثة.</p><a href="mailto:info@younexpower.com">info@younexpower.com</a></div><form class="sourcing-form" data-sourcing-form><div class="form-field"><label for="request-name" data-ar="الاسم أو اسم الشركة" data-en="Name or company">الاسم أو اسم الشركة</label><input id="request-name" name="name" type="text" autocomplete="organization" required></div><div class="form-field"><label for="request-phone" data-ar="رقم الهاتف" data-en="Phone number">رقم الهاتف</label><input id="request-phone" name="phone" type="tel" autocomplete="tel" dir="ltr" required></div><div class="form-field"><label for="request-product" data-ar="اسم المنتج" data-en="Product name">اسم المنتج</label><input id="request-product" name="product" type="text" required></div><div class="form-field"><label for="request-quantity" data-ar="الكمية المطلوبة" data-en="Required quantity">الكمية المطلوبة</label><input id="request-quantity" name="quantity" type="text" required></div><div class="form-field form-field-full"><label for="request-link" data-ar="رابط المنتج (اختياري)" data-en="Product link (optional)">رابط المنتج (اختياري)</label><input id="request-link" name="productLink" type="url" inputmode="url" dir="ltr" placeholder="https://"></div><div class="form-field"><label for="request-color" data-ar="اللون المطلوب (اختياري)" data-en="Preferred color (optional)">اللون المطلوب (اختياري)</label><input id="request-color" name="color" type="text"></div><div class="form-field"><label for="request-branding" data-ar="التخصيص" data-en="Customization">التخصيص</label><select id="request-branding" name="branding"><option value="" data-ar="بدون تخصيص" data-en="No customization">بدون تخصيص</option><option value="logo" data-ar="طباعة شعار أو علامة تجارية" data-en="Logo or private label">طباعة شعار أو علامة تجارية</option><option value="logo-packaging" data-ar="شعار وتغليف مخصص" data-en="Logo and custom packaging">شعار وتغليف مخصص</option></select></div><div class="form-field form-field-full"><label for="request-delivery" data-ar="مكان التسليم" data-en="Delivery location">مكان التسليم</label><input id="request-delivery" name="delivery" type="text" required></div><div class="form-field form-field-full"><label for="request-details" data-ar="المواصفات أو الملاحظات" data-en="Specifications or notes">المواصفات أو الملاحظات</label><textarea id="request-details" name="details" rows="4"></textarea></div><button class="button button-whatsapp form-submit" type="submit" data-ar="إرسال الطلب عبر واتساب" data-en="Send request on WhatsApp">إرسال الطلب عبر واتساب</button><p class="form-note" data-ar="لن يتم حفظ بياناتك في الموقع؛ ستُستخدم فقط لتجهيز رسالة واتساب." data-en="Your data is not stored on this website; it is only used to prepare your WhatsApp message.">لن يتم حفظ بياناتك في الموقع؛ ستُستخدم فقط لتجهيز رسالة واتساب.</p></form></section>`;
-
 write('services/index.html', page({
   titleAr: 'خدمات التوريد والتخصيص | مركز يونكس',
   titleEn: 'Sourcing & Customization Services | Younex Power Center',
@@ -282,7 +243,8 @@ write('services/index.html', page({
   image: `${origin}/assets/images/services/bulk-sourcing.webp`,
   active: 'services',
   schema: servicesSchema,
-  content: `<section class="services-page"><div class="services-hero"><img src="/assets/images/services/bulk-sourcing.webp" alt="خدمات التوريد والتخصيص من مركز يونكس" data-alt-ar="خدمات التوريد والتخصيص من مركز يونكس" data-alt-en="Younex sourcing and customization services" width="1880" height="836"><div class="services-hero-overlay"></div><div class="container services-hero-copy"><span class="section-kicker" data-ar="للتجار والشركات والمشاريع" data-en="FOR TRADERS, COMPANIES & PROJECTS">للتجار والشركات والمشاريع</span><h1 data-ar="خدمات التوريد والتخصيص" data-en="Sourcing & customization services">خدمات التوريد والتخصيص</h1><p data-ar="من اختيار المنتج إلى تسليمه في موقعك: نؤمّن المعدات والآلات بالكميات المطلوبة، مع خيارات تخصيص اللون والشعار والعلامة التجارية والتغليف." data-en="From product selection to delivery at your location: we source equipment and machinery in the quantities you need, with options for custom colors, logos, private labeling and packaging.">من اختيار المنتج إلى تسليمه في موقعك: نؤمّن المعدات والآلات بالكميات المطلوبة، مع خيارات تخصيص اللون والشعار والعلامة التجارية والتغليف.</p><a class="button button-primary" href="#service-request" data-scroll-target="service-request" data-ar="أرسل طلبك الآن" data-en="Send your request">أرسل طلبك الآن</a></div></div><div class="container services-content"><section class="services-intro"><span class="section-kicker" data-ar="حلول مرنة لأعمالك" data-en="FLEXIBLE BUSINESS SOLUTIONS">حلول مرنة لأعمالك</span><h2 data-ar="أخبرنا بما تحتاجه، ونحن نتولى الباقي" data-en="Tell us what you need — we handle the rest">أخبرنا بما تحتاجه، ونحن نتولى الباقي</h2><p data-ar="نوفر للتجار والشركات وأصحاب المشاريع المعدات الكهربائية والصناعية، معدات البناء، المولدات، مضخات المياه، الآلات والمعدات الثقيلة. يكفي أن ترسل صورة المنتج أو رابطه مع الكمية والمواصفات المطلوبة." data-en="We help traders, companies and project owners source power tools, industrial equipment, construction machinery, generators, water pumps and heavy equipment. Simply send a product photo or link with the required quantity and specifications.">نوفر للتجار والشركات وأصحاب المشاريع المعدات الكهربائية والصناعية، معدات البناء، المولدات، مضخات المياه، الآلات والمعدات الثقيلة. يكفي أن ترسل صورة المنتج أو رابطه مع الكمية والمواصفات المطلوبة.</p></section><div class="service-feature-grid"><article class="service-feature-card service-feature-card-wide"><img src="/assets/images/services/custom-branding.webp" alt="تخصيص ألوان وشعارات المنتجات" data-alt-ar="تخصيص ألوان وشعارات المنتجات" data-alt-en="Custom product colors, logos and packaging" loading="lazy" width="1280" height="853"><div><span>01</span><h3 data-ar="تخصيص المنتج والعلامة التجارية" data-en="Product & brand customization">تخصيص المنتج والعلامة التجارية</h3><p data-ar="اختر لون المنتج، وأضف شعار شركتك أو اسم علامتك التجارية على المنتج والملصقات والتغليف حسب رغبتك." data-en="Choose the product color and add your company logo or private label to the product, labels and packaging.">اختر لون المنتج، وأضف شعار شركتك أو اسم علامتك التجارية على المنتج والملصقات والتغليف حسب رغبتك.</p></div></article><article class="service-feature-card service-feature-card-wide"><img src="/assets/images/services/delivery.webp" alt="توصيل طلبيات المعدات داخل سوريا" data-alt-ar="توصيل طلبيات المعدات داخل سوريا" data-alt-en="Commercial equipment delivery across Syria" loading="lazy" width="1280" height="853"><div><span>02</span><h3 data-ar="توريد الكميات والتوصيل" data-en="Bulk sourcing & delivery">توريد الكميات والتوصيل</h3><p data-ar="نوفر المنتجات المعروضة في متجرنا أو المنتجات التي تختارها بكميات تجارية، ونسلّمها إلى الموقع الذي تحدده داخل سوريا." data-en="Order products shown in our store—or products you select—in commercial quantities, delivered to your chosen location in Syria.">نوفر المنتجات المعروضة في متجرنا أو المنتجات التي تختارها بكميات تجارية، ونسلّمها إلى الموقع الذي تحدده داخل سوريا.</p></div></article><article class="service-feature-card service-feature-card-wide"><img src="/assets/images/services/power-tool-accessories.webp" alt="إكسسوارات الباور تولز من ريش وأقراص قص وجلخ ولقم مفكات" data-alt-ar="إكسسوارات الباور تولز من ريش وأقراص قص وجلخ ولقم مفكات" data-alt-en="Power tool accessories including drill bits, cutting and grinding discs, and screwdriver bits" loading="lazy" width="1536" height="1024"><div><span>03</span><h3 data-ar="إكسسوارات ومستلزمات الباور تولز" data-en="Power tool accessories">إكسسوارات ومستلزمات الباور تولز</h3><p data-ar="نوفر ريش الدريل، لقم المفكات، أقراص القص والجلخ، مناشير الفتح، وأقراص الصنفرة بالكميات والمواصفات المطلوبة." data-en="We source drill bits, screwdriver bits, cutting and grinding discs, hole saws, and sanding discs in the quantities and specifications you need.">نوفر ريش الدريل، لقم المفكات، أقراص القص والجلخ، مناشير الفتح، وأقراص الصنفرة بالكميات والمواصفات المطلوبة.</p></div></article></div><section class="service-categories"><h2 data-ar="ماذا يمكننا أن نوفر؟" data-en="What can we source?">ماذا يمكننا أن نوفر؟</h2><div class="service-category-list"><span data-ar="معدات كهربائية" data-en="Power tools">معدات كهربائية</span><span data-ar="إكسسوارات الباور تولز" data-en="Power tool accessories">إكسسوارات الباور تولز</span><span data-ar="معدات صناعية" data-en="Industrial equipment">معدات صناعية</span><span data-ar="معدات بناء" data-en="Construction equipment">معدات بناء</span><span data-ar="مولدات كهربائية" data-en="Generators">مولدات كهربائية</span><span data-ar="مضخات مياه" data-en="Water pumps">مضخات مياه</span><span data-ar="آلات ومعدات ثقيلة" data-en="Machinery & heavy equipment">آلات ومعدات ثقيلة</span></div></section><section class="service-process"><div class="service-section-heading"><span class="section-kicker" data-ar="خطوات واضحة" data-en="A SIMPLE PROCESS">خطوات واضحة</span><h2 data-ar="كيف تطلب خدمة التوريد؟" data-en="How to request sourcing">كيف تطلب خدمة التوريد؟</h2></div><ol><li><b>1</b><div><strong data-ar="أرسل المنتج" data-en="Send the product">أرسل المنتج</strong><span data-ar="أرسل صورة المنتج أو رابطه على الإنترنت." data-en="Send a product photo or online link.">أرسل صورة المنتج أو رابطه على الإنترنت.</span></div></li><li><b>2</b><div><strong data-ar="حدد التفاصيل" data-en="Specify the details">حدد التفاصيل</strong><span data-ar="أخبرنا بالكمية والمواصفات واللون وخيارات الشعار والتغليف." data-en="Tell us the quantity, specifications, color, logo and packaging options.">أخبرنا بالكمية والمواصفات واللون وخيارات الشعار والتغليف.</span></div></li><li><b>3</b><div><strong data-ar="استلم العرض" data-en="Receive the quote">استلم العرض</strong><span data-ar="نراجع الطلب ونرسل السعر ومدة التوريد والتفاصيل." data-en="We review the request and send the price, lead time and details.">نراجع الطلب ونرسل السعر ومدة التوريد والتفاصيل.</span></div></li><li><b>4</b><div><strong data-ar="التوريد والتسليم" data-en="Sourcing & delivery">التوريد والتسليم</strong><span data-ar="بعد الاتفاق نتابع الطلب حتى تسليمه في الموقع المحدد." data-en="Once agreed, we manage the order through delivery to your location.">بعد الاتفاق نتابع الطلب حتى تسليمه في الموقع المحدد.</span></div></li></ol></section>${serviceRequestForm}</div></section>`
+  servicesScript: true,
+  content: currentPageContent('services/index.html')
 }));
 
 const aboutCanonical = `${origin}/about/`;
@@ -295,14 +257,7 @@ write('about/index.html', page({
   image: `${origin}/assets/images/logo-younex.png`,
   active: 'about',
   schema: { '@context': 'https://schema.org', '@type': 'AboutPage', '@id': aboutCanonical, url: aboutCanonical, name: 'عن مركز يونكس للمعدات والطاقة', inLanguage: ['ar', 'en'], about: { '@type': 'HardwareStore', name: 'Younex Power Center', telephone: '+963953728253', email: 'info@younexpower.com', hasMap: 'https://maps.app.goo.gl/1JqNdXCCJAQ686aG9', geo: { '@type': 'GeoCoordinates', latitude: 32.565238, longitude: 36.239266 }, address: { '@type': 'PostalAddress', streetAddress: 'خلف المخفر', addressLocality: 'الطيبة', addressRegion: 'درعا', addressCountry: 'SY' } } },
-  content: `<div class="about-layout container"><div class="about-copy"><span class="section-kicker" data-ar="من نحن" data-en="ABOUT US">من نحن</span><h1 data-ar="مركز يونكس للمعدات والطاقة" data-en="Younex Power Center">مركز يونكس للمعدات والطاقة</h1><p data-ar="مركز يونكس للمعدات والطاقة في الطيبة، درعا، يوفر المعدات الكهربائية والمولدات ومضخات المياه ومعدات البناء، إضافة إلى قطع الغيار والصيانة والكفالة." data-en="Younex Power Center in Al-Taybah, Daraa, supplies power tools, generators, water pumps and construction equipment, along with spare parts, maintenance and warranty services.">مركز يونكس للمعدات والطاقة في الطيبة، درعا، يوفر المعدات الكهربائية والمولدات ومضخات المياه ومعدات البناء، إضافة إلى قطع الغيار والصيانة والكفالة.</p><div class="service-tags" data-nosnippet>
-    <span data-ar="معدات كهربائية" data-en="Power tools">معدات كهربائية</span>
-    <span data-ar="مولدات" data-en="Generators">مولدات</span>
-    <span data-ar="مضخات مياه" data-en="Water pumps">مضخات مياه</span>
-    <span data-ar="معدات بناء" data-en="Construction equipment">معدات بناء</span>
-    <span data-ar="قطع غيار" data-en="Spare parts">قطع غيار</span>
-    <span data-ar="صيانة وكفالة" data-en="Service & warranty">صيانة وكفالة</span>
-  </div></div><aside class="contact-panel"><img src="/assets/images/logo-younex.png" alt="Younex Power Center"><div class="contact-list"><a href="https://maps.google.com/?q=Al-Taybah,Daraa,Syria" target="_blank" rel="noopener"><span><small data-ar="العنوان" data-en="Address">العنوان</small><strong data-ar="سورية - درعا - الطيبة - خلف المخفر" data-en="Behind the police station, Al-Taybah, Daraa, Syria">سورية - درعا - الطيبة - خلف المخفر</strong></span></a><a href="tel:+963953728253"><span><small data-ar="الهاتف وواتساب" data-en="Phone & WhatsApp">الهاتف وواتساب</small><strong dir="ltr">+963 953 728 253</strong></span></a><a href="mailto:info@younexpower.com"><span><small data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</small><strong>info@younexpower.com</strong></span></a><div><span><small data-ar="ساعات العمل" data-en="Opening hours">ساعات العمل</small><strong data-ar="السبت–الخميس: 9 صباحًا–1 مساءً، ثم 2 مساءً–5 مساءً" data-en="Saturday–Thursday: 9 AM–1 PM, then 2–5 PM">السبت–الخميس: 9 صباحًا–1 مساءً، ثم 2 مساءً–5 مساءً</strong><em data-ar="استراحة: 1–2 مساءً · الجمعة مغلق" data-en="Break: 1–2 PM · Friday: Closed">استراحة: 1–2 مساءً · الجمعة مغلق</em></span></div></div></aside></div>`
+  content: currentPageContent('about/index.html')
 }));
 
 const sitemapUrls = [

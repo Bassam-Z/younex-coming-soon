@@ -1,13 +1,16 @@
-# Younex Power Center — Coming Soon
+# Younex Power Center Website
 
-A responsive Arabic/English website for Younex Power Center, prepared for GitHub Pages and the custom domain `younexpower.com`.
+A responsive Arabic/English catalog and sourcing-services website for Younex Power Center, published with GitHub Pages at `younexpower.com`.
 
 ## Pages
 
-- Home / opening announcement
-- Products gallery
-- About and contact information
+- Home and product carousel
+- Product categories and individual product pages
+- Sourcing and customization services with WhatsApp quote form
+- About, contact information and store location
 
 ## Technology
 
 Plain HTML, CSS and JavaScript. No build step or paid hosting is required.
+
+Run `node tools/generate-seo-pages.cjs` after changing product data or shared static-page markup.

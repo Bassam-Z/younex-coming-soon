@@ -161,6 +161,13 @@ html[dir="rtl"] .services-hero-overlay { background: linear-gradient(270deg, rgb
 .service-category-custom h3 { padding: 5px 0 3px; font-size: 1.16rem; }
 .service-category-custom p { max-width: 300px; margin: 0; color: #bed2df; font-size: .82rem; line-height: 1.65; }
 .service-category-custom-action { margin-top: 12px; color: white; font-size: .82rem; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
+.project-equipment-card { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); overflow: hidden; margin-top: 70px; border: 1px solid var(--line); border-radius: 26px; background: white; box-shadow: 0 18px 52px rgba(11,32,52,.1); }
+.project-equipment-media { min-height: 380px; background: var(--navy-950); }
+.project-equipment-media img { display: block; width: 100%; height: 100%; min-height: 380px; object-fit: cover; object-position: center; }
+.project-equipment-copy { display: flex; align-items: flex-start; justify-content: center; flex-direction: column; padding: 42px; background: linear-gradient(145deg, #fff, #f1f9fc); }
+.project-equipment-copy h2 { margin: 7px 0 13px; color: var(--navy-900); font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.3; }
+.project-equipment-copy p { margin: 0; color: var(--muted); line-height: 1.95; }
+.project-equipment-copy .button { margin-top: 24px; }
 .service-process { padding-top: 78px; }
 .service-section-heading { text-align: center; }
 .service-process ol { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin: 36px 0 0; padding: 0; list-style: none; counter-reset: none; }
@@ -329,11 +336,14 @@ html[dir="rtl"] .detail-control.next { left: 16px; right: auto; }
   .status-badge { justify-content: center; }
   .hero-actions, .quick-info { justify-content: center; }
   .carousel { width: min(92vw, 620px); }
-  .opening-grid, .about-layout, .home-services-card, .service-request { grid-template-columns: 1fr; gap: 38px; }
+  .opening-grid, .about-layout, .home-services-card, .service-request, .project-equipment-card { grid-template-columns: 1fr; gap: 38px; }
   .home-services-card > img { min-height: 340px; order: -1; }
   .service-process ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .service-feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .service-category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-equipment-card { gap: 0; }
+  .project-equipment-media { min-height: 0; }
+  .project-equipment-media img { height: auto; min-height: 0; aspect-ratio: 16 / 9; }
   .service-request-copy { position: static; }
   .opening-card { max-width: 460px; }
   .product-gallery { grid-template-columns: repeat(2, 1fr); }
@@ -398,6 +408,8 @@ html[dir="rtl"] .detail-control.next { left: 16px; right: auto; }
   .service-category-card { scroll-snap-align: center; }
   .service-category-custom { min-height: 235px; }
   .service-categories { margin-top: 48px; padding: 32px 16px 22px; }
+  .project-equipment-card { margin-top: 48px; gap: 0; }
+  .project-equipment-copy { padding: 30px 22px 34px; }
   .service-request { margin-top: 58px; padding: 26px 18px; }
   .sourcing-form { grid-template-columns: 1fr; padding: 22px 17px; }
   .form-field-full, .form-submit, .form-note { grid-column: auto; }

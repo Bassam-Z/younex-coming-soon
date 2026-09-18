@@ -173,6 +173,9 @@ html[dir="rtl"] .services-hero-overlay { background: linear-gradient(270deg, rgb
 .service-request-copy { position: sticky; top: 120px; }
 .service-request-copy p { color: var(--muted); line-height: 1.9; }
 .service-request-copy > a { color: var(--sky-500); font-family: "Inter", system-ui, sans-serif; font-weight: 700; }
+.service-request-email { margin-top: 24px; padding-top: 20px; border-top: 1px solid #c9dce7; }
+.service-request-email span { display: block; margin-bottom: 7px; color: #526b7e; font-size: .86rem; line-height: 1.75; }
+.service-request-email a { color: var(--sky-500); font-family: "Inter", system-ui, sans-serif; font-weight: 700; }
 .sourcing-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 17px; padding: 28px; border-radius: 21px; background: white; box-shadow: 0 16px 45px rgba(11,32,52,.09); }
 .form-field { min-width: 0; }
 .form-field-full { grid-column: 1 / -1; }

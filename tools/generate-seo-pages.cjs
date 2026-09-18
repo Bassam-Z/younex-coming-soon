@@ -137,11 +137,32 @@ function currentServicesContent() {
     .replaceAll('src="assets/', 'src="/assets/');
 }
 
+function currentAboutContent() {
+  const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+  const startMarker = '      <section id="about" class="page-view" data-view="about" aria-labelledby="about-title" hidden>';
+  const endMarker = '\n      </section>';
+  const start = homepage.indexOf(startMarker);
+  const end = homepage.indexOf(endMarker, start);
+
+  if (start === -1 || end === -1) throw new Error('Unable to extract the about page from index.html');
+
+  return homepage
+    .slice(start + startMarker.length, end)
+    .trim()
+    .replaceAll('src="assets/', 'src="/assets/');
+}
+
 function write(relativePath, content) {
   if (relativePath === 'services/index.html') {
     content = content.replace(
       /<main id="main-content" class="static-page-main">[\s\S]*?<\/main>/,
       `<main id="main-content" class="static-page-main">${currentServicesContent()}</main>`
+    );
+  }
+  if (relativePath === 'about/index.html') {
+    content = content.replace(
+      /<main id="main-content" class="static-page-main">[\s\S]*?<\/main>/,
+      `<main id="main-content" class="static-page-main">${currentAboutContent()}</main>`
     );
   }
   const target = path.join(root, relativePath);
@@ -269,7 +290,7 @@ write('about/index.html', page({
   titleAr: 'من نحن | مركز يونكس للمعدات والطاقة',
   titleEn: 'About Younex Power Center',
   headTitle: 'من نحن | مركز يونكس للمعدات والطاقة في درعا',
-  description: 'مركز يونكس للمعدات والطاقة في الطيبة، درعا، يوفر المعدات الكهربائية والمولدات ومضخات المياه ومعدات البناء، إضافة إلى قطع الغيار والصيانة والكفالة.',
+  description: 'مركز يونكس للمعدات والطاقة في الطيبة، درعا: معدات كهربائية ومولدات ومضخات مياه، وخدمات توريد وتخصيص وشحن وتخليص جمركي للتجار والمشاريع.',
   canonical: aboutCanonical,
   image: `${origin}/assets/images/logo-younex.png`,
   active: 'about',

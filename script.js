@@ -1,6 +1,26 @@
+function legacyRouteTarget(hash) {
+  let route = '';
+  try { route = decodeURIComponent(String(hash || '').replace(/^#/, '')); } catch { route = String(hash || '').replace(/^#/, ''); }
+  if (route === 'home') return '/';
+  if (route === 'products') return '/products/';
+  if (route === 'services') return '/services/';
+  if (route === 'about') return '/about/';
+  if (route.startsWith('category/')) return `/products/${encodeURIComponent(route.split('/')[1] || '')}/`;
+  if (route.startsWith('product/')) return `/products/${encodeURIComponent(route.split('/')[1] || '')}/`;
+  return '';
+}
+
+const legacyTarget = legacyRouteTarget(window.location.hash);
+if (legacyTarget) window.location.replace(`${legacyTarget}${window.location.search}`);
+if (!legacyTarget && window.location.hash === '#main-content') {
+  window.history.replaceState(null, '', window.location.pathname + window.location.search);
+  window.requestAnimationFrame(() => {
+    document.getElementById('main-content')?.scrollIntoView({ behavior: 'auto', block: 'start' });
+  });
+}
+
 const root = document.documentElement;
 const views = [...document.querySelectorAll('[data-view]')];
-const routeLinks = [...document.querySelectorAll('[data-route]')];
 const navLinks = [...document.querySelectorAll('.nav-link')];
 const languageToggle = document.querySelector('.language-toggle');
 const menuToggle = document.querySelector('.menu-toggle');
@@ -146,7 +166,7 @@ function setLanguage(language) {
   updateDocumentTitle();
 }
 
-function showRoute(route, updateHash = true) {
+function showRoute(route) {
   const catalogRoute = route === 'products' || route.startsWith('category/') || route.startsWith('product/');
   const selectedView = catalogRoute ? 'products' : views.some((view) => view.dataset.view === route) ? route : 'home';
   currentRoute = catalogRoute ? route : selectedView;
@@ -163,7 +183,6 @@ function showRoute(route, updateHash = true) {
     else link.removeAttribute('aria-current');
   });
   if (selectedView === 'products') renderCatalogRoute(currentRoute);
-  if (updateHash && window.location.hash !== `#${currentRoute}`) history.pushState(null, '', `#${currentRoute}`);
   updateDocumentTitle();
   primaryNav.classList.remove('open');
   menuToggle.setAttribute('aria-expanded', 'false');
@@ -221,7 +240,7 @@ function bulkRequestUrl(product) {
     product: `${product.model} — ${localized(product.name)}`,
     productUrl: productShareUrl(product)
   });
-  return `/services/?${params.toString()}#service-request`;
+  return `/services/?${params.toString()}`;
 }
 
 function renderProduct(slug) {
@@ -308,12 +327,18 @@ slides.forEach((_, index) => {
   dotsContainer?.appendChild(dot);
 });
 
-routeLinks.forEach((link) => link.addEventListener('click', (event) => {
-  event.preventDefault();
-  showRoute(link.dataset.route);
-}));
-
 document.addEventListener('click', (event) => {
+  const skipLink = event.target.closest('.skip-link');
+  if (skipLink) {
+    event.preventDefault();
+    const target = document.getElementById('main-content');
+    if (target) {
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
+      target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+    }
+    return;
+  }
   const scrollLink = event.target.closest('[data-scroll-target]');
   if (scrollLink) {
     event.preventDefault();
@@ -321,8 +346,6 @@ document.addEventListener('click', (event) => {
     if (target) target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
     return;
   }
-  const catalogLink = event.target.closest('[data-catalog-route]');
-  if (catalogLink) { event.preventDefault(); showRoute(catalogLink.dataset.catalogRoute); return; }
   const thumbnail = event.target.closest('[data-product-image-index]');
   if (thumbnail) { setProductImage(Number(thumbnail.dataset.productImageIndex)); return; }
   const control = event.target.closest('[data-product-image]');
@@ -361,7 +384,6 @@ carousel?.addEventListener('touchend', (event) => {
 }, { passive: true });
 
 document.addEventListener('visibilitychange', restartAutoplay);
-window.addEventListener('popstate', () => showRoute(window.location.hash.slice(1) || 'home', false));
 window.addEventListener('keydown', (event) => {
   if (currentRoute.startsWith('product/')) {
     if (event.key === 'ArrowLeft') setProductImage(activeProductImage - 1);
@@ -376,5 +398,5 @@ window.addEventListener('keydown', (event) => {
 document.getElementById('current-year').textContent = new Date().getFullYear();
 setLanguage(currentLanguage);
 renderSlide(0);
-showRoute(window.location.hash.slice(1) || 'home', false);
+showRoute('home');
 restartAutoplay();

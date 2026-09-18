@@ -85,4 +85,11 @@
       window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     });
   });
+
+  if ((presetProduct || presetLink) && forms[0]) {
+    var requestSection = forms[0].closest('#service-request');
+    if (requestSection && !requestSection.closest('[hidden]')) window.requestAnimationFrame(function () {
+      requestSection.scrollIntoView({ behavior: 'auto', block: 'start' });
+    });
+  }
 })();

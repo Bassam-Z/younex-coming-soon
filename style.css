@@ -297,6 +297,15 @@ html[dir="rtl"] .detail-control.next { left: 16px; right: auto; }
 .contact-list small { color: #91a4b9; font-size: .72rem; font-style: normal; }
 .contact-list strong { overflow-wrap: anywhere; font-size: .92rem; font-weight: 600; }
 .contact-list em { margin-top: 3px; color: #ff9a9a; font-size: .8rem; font-style: normal; }
+.about-map-card { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr); overflow: hidden; border: 1px solid #d7e6ee; border-radius: var(--radius-lg); background: white; box-shadow: var(--shadow); }
+.about-map-frame { min-height: 380px; background: #dceaf1; }
+.about-map-frame iframe { display: block; width: 100%; height: 100%; min-height: 380px; border: 0; }
+.about-map-copy { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 38px; background: linear-gradient(145deg, #f8fcfe, #edf7fb); }
+.about-map-copy h2 { margin: 8px 0 12px; color: var(--navy-950); font-size: clamp(1.55rem, 2.5vw, 2.15rem); line-height: 1.35; }
+.about-map-copy p { margin: 0; color: var(--muted); line-height: 1.8; }
+.about-map-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.button-map-secondary { color: var(--navy-900); border: 1px solid #b9ddea; background: white; }
+.button-map-secondary:hover { color: #07111f; border-color: var(--sky-400); background: #f2fbfe; }
 
 .site-footer { color: #b6c5d4; background: var(--navy-950); }
 .footer-grid { display: grid; grid-template-columns: 1.3fr .7fr 1fr; gap: 70px; padding-block: 58px; }
@@ -330,6 +339,8 @@ html[dir="rtl"] .detail-control.next { left: 16px; right: auto; }
   .product-gallery-detail { position: static; max-width: 700px; width: 100%; margin-inline: auto; }
   .about-layout { padding-block: 70px; }
   .contact-panel { max-width: 650px; width: 100%; }
+  .about-map-card { grid-template-columns: 1fr; }
+  .about-map-frame { order: 2; }
 }
 
 @media (max-width: 720px) {
@@ -390,6 +401,10 @@ html[dir="rtl"] .detail-control.next { left: 16px; right: auto; }
   .form-field-full, .form-submit, .form-note { grid-column: auto; }
   .about-layout { padding-block: 58px; gap: 34px; }
   .contact-list > a, .contact-list > div { padding: 18px; }
+  .about-map-frame, .about-map-frame iframe { min-height: 300px; }
+  .about-map-copy { padding: 28px 22px; }
+  .about-map-actions { width: 100%; flex-direction: column; }
+  .about-map-actions .button { width: 100%; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; padding-block: 45px; }
   .footer-bottom { align-items: center; flex-direction: column; text-align: center; }
   .whatsapp-float span { display: none; }

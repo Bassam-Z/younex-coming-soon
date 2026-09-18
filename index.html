@@ -28,7 +28,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=17" />
+  <link rel="stylesheet" href="style.css?v=18" />
     <script src="products-data.js?v=4" defer></script>
   <script src="script.js?v=13" defer></script>
     <script src="services.js?v=2" defer></script>
@@ -49,6 +49,12 @@
             "image": "https://younexpower.com/assets/images/logo-younex.png",
             "telephone": "+963953728253",
             "email": "info@younexpower.com",
+            "hasMap": "https://maps.app.goo.gl/1JqNdXCCJAQ686aG9",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 32.565238,
+              "longitude": 36.239266
+            },
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "خلف المخفر",
@@ -322,7 +328,7 @@
           <aside class="contact-panel">
             <img src="assets/images/logo-younex.png" alt="Younex Power Center" />
             <div class="contact-list">
-              <a href="https://maps.google.com/?q=Al-Taybah,Daraa,Syria" target="_blank" rel="noopener">
+              <a href="https://maps.app.goo.gl/1JqNdXCCJAQ686aG9" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z"></path><circle cx="12" cy="9" r="2.4"></circle></svg>
                 <span><small data-ar="العنوان" data-en="Address">العنوان</small><strong data-ar="سورية - درعا - الطيبة - خلف المخفر" data-en="Behind the police station, Al-Taybah, Daraa, Syria">سورية - درعا - الطيبة - خلف المخفر</strong></span>
               </a>
@@ -340,6 +346,21 @@
               </div>
             </div>
           </aside>
+
+          <section class="about-map-card" aria-labelledby="about-map-title">
+            <div class="about-map-frame">
+              <iframe src="https://www.google.com/maps?q=32.565238,36.239266&amp;z=17&amp;output=embed" title="موقع مركز يونكس للمعدات والطاقة على الخريطة" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="about-map-copy">
+              <span class="section-kicker" data-ar="زورونا في المتجر" data-en="VISIT OUR STORE">زورونا في المتجر</span>
+              <h2 id="about-map-title" data-ar="موقع مركز يونكس على الخريطة" data-en="Find Younex on the map">موقع مركز يونكس على الخريطة</h2>
+              <p data-ar="سورية – درعا – الطيبة – خلف المخفر" data-en="Behind the police station, Al-Taybah, Daraa, Syria">سورية – درعا – الطيبة – خلف المخفر</p>
+              <div class="about-map-actions">
+                <a class="button button-primary" href="https://maps.app.goo.gl/1JqNdXCCJAQ686aG9" target="_blank" rel="noopener" data-ar="فتح الموقع على خرائط Google" data-en="Open in Google Maps">فتح الموقع على خرائط Google</a>
+                <a class="button button-map-secondary" href="https://www.google.com/maps/dir/?api=1&amp;destination=32.565238%2C36.239266" target="_blank" rel="noopener" data-ar="الحصول على الاتجاهات" data-en="Get directions">الحصول على الاتجاهات</a>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </main>

@@ -52,7 +52,7 @@ function head({ title, description, canonical, image, type = 'website', schema }
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=17">
+  <link rel="stylesheet" href="/style.css?v=18">
   <script type="application/ld+json">${json(schema)}</script>
   <script>window.goatcounter = { no_onload: true };</script>
   <script data-goatcounter="https://younexpower.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -294,7 +294,7 @@ write('about/index.html', page({
   canonical: aboutCanonical,
   image: `${origin}/assets/images/logo-younex.png`,
   active: 'about',
-  schema: { '@context': 'https://schema.org', '@type': 'AboutPage', '@id': aboutCanonical, url: aboutCanonical, name: 'عن مركز يونكس للمعدات والطاقة', inLanguage: ['ar', 'en'], about: { '@type': 'HardwareStore', name: 'Younex Power Center', telephone: '+963953728253', email: 'info@younexpower.com', address: { '@type': 'PostalAddress', streetAddress: 'خلف المخفر', addressLocality: 'الطيبة', addressRegion: 'درعا', addressCountry: 'SY' } } },
+  schema: { '@context': 'https://schema.org', '@type': 'AboutPage', '@id': aboutCanonical, url: aboutCanonical, name: 'عن مركز يونكس للمعدات والطاقة', inLanguage: ['ar', 'en'], about: { '@type': 'HardwareStore', name: 'Younex Power Center', telephone: '+963953728253', email: 'info@younexpower.com', hasMap: 'https://maps.app.goo.gl/1JqNdXCCJAQ686aG9', geo: { '@type': 'GeoCoordinates', latitude: 32.565238, longitude: 36.239266 }, address: { '@type': 'PostalAddress', streetAddress: 'خلف المخفر', addressLocality: 'الطيبة', addressRegion: 'درعا', addressCountry: 'SY' } } },
   content: `<div class="about-layout container"><div class="about-copy"><span class="section-kicker" data-ar="من نحن" data-en="ABOUT US">من نحن</span><h1 data-ar="مركز يونكس للمعدات والطاقة" data-en="Younex Power Center">مركز يونكس للمعدات والطاقة</h1><p data-ar="مركز يونكس للمعدات والطاقة في الطيبة، درعا، يوفر المعدات الكهربائية والمولدات ومضخات المياه ومعدات البناء، إضافة إلى قطع الغيار والصيانة والكفالة." data-en="Younex Power Center in Al-Taybah, Daraa, supplies power tools, generators, water pumps and construction equipment, along with spare parts, maintenance and warranty services.">مركز يونكس للمعدات والطاقة في الطيبة، درعا، يوفر المعدات الكهربائية والمولدات ومضخات المياه ومعدات البناء، إضافة إلى قطع الغيار والصيانة والكفالة.</p><div class="service-tags" data-nosnippet>
     <span data-ar="معدات كهربائية" data-en="Power tools">معدات كهربائية</span>
     <span data-ar="مولدات" data-en="Generators">مولدات</span>

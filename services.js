@@ -53,7 +53,7 @@
         'Delivery location: ' + data.delivery,
         data.details ? 'Specifications / notes: ' + data.details : '',
         '',
-        'Please send me the price, lead time and available customization options.'
+        'Please send me the price, lead time, customization, shipping, customs clearance and delivery details.'
       ].filter(Boolean).join('\n');
     }
 
@@ -70,7 +70,7 @@
       'مكان التسليم: ' + data.delivery,
       data.details ? 'المواصفات / الملاحظات: ' + data.details : '',
       '',
-      'أرجو تزويدي بالسعر ومدة التوريد وخيارات التخصيص المتاحة.'
+      'أرجو تزويدي بالسعر ومدة التوريد وخيارات التخصيص والشحن والتخليص الجمركي والتوصيل.'
     ].filter(Boolean).join('\n');
   }
 

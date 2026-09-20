@@ -220,6 +220,12 @@ html[dir="ltr"] .category-card:hover .category-link b { transform: scaleX(-1) tr
 .catalog-breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; padding: 32px 0 25px; color: #7a8b9d; font-size: .88rem; }
 .catalog-breadcrumb a { color: var(--sky-500); font-weight: 700; }
 .catalog-breadcrumb strong { color: var(--navy-900); }
+.product-navigation { display: flex; justify-content: flex-start; margin: -10px 0 24px; }
+.product-back-button { display: inline-flex; align-items: center; gap: 8px; min-height: 42px; padding: 9px 16px; border: 1px solid #c9dce6; border-radius: 999px; color: var(--navy-900); background: white; box-shadow: 0 8px 24px rgba(11,32,52,.06); font: inherit; font-size: .88rem; font-weight: 800; cursor: pointer; transition: color .2s, border-color .2s, background .2s, transform .2s, box-shadow .2s; }
+.product-back-button:hover { transform: translateY(-2px); border-color: var(--sky-500); color: #073146; background: #edf9fd; box-shadow: 0 12px 28px rgba(11,32,52,.1); }
+.product-back-button:focus-visible { outline: 3px solid rgba(43,196,243,.35); outline-offset: 3px; }
+.product-back-button svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+html[dir="rtl"] .product-back-button svg { transform: scaleX(-1); }
 .catalog-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 30px; margin-bottom: 35px; padding: 12px 0 30px; border-bottom: 1px solid var(--line); }
 .catalog-heading h1 { margin: 5px 0 8px; color: var(--navy-900); font-size: clamp(2.15rem, 4.5vw, 4rem); line-height: 1.2; }
 .catalog-heading p { max-width: 720px; margin: 0; color: var(--muted); }
@@ -390,6 +396,7 @@ html[dir="rtl"] .detail-control.next { left: 16px; right: auto; }
   .catalog-heading { align-items: flex-start; flex-direction: column; gap: 16px; margin-bottom: 25px; }
   .catalog-heading h1 { font-size: 2.25rem; }
   .product-gallery { grid-template-columns: 1fr; gap: 16px; padding-bottom: 0; }
+  .product-navigation { margin-top: -8px; margin-bottom: 20px; }
   .product-detail { gap: 28px; }
   .product-thumbnails { grid-template-columns: repeat(6, minmax(48px, 1fr)); overflow-x: auto; padding-bottom: 5px; }
   .specifications dl > div { grid-template-columns: 1.15fr .85fr; gap: 10px; }

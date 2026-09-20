@@ -88,7 +88,7 @@ function enhanceDocument(html) {
   if (!output.includes('/locales/en.json')) output = output.replace('</head>', '  <link rel="preload" href="/locales/en.json?v=30" as="fetch" crossorigin>\n</head>');
   if (!output.includes('/i18n.js')) output = output.replace('</head>', '  <script src="/i18n.js?v=3" defer></script>\n</head>');
   output = output.replace(/\/i18n\.js\?v=\d+/g, '/i18n.js?v=3');
-  output = output.replace(/<link rel="stylesheet" href="([^"?]+)(?:\?v=\d+)?"\s*\/?\s*>/, '<link rel="stylesheet" href="$1?v=23">');
+  output = output.replace(/<link rel="stylesheet" href="([^"?]+)(?:\?v=\d+)?"\s*\/?\s*>/, '<link rel="stylesheet" href="$1?v=25">');
   if (!output.includes('class="i18n-loader"')) {
     output = output.replace(/<body([^>]*)>/, (match, attributes) => {
       if (/\bclass=/.test(attributes)) {

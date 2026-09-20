@@ -29,7 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 html[lang="en"] body { font-family: "Inter", system-ui, sans-serif; }
-.i18n-loader { position: fixed; z-index: 2000; inset: 0; display: grid; place-content: center; justify-items: center; gap: 12px; overflow: hidden; color: white; background: radial-gradient(circle at 50% 38%, rgba(0,174,234,.19), transparent 30%), linear-gradient(145deg, #050b14, #0a1f34 72%, #06314a); opacity: 1; visibility: visible; transition: opacity .45s ease, visibility .45s ease; }
+.i18n-loader { position: fixed; z-index: 2000; inset: 0; display: grid; place-content: center; justify-items: center; gap: 12px; overflow: hidden; color: white; background: radial-gradient(circle at 50% 38%, rgba(0,174,234,.19), transparent 30%), linear-gradient(145deg, #050b14, #0a1f34 72%, #06314a); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .32s ease, visibility .32s ease; }
 .i18n-loader::before, .i18n-loader::after { content: ""; position: absolute; border: 1px solid rgba(43,196,243,.12); border-radius: 50%; }
 .i18n-loader::before { width: min(72vw, 560px); aspect-ratio: 1; }
 .i18n-loader::after { width: min(52vw, 380px); aspect-ratio: 1; }
@@ -41,6 +41,7 @@ html[lang="en"] body { font-family: "Inter", system-ui, sans-serif; }
 .i18n-loader > i { position: relative; z-index: 2; overflow: hidden; width: 180px; height: 3px; margin-top: 5px; border-radius: 999px; background: rgba(255,255,255,.12); }
 .i18n-loader > i b { display: block; width: 44%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, transparent, var(--sky-400), transparent); animation: younex-loader-bar 1.15s ease-in-out infinite; }
 body.i18n-pending > :not(.i18n-loader):not(script) { visibility: hidden; opacity: 0; }
+body.i18n-loader-visible > .i18n-loader { opacity: 1; visibility: visible; pointer-events: auto; }
 body.i18n-ready > .i18n-loader { opacity: 0; visibility: hidden; pointer-events: none; }
 body.i18n-ready > :not(.i18n-loader):not(script) { animation: younex-content-in .32s ease both; }
 @keyframes younex-loader-spin { to { transform: rotate(360deg); } }
@@ -238,7 +239,7 @@ html[dir="ltr"] .category-card:hover .category-link b { transform: scaleX(-1) tr
 .catalog-breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; padding: 32px 0 25px; color: #7a8b9d; font-size: .88rem; }
 .catalog-breadcrumb a { color: var(--sky-500); font-weight: 700; }
 .catalog-breadcrumb strong { color: var(--navy-900); }
-.product-navigation { display: flex; justify-content: flex-start; margin: -10px 0 24px; }
+.product-navigation { display: flex; justify-content: flex-end; direction: ltr; margin: -10px 0 24px; }
 .product-back-button { display: inline-flex; align-items: center; gap: 8px; min-height: 42px; padding: 9px 16px; border: 1px solid #c9dce6; border-radius: 999px; color: var(--navy-900); background: white; box-shadow: 0 8px 24px rgba(11,32,52,.06); font: inherit; font-size: .88rem; font-weight: 800; cursor: pointer; transition: color .2s, border-color .2s, background .2s, transform .2s, box-shadow .2s; }
 .product-back-button:hover { transform: translateY(-2px); border-color: var(--sky-500); color: #073146; background: #edf9fd; box-shadow: 0 12px 28px rgba(11,32,52,.1); }
 .product-back-button:focus-visible { outline: 3px solid rgba(43,196,243,.35); outline-offset: 3px; }

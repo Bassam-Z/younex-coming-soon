@@ -59,7 +59,7 @@ function head({ title, description, canonical, image, type = 'website', schema, 
   <script>window.goatcounter = { no_onload: true };</script>
   <script data-goatcounter="https://younexpower.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   <script src="/analytics.js?v=2" defer></script>
-  <script src="/seo-pages.js?v=5" defer></script>
+  <script src="/seo-pages.js?v=6" defer></script>
 ${servicesScript ? '  <script src="/services.js?v=4" defer></script>\n' : ''}</head>`;
 }
 
@@ -111,6 +111,10 @@ function productCard(product) {
   </a>`;
 }
 
+function backNavigation(fallback) {
+  return `<div class="product-navigation"><button class="product-back-button" type="button" data-smart-back data-fallback="${fallback}" data-aria-ar="الرجوع إلى الصفحة السابقة" data-aria-en="Back to the previous page" aria-label="الرجوع إلى الصفحة السابقة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg><span data-ar="رجوع" data-en="Back">رجوع</span></button></div>`;
+}
+
 function page({ titleAr, titleEn, headTitle, description, canonical, image, schema, active = 'products', content, type, servicesScript = false }) {
   return `${head({ title: headTitle, description, canonical, image, schema, type, servicesScript })}
 <body data-title-ar="${esc(titleAr)}" data-title-en="${esc(titleEn)}">
@@ -159,7 +163,7 @@ write('products/index.html', page({
   canonical: productsCanonical,
   image: `${origin}/assets/products/corded/al-42hh/1.webp`,
   schema: productsSchema,
-  content: `<div class="page-hero container"><span class="section-kicker">YOUNEX RANGE</span><h1 data-ar="منتجاتنا" data-en="Our products">منتجاتنا</h1><p data-ar="اختر الفئة التي تهمك، ثم تصفّح المنتجات والمواصفات والصور التفصيلية." data-en="Choose a category, then explore its products, specifications and detailed images.">اختر الفئة التي تهمك، ثم تصفّح المنتجات والمواصفات والصور التفصيلية.</p></div><div class="catalog-content container"><div class="category-grid">${catalog.categories.map(categoryCard).join('')}</div></div>`
+  content: `<div class="page-hero container"><span class="section-kicker">YOUNEX RANGE</span><h1 data-ar="منتجاتنا" data-en="Our products">منتجاتنا</h1><p data-ar="اختر الفئة التي تهمك، ثم تصفّح المنتجات والمواصفات والصور التفصيلية." data-en="Choose a category, then explore its products, specifications and detailed images.">اختر الفئة التي تهمك، ثم تصفّح المنتجات والمواصفات والصور التفصيلية.</p></div><div class="catalog-content container">${backNavigation('/')}<div class="category-grid">${catalog.categories.map(categoryCard).join('')}</div></div>`
 }));
 
 for (const category of catalog.categories) {
@@ -183,7 +187,7 @@ for (const category of catalog.categories) {
     canonical,
     image: category.cover ? `${origin}/${category.cover}` : `${origin}/assets/images/logo-younex.png`,
     schema: categorySchema,
-    content: `<div class="catalog-content container"><nav class="catalog-breadcrumb"><a href="/products/" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a><span>/</span>${localizedTag('strong', category.name)}</nav><header class="catalog-heading"><div><span class="section-kicker">YOUNEX RANGE</span>${localizedTag('h1', category.name)}${localizedTag('p', category.description)}</div><span class="product-count" data-ar="${category.status === 'soon' ? 'قريبًا' : `${products.length} منتج`}" data-en="${category.status === 'soon' ? 'Coming soon' : `${products.length} products`}">${category.status === 'soon' ? 'قريبًا' : `${products.length} منتج`}</span></header>${cards}</div>`
+    content: `<div class="catalog-content container"><nav class="catalog-breadcrumb"><a href="/products/" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a><span>/</span>${localizedTag('strong', category.name)}</nav>${backNavigation('/products/')}<header class="catalog-heading"><div><span class="section-kicker">YOUNEX RANGE</span>${localizedTag('h1', category.name)}${localizedTag('p', category.description)}</div><span class="product-count" data-ar="${category.status === 'soon' ? 'قريبًا' : `${products.length} منتج`}" data-en="${category.status === 'soon' ? 'Coming soon' : `${products.length} products`}">${category.status === 'soon' ? 'قريبًا' : `${products.length} منتج`}</span></header>${cards}</div>`
   }));
 }
 
@@ -202,7 +206,7 @@ for (const product of catalog.products) {
   const bulkRequest = `/services/?product=${encodeURIComponent(`${product.model} — ${product.name.ar}`)}&productUrl=${encodeURIComponent(canonical)}`;
   const thumbnails = product.images.map((image, index) => `<button type="button" class="product-thumbnail${index === 0 ? ' active' : ''}" data-gallery-image="/${image}" data-gallery-alt="${esc(product.model)} — صورة ${index + 1}" aria-label="عرض الصورة ${index + 1}"><img src="/${image}" alt="" loading="lazy" width="150" height="150"></button>`).join('');
   const specs = product.specs.map((spec) => `<div>${localizedTag('dt', spec.label)}<dd dir="ltr">${esc(spec.value)}</dd></div>`).join('');
-  const productNavigation = `<div class="product-navigation"><button class="product-back-button" type="button" data-smart-back data-fallback="/products/${category.id}/" data-aria-ar="الرجوع إلى الصفحة السابقة" data-aria-en="Back to the previous page" aria-label="الرجوع إلى الصفحة السابقة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg><span data-ar="رجوع" data-en="Back">رجوع</span></button></div>`;
+  const productNavigation = backNavigation(`/products/${category.id}/`);
   const content = `<div class="catalog-content container"><nav class="catalog-breadcrumb"><a href="/products/" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a><span>/</span><a href="/products/${category.id}/" data-ar="${esc(category.name.ar)}" data-en="${esc(category.name.en)}">${esc(category.name.ar)}</a><span>/</span><strong>${esc(product.model)}</strong></nav><article class="product-detail"><div class="product-gallery-detail"><div class="product-main-media"><img id="product-main-image" src="/${product.images[0]}" alt="${esc(product.model)} — ${esc(product.name.ar)}" fetchpriority="high" width="900" height="900"><button class="detail-control previous" type="button" data-static-gallery="previous" aria-label="الصورة السابقة"><span>‹</span></button><button class="detail-control next" type="button" data-static-gallery="next" aria-label="الصورة التالية"><span>›</span></button><span id="product-image-counter" class="image-counter">1 / ${product.images.length}</span></div><div class="product-thumbnails">${thumbnails}</div></div><div class="product-detail-copy"><div class="product-title-row"><span class="availability-badge" data-ar="متوفر" data-en="Available">متوفر</span>${localizedTag('small', category.name)}</div><h1>${esc(product.model)}</h1>${localizedTag('h2', product.name)}${localizedTag('p', product.description)}<div class="specifications"><h3 data-ar="المواصفات الفنية" data-en="Technical specifications">المواصفات الفنية</h3><dl>${specs}</dl></div><div class="seo-product-summary"><strong>${esc(product.model)} — ${esc(product.name.en)}</strong><p>${esc(product.description.en)}</p></div><div class="purchase-box"><div><strong data-ar="مهتم بهذا المنتج؟" data-en="Interested in this product?">مهتم بهذا المنتج؟</strong><span data-ar="اسألنا عن السعر والكمية والمميزات." data-en="Ask us about price, quantity and features.">اسألنا عن السعر والكمية والمميزات.</span></div><a class="button button-whatsapp" href="https://wa.me/963953728253?text=${message}" target="_blank" rel="noopener" data-ar="استفسر عبر واتساب" data-en="Ask on WhatsApp">استفسر عبر واتساب</a></div><div class="bulk-order-box"><div><span class="bulk-order-label" data-ar="للتجار وأصحاب المشاريع" data-en="For traders and businesses">للتجار وأصحاب المشاريع</span><strong data-ar="هل تحتاج هذا المنتج بكميات تجارية؟" data-en="Need this product in commercial quantities?">هل تحتاج هذا المنتج بكميات تجارية؟</strong><p data-ar="نوفر الكمية المطلوبة مع خيارات تخصيص اللون وطباعة شعارك أو علامتك التجارية على المنتج والتغليف." data-en="We can source the quantity you need with custom colors, your logo or private label on the product and packaging.">نوفر الكمية المطلوبة مع خيارات تخصيص اللون وطباعة شعارك أو علامتك التجارية على المنتج والتغليف.</p></div><a class="button button-service" href="${bulkRequest}" data-ar="اطلب سعر الكميات" data-en="Request a bulk quote">اطلب سعر الكميات</a></div></div></article></div>`;
   const productContent = content.replace('</nav><article class="product-detail">', `</nav>${productNavigation}<article class="product-detail">`);
   write(`products/${product.slug}/index.html`, page({

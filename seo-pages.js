@@ -68,15 +68,7 @@
     if (backButton) {
       event.preventDefault();
       var fallback = backButton.getAttribute('data-fallback') || '/products/';
-      var internalReferrer = false;
-      try {
-        internalReferrer = Boolean(document.referrer) && new URL(document.referrer).origin === window.location.origin;
-      } catch (error) { /* Use the safe category fallback. */ }
-      if (internalReferrer && window.history.length > 1) {
-        window.history.back();
-      } else {
-        window.location.assign(fallback);
-      }
+      window.location.assign(fallback);
       return;
     }
     var skipLink = event.target.closest('.skip-link');

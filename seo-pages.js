@@ -15,6 +15,7 @@
 
   function setLanguage(language) {
     var arabic = language === 'ar';
+    if (window.YounexI18n && window.YounexI18n.language !== language) window.YounexI18n.setLanguage(language);
     root.lang = language;
     root.dir = arabic ? 'rtl' : 'ltr';
     document.querySelectorAll('[data-ar][data-en]').forEach(function (element) {
@@ -34,6 +35,11 @@
     if (pageTitle) document.title = pageTitle;
     try { localStorage.setItem('younex-language', language); } catch (error) { /* Optional preference. */ }
   }
+
+  document.addEventListener('younex:languagechange', function (event) {
+    var language = event.detail && event.detail.language ? event.detail.language : 'ar';
+    if (root.lang !== language) setLanguage(language);
+  });
 
   function showImage(index) {
     var mainImage = document.getElementById('product-main-image');

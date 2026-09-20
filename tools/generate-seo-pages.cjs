@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { compileHtml } = require('./i18n-compiler.cjs');
 
 global.window = {};
 require('../products-data.js');
@@ -130,7 +131,7 @@ function currentPageContent(relativePath) {
 function write(relativePath, content) {
   const target = path.join(root, relativePath);
   fs.mkdirSync(path.dirname(target), { recursive: true });
-  fs.writeFileSync(target, content);
+  fs.writeFileSync(target, relativePath.endsWith('.html') ? compileHtml(content) : content);
 }
 
 function breadcrumbSchema(items) {

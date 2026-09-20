@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css?v=20">
+<link rel="stylesheet" href="/style.css?v=22">
   <title>الصفحة غير موجودة | Younex Power Center</title>
   
 <style>
@@ -85,8 +85,20 @@
   }
 </style>
 
+  <link rel="preload" href="/locales/ar.json?v=29" as="fetch" crossorigin>
+  <script src="/i18n.js?v=1" defer></script>
+  <link rel="preload" href="/locales/en.json?v=29" as="fetch" crossorigin>
 </head>
-<body data-title-ar="الصفحة غير موجودة | Younex Power Center" data-title-en="Page not found | Younex Power Center">
+<body data-i18n-title="title.page_not_found_younex_power_center_c96eaa8" class="i18n-pending"><div class="i18n-loader" id="i18n-loader" role="status" aria-live="polite" aria-label="جارٍ تحميل موقع يونكس" data-i18n-aria="loader.aria">
+  <div class="i18n-loader-visual" aria-hidden="true">
+    <span class="i18n-loader-ring"></span>
+    <svg viewBox="0 0 64 64"><path d="M35 3 14 36h16l-2 25 22-36H34z"></path></svg>
+  </div>
+  <strong>YOUNEX</strong>
+  <span data-i18n="loader.loading">جارٍ تجهيز الموقع...</span>
+  <i aria-hidden="true"><b></b></i>
+</div>
+<script>window.setTimeout(function(){var b=document.body;if(b&&b.classList.contains('i18n-pending')){b.classList.remove('i18n-pending');b.classList.add('i18n-ready');}},4000);</script>
 
 <header class="site-header">
   <div class="header-inner container">
@@ -94,10 +106,10 @@
       <img src="/assets/images/logo-younex.png" alt="Younex Power Center" width="512" height="512">
     </a>
     <nav class="primary-nav" aria-label="Primary navigation">
-      <a href="/" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-      <a href="/products/" class="nav-link" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a>
-      <a href="/services/" class="nav-link" data-ar="خدمات التوريد" data-en="Sourcing services">خدمات التوريد</a>
-      <a href="/about/" class="nav-link" data-ar="من نحن" data-en="About us">من نحن</a>
+      <a href="/" class="nav-link" data-i18n="content.home_c2133d3">الرئيسية</a>
+      <a href="/products/" class="nav-link" data-i18n="content.products_1d94cee">منتجاتنا</a>
+      <a href="/services/" class="nav-link" data-i18n="content.sourcing_services_3cbade8">خدمات التوريد</a>
+      <a href="/about/" class="nav-link" data-i18n="content.about_us_6ef28e7">من نحن</a>
     </nav>
     <button class="language-toggle" type="button" aria-label="Switch to English">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3.5 9h17M3.5 15h17M12 3c2.2 2.5 3.3 5.5 3.3 9S14.2 18.5 12 21M12 3C9.8 5.5 8.7 8.5 8.7 12S9.8 18.5 12 21"></path></svg>
@@ -111,26 +123,22 @@
     <p class="error-code">404</p>
     <p class="error-kicker">YOUNEX POWER CENTER</p>
 
-    <h1 id="error-title"
-        data-ar="عذرًا، هذه الصفحة غير متوفرة"
-        data-en="Sorry, this page is not available">
+    <h1 id="error-title" data-i18n="content.sorry_this_page_is_not_available_b551173">
       عذرًا، هذه الصفحة غير متوفرة
     </h1>
 
-    <p id="error-description"
-       data-ar="قد يكون الرابط قديمًا أو تم تغيير الصفحة. يمكنك العودة إلى الصفحة الرئيسية أو تصفح منتجاتنا الحالية."
-       data-en="The link may be old or the page may have moved. You can return home or browse our current products.">
+    <p id="error-description" data-i18n="content.the_link_may_be_old_or_the_25329c3">
       قد يكون الرابط قديمًا أو تم تغيير الصفحة. يمكنك العودة إلى الصفحة الرئيسية أو تصفح منتجاتنا الحالية.
     </p>
 
     <div class="error-actions">
-      <a class="button button-primary" href="/products/" data-ar="تصفح المنتجات" data-en="Browse products">تصفح المنتجات</a>
-      <a class="button button-secondary" href="/" data-ar="العودة إلى الرئيسية" data-en="Back to home">العودة إلى الرئيسية</a>
+      <a class="button button-primary" href="/products/" data-i18n="content.browse_products_9284d8f">تصفح المنتجات</a>
+      <a class="button button-secondary" href="/" data-i18n="content.back_to_home_bca93df">العودة إلى الرئيسية</a>
     </div>
 
     <p class="error-help">
-      <span data-ar="تحتاج مساعدة؟" data-en="Need help?">تحتاج مساعدة؟</span>
-      <a href="https://wa.me/963953728253" target="_blank" rel="noopener" data-ar="تواصل معنا عبر واتساب" data-en="Contact us on WhatsApp">تواصل معنا عبر واتساب</a>
+      <span data-i18n="content.need_help_cef8ca0">تحتاج مساعدة؟</span>
+      <a href="https://wa.me/963953728253" target="_blank" rel="noopener" data-i18n="content.contact_us_on_whatsapp_b8004e4">تواصل معنا عبر واتساب</a>
     </p>
   </section>
 </main>
@@ -139,17 +147,17 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <img src="/assets/images/logo-younex.png" alt="Younex Power Center" width="512" height="512">
-      <p data-ar="قوة تثق بها، وخدمة قريبة منك." data-en="Power you can trust, service close to you.">قوة تثق بها، وخدمة قريبة منك.</p>
+      <p data-i18n="content.power_you_can_trust_service_close_to_dfc4086">قوة تثق بها، وخدمة قريبة منك.</p>
     </div>
     <div class="footer-links">
-      <strong data-ar="روابط سريعة" data-en="Quick links">روابط سريعة</strong>
-      <a href="/" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-      <a href="/products/" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a>
-      <a href="/services/" data-ar="خدمات التوريد" data-en="Sourcing services">خدمات التوريد</a>
-      <a href="/about/" data-ar="من نحن" data-en="About us">من نحن</a>
+      <strong data-i18n="content.quick_links_bf99e16">روابط سريعة</strong>
+      <a href="/" data-i18n="content.home_c2133d3">الرئيسية</a>
+      <a href="/products/" data-i18n="content.products_1d94cee">منتجاتنا</a>
+      <a href="/services/" data-i18n="content.sourcing_services_3cbade8">خدمات التوريد</a>
+      <a href="/about/" data-i18n="content.about_us_6ef28e7">من نحن</a>
     </div>
     <div class="footer-contact">
-      <strong data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</strong>
+      <strong data-i18n="content.contact_us_a9e7ef7">تواصل معنا</strong>
       <a href="tel:+963953728253" dir="ltr">+963 953 728 253</a>
       <a href="mailto:info@younexpower.com">info@younexpower.com</a>
       <span>www.younexpower.com</span>
@@ -157,7 +165,7 @@
   </div>
   <div class="footer-bottom container">
     <span>© <span id="current-year"></span> Younex Power Center.</span>
-    <span data-ar="جميع الحقوق محفوظة." data-en="All rights reserved.">جميع الحقوق محفوظة.</span>
+    <span data-i18n="content.all_rights_reserved_d761f3c">جميع الحقوق محفوظة.</span>
   </div>
 </footer>
 

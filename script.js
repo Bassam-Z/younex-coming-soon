@@ -79,6 +79,7 @@ function homepageSlideMarkup(product, index) {
 
 function setLanguage(language) {
   currentLanguage = language;
+  if (window.YounexI18n && window.YounexI18n.language !== language) window.YounexI18n.setLanguage(language);
   const arabic = language === 'ar';
   root.lang = language;
   root.dir = arabic ? 'rtl' : 'ltr';
@@ -102,6 +103,11 @@ function setLanguage(language) {
   });
   try { localStorage.setItem('younex-language', language); } catch { /* Optional preference. */ }
 }
+
+document.addEventListener('younex:languagechange', (event) => {
+  const language = event.detail?.language || 'ar';
+  if (language !== currentLanguage) setLanguage(language);
+});
 
 function renderSlide(index) {
   if (!slides.length) return;

@@ -239,7 +239,7 @@ html[dir="ltr"] .category-card:hover .category-link b { transform: scaleX(-1) tr
 .catalog-breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; padding: 32px 0 25px; color: #7a8b9d; font-size: .88rem; }
 .catalog-breadcrumb a { color: var(--sky-500); font-weight: 700; }
 .catalog-breadcrumb strong { color: var(--navy-900); }
-.product-navigation { display: flex; justify-content: flex-end; direction: ltr; margin: -10px 0 24px; }
+.product-navigation {display: flex; justify-content: flex-start; margin: -10px 0 24px; }
 .product-back-button { display: inline-flex; align-items: center; gap: 8px; min-height: 42px; padding: 9px 16px; border: 1px solid #c9dce6; border-radius: 999px; color: var(--navy-900); background: white; box-shadow: 0 8px 24px rgba(11,32,52,.06); font: inherit; font-size: .88rem; font-weight: 800; cursor: pointer; transition: color .2s, border-color .2s, background .2s, transform .2s, box-shadow .2s; }
 .product-back-button:hover { transform: translateY(-2px); border-color: var(--sky-500); color: #073146; background: #edf9fd; box-shadow: 0 12px 28px rgba(11,32,52,.1); }
 .product-back-button:focus-visible { outline: 3px solid rgba(43,196,243,.35); outline-offset: 3px; }

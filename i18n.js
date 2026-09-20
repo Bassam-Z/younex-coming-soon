@@ -19,7 +19,7 @@
 
   function load(language) {
     if (cache[language]) return Promise.resolve(cache[language]);
-    return fetch('/locales/' + language + '.json?v=29', { credentials: 'same-origin' })
+    return fetch('/locales/' + language + '.json?v=30', { credentials: 'same-origin' })
       .then(function (response) {
         if (!response.ok) throw new Error('Translation request failed: ' + response.status);
         return response.json();
@@ -51,10 +51,48 @@
     target.querySelectorAll('[data-i18n-alt]').forEach(function (element) {
       element.setAttribute('alt', translate(locale, element.getAttribute('data-i18n-alt'), element.getAttribute('alt') || ''));
     });
+    target.querySelectorAll('[data-i18n-gallery-alt]').forEach(function (element) {
+      element.setAttribute('data-gallery-alt', translate(locale, element.getAttribute('data-i18n-gallery-alt'), ''));
+    });
+    target.querySelectorAll('[data-i18n-placeholder]').forEach(function (element) {
+      element.setAttribute('placeholder', translate(locale, element.getAttribute('data-i18n-placeholder'), ''));
+    });
+    target.querySelectorAll('[data-i18n-title-attr]').forEach(function (element) {
+      element.setAttribute('title', translate(locale, element.getAttribute('data-i18n-title-attr'), ''));
+    });
     var titleTarget = document.body && document.body.getAttribute('data-i18n-title');
     if (titleTarget) document.title = translate(locale, titleTarget, document.title);
+    var languageToggle = document.querySelector('.language-toggle');
+    if (languageToggle) {
+      var toggleText = languageToggle.querySelector('span');
+      if (toggleText) toggleText.textContent = valueAt(locale, 'language.toggleLabel') || toggleText.textContent;
+      languageToggle.setAttribute('aria-label', valueAt(locale, 'language.toggleAria') || languageToggle.getAttribute('aria-label') || '');
+    }
     document.documentElement.lang = language;
     document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+    applySeo(locale);
+  }
+
+  function applySeo(locale) {
+    if (!document.body) return;
+    var page = document.body.getAttribute('data-i18n-page');
+    var seo = page ? valueAt(locale, 'seo.pages.' + page) : null;
+    if (!seo) return;
+    document.title = seo.title || document.title;
+    var fields = {
+      'meta[name="description"]': seo.description,
+      'meta[property="og:title"]': seo.ogTitle,
+      'meta[property="og:description"]': seo.ogDescription,
+      'meta[property="og:image:alt"]': seo.imageAlt,
+      'meta[name="twitter:title"]': seo.ogTitle,
+      'meta[name="twitter:description"]': seo.ogDescription
+    };
+    Object.keys(fields).forEach(function (selector) {
+      var element = document.querySelector(selector);
+      if (element && fields[selector]) element.setAttribute('content', fields[selector]);
+    });
+    var schema = document.querySelector('[data-i18n-schema]');
+    if (schema && seo.schema) schema.textContent = JSON.stringify(seo.schema);
   }
 
   function finishLoading() {
@@ -97,4 +135,10 @@
   };
 
   window.YounexI18n.ready = setLanguage(activeLanguage);
+  document.addEventListener('click', function (event) {
+    var toggle = event.target.closest('.language-toggle');
+    if (toggle) window.YounexI18n.toggle();
+  });
+  var currentYear = document.getElementById('current-year');
+  if (currentYear) currentYear.textContent = new Date().getFullYear();
 }());

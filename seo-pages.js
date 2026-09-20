@@ -38,7 +38,7 @@
 
   document.addEventListener('younex:languagechange', function (event) {
     var language = event.detail && event.detail.language ? event.detail.language : 'ar';
-    if (root.lang !== language) setLanguage(language);
+    setLanguage(language);
   });
 
   function showImage(index) {
@@ -55,9 +55,6 @@
     });
   }
 
-  if (languageToggle) languageToggle.addEventListener('click', function () {
-    setLanguage(root.lang === 'ar' ? 'en' : 'ar');
-  });
   if (menuToggle) menuToggle.addEventListener('click', function () {
     var open = primaryNav && primaryNav.classList.toggle('open');
     menuToggle.setAttribute('aria-expanded', String(Boolean(open)));

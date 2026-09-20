@@ -157,7 +157,6 @@ document.addEventListener('click', (event) => {
   }
 });
 
-languageToggle?.addEventListener('click', () => setLanguage(currentLanguage === 'ar' ? 'en' : 'ar'));
 menuToggle?.addEventListener('click', () => {
   const open = primaryNav?.classList.toggle('open');
   menuToggle.setAttribute('aria-expanded', String(Boolean(open)));

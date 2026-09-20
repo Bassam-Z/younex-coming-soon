@@ -3,6 +3,10 @@
     "loading": "Loading Younex...",
     "aria": "Loading the Younex website"
   },
+  "language": {
+    "toggleLabel": "عربي",
+    "toggleAria": "التبديل إلى العربية"
+  },
   "content": {
     "home_c2133d3": "Home",
     "products_1d94cee": "Products",
@@ -215,7 +219,8 @@
     "the_link_may_be_old_or_the_25329c3": "The link may be old or the page may have moved. You can return home or browse our current products.",
     "this_product_is_no_longer_available_b07aff0": "This product is no longer available",
     "this_model_may_have_been_discontinued_or_7a831fb": "This model may have been discontinued or replaced by a newer one. Browse our current range or contact us and we will help you find a suitable alternative.",
-    "view_product_f8ca65f": "View product"
+    "view_product_f8ca65f": "View product",
+    "runtime_48518ea": "Younex interface control"
   },
   "aria": {
     "open_menu_d74f57d": "Open menu",
@@ -224,7 +229,15 @@
     "previous_image_01c3e35": "Previous image",
     "next_image_c8c1fe3": "Next image",
     "back_to_the_previous_page_3458463": "Back to the previous page",
-    "start_a_custom_sourcing_request_b904c76": "Start a custom sourcing request"
+    "start_a_custom_sourcing_request_b904c76": "Start a custom sourcing request",
+    "runtime_01c3e35": "Previous image",
+    "runtime_c8c1fe3": "Next image",
+    "runtime_703c2ea": "View image 1",
+    "runtime_51b392c": "View image 2",
+    "runtime_80765e5": "View image 3",
+    "runtime_9738aea": "View image 4",
+    "runtime_9813bd8": "View image 5",
+    "runtime_3f4bb21": "View image 6"
   },
   "alt": {
     "a_large_younex_commercial_equipment_order_6a8acc5": "A large Younex commercial equipment order",
@@ -237,7 +250,178 @@
     "industrial_construction_and_workshop_equipment_54ee62f": "Industrial, construction and workshop equipment",
     "garden_and_agricultural_equipment_50d1c74": "Garden and agricultural equipment",
     "energy_water_and_specialized_equipment_83fa1f2": "Energy, water and specialized equipment",
-    "equipment_machinery_scaffolding_and_sourcing_solutions_for_9f68e32": "Equipment, machinery, scaffolding and sourcing solutions for business projects"
+    "equipment_machinery_scaffolding_and_sourcing_solutions_for_9f68e32": "Equipment, machinery, scaffolding and sourcing solutions for business projects",
+    "runtime_1f76e0e": "Younex product image",
+    "runtime_3824ef3": "Younex interface control",
+    "runtime_a9c5022": "Younex interface control",
+    "runtime_26d2af9": "Younex interface control",
+    "runtime_879c549": "Younex interface control",
+    "runtime_131fe1a": "Younex interface control",
+    "runtime_c7e4de4": "Younex product image",
+    "runtime_647a8dc": "Younex interface control",
+    "runtime_b02ee71": "Younex interface control",
+    "runtime_9cef5e1": "Younex interface control",
+    "runtime_968dc22": "Younex interface control",
+    "runtime_8376087": "Younex interface control",
+    "runtime_3e5fb30": "Younex interface control",
+    "runtime_2934d86": "Younex product image",
+    "runtime_262915d": "Younex interface control",
+    "runtime_995ad27": "Younex interface control",
+    "runtime_d66f2f5": "Younex interface control",
+    "runtime_6ba58f6": "Younex interface control",
+    "runtime_281b78b": "Younex interface control",
+    "runtime_f570757": "Younex interface control",
+    "runtime_6daa4ea": "Younex product image",
+    "runtime_721dc8a": "Younex interface control",
+    "runtime_1d7f01c": "Younex interface control",
+    "runtime_f18b82b": "Younex interface control",
+    "runtime_c098ce8": "Younex interface control",
+    "runtime_c30e6ff": "Younex interface control",
+    "runtime_a933b76": "Younex interface control",
+    "runtime_0800f19": "Younex product image",
+    "runtime_e8cf90c": "Younex interface control",
+    "runtime_5b204b9": "Younex interface control",
+    "runtime_04ffcab": "Younex interface control",
+    "runtime_34e0a8d": "Younex interface control",
+    "runtime_bbdf0fc": "Younex interface control",
+    "runtime_722111d": "Younex interface control",
+    "runtime_a01d108": "Younex product image",
+    "runtime_66c0abf": "Younex interface control",
+    "runtime_bd92808": "Younex interface control",
+    "runtime_48039ce": "Younex interface control",
+    "runtime_12a96c6": "Younex interface control",
+    "runtime_0e57990": "Younex interface control",
+    "runtime_3a4beb6": "Younex interface control",
+    "runtime_e5acbfe": "Younex product image",
+    "runtime_ad1f2b8": "Younex interface control",
+    "runtime_f2680eb": "Younex interface control",
+    "runtime_52eab4a": "Younex interface control",
+    "runtime_ed90eb8": "Younex interface control",
+    "runtime_260a85e": "Younex interface control",
+    "runtime_55f1420": "Younex interface control",
+    "runtime_4fd71ec": "Younex product image",
+    "runtime_c455075": "Younex interface control",
+    "runtime_9c364e3": "Younex interface control",
+    "runtime_b3be6aa": "Younex interface control",
+    "runtime_f7b9d55": "Younex interface control",
+    "runtime_869eac1": "Younex interface control",
+    "runtime_76853a7": "Younex interface control",
+    "runtime_7a87aab": "Younex product image",
+    "runtime_e4ec7c1": "Younex interface control",
+    "runtime_e49d772": "Younex interface control",
+    "runtime_45438f8": "Younex interface control",
+    "runtime_eddf518": "Younex interface control",
+    "runtime_b34393c": "Younex interface control",
+    "runtime_4f0832a": "Younex product image",
+    "runtime_17c3eac": "Younex interface control",
+    "runtime_2f4921c": "Younex interface control",
+    "runtime_a187322": "Younex interface control",
+    "runtime_85a30d6": "Younex interface control",
+    "runtime_cd73c59": "Younex interface control",
+    "runtime_5c70013": "Younex product image",
+    "runtime_0160ddb": "Younex interface control",
+    "runtime_1ef34b5": "Younex interface control",
+    "runtime_9d332c2": "Younex interface control",
+    "runtime_763c42e": "Younex interface control",
+    "runtime_4156cad": "Younex interface control",
+    "runtime_1415dd0": "Younex product image",
+    "runtime_cf35a6b": "Younex interface control",
+    "runtime_4d204a1": "Younex interface control",
+    "runtime_e17a81e": "Younex interface control",
+    "runtime_415e08a": "Younex interface control",
+    "runtime_5b36255": "Younex interface control",
+    "runtime_ed5eeec": "Younex product image",
+    "runtime_bcf1820": "Younex interface control",
+    "runtime_dbeccef": "Younex interface control",
+    "runtime_f9f3713": "Younex interface control",
+    "runtime_dfd97b9": "Younex interface control",
+    "runtime_2120463": "Younex interface control",
+    "runtime_ad95ad8": "Younex interface control",
+    "runtime_b301d11": "Younex product image",
+    "runtime_a0e023b": "Younex interface control",
+    "runtime_d6cc537": "Younex interface control",
+    "runtime_ade2e23": "Younex interface control",
+    "runtime_438c1cd": "Younex interface control",
+    "runtime_dbf3198": "Younex interface control",
+    "runtime_d70cf01": "Younex interface control",
+    "runtime_0bd2581": "Younex product image",
+    "runtime_1368380": "Younex product image",
+    "runtime_4cc9597": "Younex product image",
+    "runtime_f959f50": "Younex product image",
+    "runtime_5c0ec50": "Younex product image",
+    "runtime_8e4633b": "Younex product image",
+    "runtime_bd24065": "Younex product image",
+    "runtime_2d67e42": "Younex interface control",
+    "runtime_15ded64": "Younex interface control",
+    "runtime_c86a7c2": "Younex interface control",
+    "runtime_9d3c516": "Younex interface control",
+    "runtime_f4efdcb": "Younex interface control",
+    "runtime_4aa4ded": "Younex product image",
+    "runtime_f7d57cc": "Younex interface control",
+    "runtime_407c052": "Younex interface control",
+    "runtime_6a8194c": "Younex interface control",
+    "runtime_7557faf": "Younex interface control",
+    "runtime_cb5b087": "Younex interface control",
+    "runtime_becacd9": "Younex product image",
+    "runtime_f7e6656": "Younex interface control",
+    "runtime_5c782d1": "Younex interface control",
+    "runtime_1f39ed0": "Younex interface control",
+    "runtime_4bf2adc": "Younex interface control",
+    "runtime_a2fb541": "Younex interface control",
+    "runtime_c34cb5a": "Younex product image",
+    "runtime_2443609": "Younex interface control",
+    "runtime_f664b43": "Younex interface control",
+    "runtime_bd32cb8": "Younex interface control",
+    "runtime_3239422": "Younex interface control",
+    "runtime_13db1d6": "Younex interface control",
+    "runtime_41afb5c": "Younex product image",
+    "runtime_a6bb510": "Younex interface control",
+    "runtime_9df9793": "Younex interface control",
+    "runtime_9b446d5": "Younex interface control",
+    "runtime_bbd5bfc": "Younex interface control",
+    "runtime_f29f236": "Younex interface control",
+    "runtime_371d0d2": "Younex product image",
+    "runtime_af2f2c2": "Younex interface control",
+    "runtime_d3a503b": "Younex interface control",
+    "runtime_623e8b3": "Younex interface control",
+    "runtime_869fa77": "Younex interface control",
+    "runtime_4f2d0a2": "Younex interface control",
+    "runtime_2ec881f": "Younex product image",
+    "runtime_f3eefb7": "Younex product image",
+    "runtime_7722f8d": "Younex product image",
+    "runtime_8b4e72e": "Younex interface control",
+    "runtime_a59c40a": "Younex interface control",
+    "runtime_2bbac8e": "Younex interface control",
+    "runtime_695645e": "Younex interface control",
+    "runtime_83cc14c": "Younex interface control",
+    "runtime_b815238": "Younex interface control",
+    "runtime_3046b3f": "Younex interface control",
+    "runtime_73f5867": "Younex interface control",
+    "runtime_a639bfe": "Younex interface control",
+    "runtime_a8f8d5e": "Younex interface control",
+    "runtime_fff710c": "Younex interface control",
+    "runtime_5f0237c": "Younex interface control",
+    "runtime_8e2d06e": "Younex interface control",
+    "runtime_60e6696": "Younex interface control",
+    "runtime_eff3075": "Younex interface control",
+    "runtime_f026562": "Younex interface control",
+    "runtime_45281b7": "Younex interface control",
+    "runtime_31636bd": "Younex interface control",
+    "runtime_79a7655": "Younex interface control",
+    "runtime_c1eaee2": "Younex interface control",
+    "runtime_a17212a": "Younex interface control",
+    "runtime_1a7dc5e": "Younex interface control",
+    "runtime_688afa4": "Younex interface control",
+    "runtime_a459560": "Younex interface control",
+    "runtime_13e461c": "Younex interface control",
+    "runtime_df9a242": "Younex interface control",
+    "runtime_16bc2d2": "Younex interface control",
+    "runtime_e208dfb": "Younex interface control",
+    "runtime_d85e1e9": "Younex interface control",
+    "runtime_9d33da6": "Younex interface control",
+    "runtime_3c3b2e3": "Younex interface control",
+    "runtime_686c333": "Younex interface control",
+    "runtime_35415eb": "Younex interface control"
   },
   "title": {
     "page_not_found_younex_power_center_c96eaa8": "Page not found | Younex Power Center",
@@ -276,5 +460,2243 @@
     "younex_4_kw_open_gasoline_generator_younex_8e22f9f": "Younex 4 kW Open Gasoline Generator | Younex Power Center",
     "younex_5_kw_open_gasoline_generator_younex_d09bf84": "Younex 5 kW Open Gasoline Generator | Younex Power Center",
     "sourcing_customization_services_younex_power_center_97b5f8a": "Sourcing & Customization Services | Younex Power Center"
+  },
+  "seo": {
+    "pages": {
+      "404": {
+        "title": "Page not found | Younex Power Center",
+        "description": "The link may be old or the page may have moved. You can return home or browse our current products.",
+        "ogTitle": "Page not found | Younex Power Center",
+        "ogDescription": "The link may be old or the page may have moved. You can return home or browse our current products.",
+        "imageAlt": "Page not found | Younex Power Center — Younex Power Center",
+        "schema": null
+      },
+      "about": {
+        "title": "About Younex Power Center",
+        "description": "We also help traders, shop owners and new businesses source products and equipment in commercial quantities at competitive prices, with options for custom colors, logos and private labeling. We also source specialized equipment on request and manage sourcing, shipping, customs clearance and delivery across Syria.",
+        "ogTitle": "About Younex Power Center",
+        "ogDescription": "We also help traders, shop owners and new businesses source products and equipment in commercial quantities at competitive prices, with options for custom colors, logos and private labeling. We also source specialized equipment on request and manage sourcing, shipping, customs clearance and delivery across Syria.",
+        "imageAlt": "About Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "@id": "https://younexpower.com/about/",
+          "url": "https://younexpower.com/about/",
+          "inLanguage": [
+            "ar",
+            "en"
+          ],
+          "about": {
+            "@type": "HardwareStore",
+            "name": "Younex Power Center",
+            "telephone": "+963953728253",
+            "email": "info@younexpower.com",
+            "hasMap": "https://maps.app.goo.gl/1JqNdXCCJAQ686aG9",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 32.565238,
+              "longitude": 36.239266
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Behind the police station",
+              "addressLocality": "Al-Taybah",
+              "addressRegion": "Daraa",
+              "addressCountry": "SY"
+            }
+          }
+        }
+      },
+      "index": {
+        "title": "Younex Power Center in Daraa",
+        "description": "You can now browse most of our products on the website and contact us directly to ask about prices and availability. We are also happy to welcome you daily at our store in Al-Taybah, while online purchasing and payment are coming soon.",
+        "ogTitle": "Younex Power Center in Daraa",
+        "ogDescription": "You can now browse most of our products on the website and contact us directly to ask about prices and availability. We are also happy to welcome you daily at our store in Al-Taybah, while online purchasing and payment are coming soon.",
+        "imageAlt": "Younex Power Center in Daraa — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "HardwareStore",
+              "@id": "https://younexpower.com/#business",
+              "name": "Younex Power Center",
+              "alternateName": "Younex Power Center",
+              "url": "https://younexpower.com/",
+              "logo": "https://younexpower.com/assets/images/logo-younex.png",
+              "image": "https://younexpower.com/assets/images/logo-younex.png",
+              "telephone": "+963953728253",
+              "email": "info@younexpower.com",
+              "hasMap": "https://maps.app.goo.gl/1JqNdXCCJAQ686aG9",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 32.565238,
+                "longitude": 36.239266
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Behind the police station",
+                "addressLocality": "Al-Taybah",
+                "addressRegion": "Daraa",
+                "addressCountry": "SY"
+              },
+              "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Daraa, Syria"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Saturday",
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                  ],
+                  "opens": "09:00",
+                  "closes": "13:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Saturday",
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                  ],
+                  "opens": "14:00",
+                  "closes": "17:00"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://younexpower.com/#website",
+              "url": "https://younexpower.com/",
+              "name": "Younex Power Center",
+              "inLanguage": [
+                "ar",
+                "en"
+              ],
+              "publisher": {
+                "@id": "https://younexpower.com/#business"
+              }
+            }
+          ]
+        }
+      },
+      "product-unavailable": {
+        "title": "Product unavailable | Younex Power Center",
+        "description": "This model may have been discontinued or replaced by a newer one. Browse our current range or contact us and we will help you find a suitable alternative.",
+        "ogTitle": "Product unavailable | Younex Power Center",
+        "ogDescription": "This model may have been discontinued or replaced by a newer one. Browse our current range or contact us and we will help you find a suitable alternative.",
+        "imageAlt": "Product unavailable | Younex Power Center — Younex Power Center",
+        "schema": null
+      },
+      "products_al-2601": {
+        "title": "AL-2601 Rotary Hammer | Younex Power Center",
+        "description": "A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+        "ogTitle": "AL-2601 Rotary Hammer | Younex Power Center",
+        "ogDescription": "A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+        "imageAlt": "AL-2601 Rotary Hammer | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-2601/#product",
+              "url": "https://younexpower.com/products/al-2601/",
+              "name": "AL-2601 Rotary Hammer",
+              "alternateName": "AL-2601",
+              "sku": "AL-2601",
+              "model": "AL-2601",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-2601/1.webp",
+                "https://younexpower.com/assets/products/corded/al-2601/2.webp",
+                "https://younexpower.com/assets/products/corded/al-2601/3.webp",
+                "https://younexpower.com/assets/products/corded/al-2601/4.webp",
+                "https://younexpower.com/assets/products/corded/al-2601/5.webp"
+              ],
+              "description": ". A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-2601",
+                  "item": "https://younexpower.com/products/al-2601/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-26g": {
+        "title": "AL-26G Rotary Hammer | Younex Power Center",
+        "description": "A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+        "ogTitle": "AL-26G Rotary Hammer | Younex Power Center",
+        "ogDescription": "A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+        "imageAlt": "AL-26G Rotary Hammer | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-26g/#product",
+              "url": "https://younexpower.com/products/al-26g/",
+              "name": "AL-26G Rotary Hammer",
+              "alternateName": "AL-26G",
+              "sku": "AL-26G",
+              "model": "AL-26G",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-26g/1.webp",
+                "https://younexpower.com/assets/products/corded/al-26g/2.webp",
+                "https://younexpower.com/assets/products/corded/al-26g/3.webp",
+                "https://younexpower.com/assets/products/corded/al-26g/4.webp",
+                "https://younexpower.com/assets/products/corded/al-26g/5.webp",
+                "https://younexpower.com/assets/products/corded/al-26g/6.webp"
+              ],
+              "description": ". A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-26G",
+                  "item": "https://younexpower.com/products/al-26g/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-32g": {
+        "title": "AL-32G Rotary Hammer | Younex Power Center",
+        "description": "A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+        "ogTitle": "AL-32G Rotary Hammer | Younex Power Center",
+        "ogDescription": "A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+        "imageAlt": "AL-32G Rotary Hammer | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-32g/#product",
+              "url": "https://younexpower.com/products/al-32g/",
+              "name": "AL-32G Rotary Hammer",
+              "alternateName": "AL-32G",
+              "sku": "AL-32G",
+              "model": "AL-32G",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-32g/1.webp",
+                "https://younexpower.com/assets/products/corded/al-32g/2.webp",
+                "https://younexpower.com/assets/products/corded/al-32g/3.webp",
+                "https://younexpower.com/assets/products/corded/al-32g/4.webp",
+                "https://younexpower.com/assets/products/corded/al-32g/5.webp",
+                "https://younexpower.com/assets/products/corded/al-32g/6.webp"
+              ],
+              "description": ". A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-32G",
+                  "item": "https://younexpower.com/products/al-32g/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-42hh": {
+        "title": "AL-42HH Rotary Hammer | Younex Power Center",
+        "description": "A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+        "ogTitle": "AL-42HH Rotary Hammer | Younex Power Center",
+        "ogDescription": "A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+        "imageAlt": "AL-42HH Rotary Hammer | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-42hh/#product",
+              "url": "https://younexpower.com/products/al-42hh/",
+              "name": "AL-42HH Rotary Hammer",
+              "alternateName": "AL-42HH",
+              "sku": "AL-42HH",
+              "model": "AL-42HH",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-42hh/1.webp",
+                "https://younexpower.com/assets/products/corded/al-42hh/2.webp",
+                "https://younexpower.com/assets/products/corded/al-42hh/3.webp",
+                "https://younexpower.com/assets/products/corded/al-42hh/4.webp",
+                "https://younexpower.com/assets/products/corded/al-42hh/5.webp",
+                "https://younexpower.com/assets/products/corded/al-42hh/6.webp"
+              ],
+              "description": ". A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-42HH",
+                  "item": "https://younexpower.com/products/al-42hh/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-61186": {
+        "title": "AL-61186 Angle Grinder | Younex Power Center",
+        "description": "A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+        "ogTitle": "AL-61186 Angle Grinder | Younex Power Center",
+        "ogDescription": "A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+        "imageAlt": "AL-61186 Angle Grinder | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-61186/#product",
+              "url": "https://younexpower.com/products/al-61186/",
+              "name": "AL-61186 Angle Grinder",
+              "alternateName": "AL-61186",
+              "sku": "AL-61186",
+              "model": "AL-61186",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-61186/1.webp",
+                "https://younexpower.com/assets/products/corded/al-61186/2.webp",
+                "https://younexpower.com/assets/products/corded/al-61186/3.webp",
+                "https://younexpower.com/assets/products/corded/al-61186/4.webp",
+                "https://younexpower.com/assets/products/corded/al-61186/5.webp",
+                "https://younexpower.com/assets/products/corded/al-61186/6.webp"
+              ],
+              "description": ". A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-61186",
+                  "item": "https://younexpower.com/products/al-61186/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-61188": {
+        "title": "AL-61188 Angle Grinder | Younex Power Center",
+        "description": "A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+        "ogTitle": "AL-61188 Angle Grinder | Younex Power Center",
+        "ogDescription": "A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+        "imageAlt": "AL-61188 Angle Grinder | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-61188/#product",
+              "url": "https://younexpower.com/products/al-61188/",
+              "name": "AL-61188 Angle Grinder",
+              "alternateName": "AL-61188",
+              "sku": "AL-61188",
+              "model": "AL-61188",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-61188/1.webp",
+                "https://younexpower.com/assets/products/corded/al-61188/2.webp",
+                "https://younexpower.com/assets/products/corded/al-61188/3.webp",
+                "https://younexpower.com/assets/products/corded/al-61188/4.webp",
+                "https://younexpower.com/assets/products/corded/al-61188/5.webp",
+                "https://younexpower.com/assets/products/corded/al-61188/6.webp"
+              ],
+              "description": ". A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-61188",
+                  "item": "https://younexpower.com/products/al-61188/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-95a": {
+        "title": "AL-95A Demolition Hammer | Younex Power Center",
+        "description": "A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+        "ogTitle": "AL-95A Demolition Hammer | Younex Power Center",
+        "ogDescription": "A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+        "imageAlt": "AL-95A Demolition Hammer | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-95a/#product",
+              "url": "https://younexpower.com/products/al-95a/",
+              "name": "AL-95A Demolition Hammer",
+              "alternateName": "AL-95A",
+              "sku": "AL-95A",
+              "model": "AL-95A",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-95a/1.webp",
+                "https://younexpower.com/assets/products/corded/al-95a/2.webp",
+                "https://younexpower.com/assets/products/corded/al-95a/3.webp",
+                "https://younexpower.com/assets/products/corded/al-95a/4.webp",
+                "https://younexpower.com/assets/products/corded/al-95a/5.webp",
+                "https://younexpower.com/assets/products/corded/al-95a/6.webp"
+              ],
+              "description": ". A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-95A",
+                  "item": "https://younexpower.com/products/al-95a/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-a61167": {
+        "title": "AL-A61167 Angle Grinder | Younex Power Center",
+        "description": "A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+        "ogTitle": "AL-A61167 Angle Grinder | Younex Power Center",
+        "ogDescription": "A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+        "imageAlt": "AL-A61167 Angle Grinder | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-a61167/#product",
+              "url": "https://younexpower.com/products/al-a61167/",
+              "name": "AL-A61167 Angle Grinder",
+              "alternateName": "AL-A61167",
+              "sku": "AL-A61167",
+              "model": "AL-A61167",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-a61167/1.webp",
+                "https://younexpower.com/assets/products/corded/al-a61167/2.webp",
+                "https://younexpower.com/assets/products/corded/al-a61167/3.webp",
+                "https://younexpower.com/assets/products/corded/al-a61167/4.webp",
+                "https://younexpower.com/assets/products/corded/al-a61167/5.webp",
+                "https://younexpower.com/assets/products/corded/al-a61167/6.webp"
+              ],
+              "description": ". A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-A61167",
+                  "item": "https://younexpower.com/products/al-a61167/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-a62705a": {
+        "title": "AL-A62705A Angle Grinder | Younex Power Center",
+        "description": "A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+        "ogTitle": "AL-A62705A Angle Grinder | Younex Power Center",
+        "ogDescription": "A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+        "imageAlt": "AL-A62705A Angle Grinder | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-a62705a/#product",
+              "url": "https://younexpower.com/products/al-a62705a/",
+              "name": "AL-A62705A Angle Grinder",
+              "alternateName": "AL-A62705A",
+              "sku": "AL-A62705A",
+              "model": "AL-A62705A",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-a62705a/1.webp",
+                "https://younexpower.com/assets/products/corded/al-a62705a/2.webp",
+                "https://younexpower.com/assets/products/corded/al-a62705a/3.webp",
+                "https://younexpower.com/assets/products/corded/al-a62705a/4.webp",
+                "https://younexpower.com/assets/products/corded/al-a62705a/5.webp"
+              ],
+              "description": ". A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-A62705A",
+                  "item": "https://younexpower.com/products/al-a62705a/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-ak198": {
+        "title": "AL-AK198 Cut-off Saw | Younex Power Center",
+        "description": "We can source the quantity you need with custom colors, your logo or private label on the product and packaging.",
+        "ogTitle": "AL-AK198 Cut-off Saw | Younex Power Center",
+        "ogDescription": "We can source the quantity you need with custom colors, your logo or private label on the product and packaging.",
+        "imageAlt": "AL-AK198 Cut-off Saw | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-ak198/#product",
+              "url": "https://younexpower.com/products/al-ak198/",
+              "name": "AL-AK198 Cut-off Saw",
+              "alternateName": "AL-AK198",
+              "sku": "AL-AK198",
+              "model": "AL-AK198",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-ak198/1.webp",
+                "https://younexpower.com/assets/products/corded/al-ak198/2.webp",
+                "https://younexpower.com/assets/products/corded/al-ak198/3.webp",
+                "https://younexpower.com/assets/products/corded/al-ak198/4.webp",
+                "https://younexpower.com/assets/products/corded/al-ak198/5.webp"
+              ],
+              "description": ". A corded cut-off saw for professional metal cutting, equipped with a large blade and workshop-ready power.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-AK198",
+                  "item": "https://younexpower.com/products/al-ak198/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-ak911": {
+        "title": "AL-AK911 Demolition Hammer | Younex Power Center",
+        "description": "A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+        "ogTitle": "AL-AK911 Demolition Hammer | Younex Power Center",
+        "ogDescription": "A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+        "imageAlt": "AL-AK911 Demolition Hammer | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-ak911/#product",
+              "url": "https://younexpower.com/products/al-ak911/",
+              "name": "AL-AK911 Demolition Hammer",
+              "alternateName": "AL-AK911",
+              "sku": "AL-AK911",
+              "model": "AL-AK911",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-ak911/1.webp",
+                "https://younexpower.com/assets/products/corded/al-ak911/2.webp",
+                "https://younexpower.com/assets/products/corded/al-ak911/3.webp",
+                "https://younexpower.com/assets/products/corded/al-ak911/4.webp",
+                "https://younexpower.com/assets/products/corded/al-ak911/5.webp"
+              ],
+              "description": ". A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-AK911",
+                  "item": "https://younexpower.com/products/al-ak911/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-ak958": {
+        "title": "AL-AK958 Professional Demolition Hammer | Younex Power Center",
+        "description": "A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+        "ogTitle": "AL-AK958 Professional Demolition Hammer | Younex Power Center",
+        "ogDescription": "A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+        "imageAlt": "AL-AK958 Professional Demolition Hammer | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-ak958/#product",
+              "url": "https://younexpower.com/products/al-ak958/",
+              "name": "AL-AK958 Professional Demolition Hammer",
+              "alternateName": "AL-AK958",
+              "sku": "AL-AK958",
+              "model": "AL-AK958",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-ak958/1.webp",
+                "https://younexpower.com/assets/products/corded/al-ak958/2.webp",
+                "https://younexpower.com/assets/products/corded/al-ak958/3.webp",
+                "https://younexpower.com/assets/products/corded/al-ak958/4.webp",
+                "https://younexpower.com/assets/products/corded/al-ak958/5.webp"
+              ],
+              "description": ". A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-AK958",
+                  "item": "https://younexpower.com/products/al-ak958/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-g40": {
+        "title": "AL-G40 Demolition Hammer | Younex Power Center",
+        "description": "A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+        "ogTitle": "AL-G40 Demolition Hammer | Younex Power Center",
+        "ogDescription": "A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+        "imageAlt": "AL-G40 Demolition Hammer | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-g40/#product",
+              "url": "https://younexpower.com/products/al-g40/",
+              "name": "AL-G40 Demolition Hammer",
+              "alternateName": "AL-G40",
+              "sku": "AL-G40",
+              "model": "AL-G40",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-g40/1.webp",
+                "https://younexpower.com/assets/products/corded/al-g40/2.webp",
+                "https://younexpower.com/assets/products/corded/al-g40/3.webp",
+                "https://younexpower.com/assets/products/corded/al-g40/4.webp",
+                "https://younexpower.com/assets/products/corded/al-g40/5.webp",
+                "https://younexpower.com/assets/products/corded/al-g40/6.webp"
+              ],
+              "description": ". A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-G40",
+                  "item": "https://younexpower.com/products/al-g40/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-g500": {
+        "title": "AL-G500 Demolition Hammer | Younex Power Center",
+        "description": "A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+        "ogTitle": "AL-G500 Demolition Hammer | Younex Power Center",
+        "ogDescription": "A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+        "imageAlt": "AL-G500 Demolition Hammer | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-g500/#product",
+              "url": "https://younexpower.com/products/al-g500/",
+              "name": "AL-G500 Demolition Hammer",
+              "alternateName": "AL-G500",
+              "sku": "AL-G500",
+              "model": "AL-G500",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-g500/1.webp",
+                "https://younexpower.com/assets/products/corded/al-g500/2.webp",
+                "https://younexpower.com/assets/products/corded/al-g500/3.webp",
+                "https://younexpower.com/assets/products/corded/al-g500/4.webp",
+                "https://younexpower.com/assets/products/corded/al-g500/5.webp",
+                "https://younexpower.com/assets/products/corded/al-g500/6.webp"
+              ],
+              "description": ". A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-G500",
+                  "item": "https://younexpower.com/products/al-g500/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_corded": {
+        "title": "Corded Power Tools | Younex Power Center",
+        "description": "Corded Power Tools | Younex Power Center. Explore Younex products, equipment and sourcing services in Syria.",
+        "ogTitle": "Corded Power Tools | Younex Power Center",
+        "ogDescription": "Corded Power Tools | Younex Power Center. Explore Younex products, equipment and sourcing services in Syria.",
+        "imageAlt": "Corded Power Tools | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://younexpower.com/products/corded/",
+              "url": "https://younexpower.com/products/corded/",
+              "name": "| Corded Power Tools",
+              "inLanguage": [
+                "ar",
+                "en"
+              ],
+              "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": 14,
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "https://younexpower.com/products/al-2601/",
+                    "name": "AL-2601"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "url": "https://younexpower.com/products/al-26g/",
+                    "name": "AL-26G"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "url": "https://younexpower.com/products/al-32g/",
+                    "name": "AL-32G"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "url": "https://younexpower.com/products/al-42hh/",
+                    "name": "AL-42HH"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "url": "https://younexpower.com/products/al-95a/",
+                    "name": "AL-95A"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "url": "https://younexpower.com/products/al-ak198/",
+                    "name": "AL-AK198"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "url": "https://younexpower.com/products/al-ak911/",
+                    "name": "AL-AK911"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 8,
+                    "url": "https://younexpower.com/products/al-ak958/",
+                    "name": "AL-AK958"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 9,
+                    "url": "https://younexpower.com/products/al-g40/",
+                    "name": "AL-G40"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 10,
+                    "url": "https://younexpower.com/products/al-g500/",
+                    "name": "AL-G500"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 11,
+                    "url": "https://younexpower.com/products/al-61186/",
+                    "name": "AL-61186"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 12,
+                    "url": "https://younexpower.com/products/al-61188/",
+                    "name": "AL-61188"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 13,
+                    "url": "https://younexpower.com/products/al-a61167/",
+                    "name": "AL-A61167"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 14,
+                    "url": "https://younexpower.com/products/al-a62705a/",
+                    "name": "AL-A62705A"
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_cordless": {
+        "title": "Cordless Power Tools | Younex Power Center",
+        "description": "We are preparing a practical cordless tool range. Contact us on WhatsApp for availability.",
+        "ogTitle": "Cordless Power Tools | Younex Power Center",
+        "ogDescription": "We are preparing a practical cordless tool range. Contact us on WhatsApp for availability.",
+        "imageAlt": "Cordless Power Tools | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://younexpower.com/products/cordless/",
+              "url": "https://younexpower.com/products/cordless/",
+              "name": "| Cordless Power Tools",
+              "inLanguage": [
+                "ar",
+                "en"
+              ],
+              "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": 0,
+                "itemListElement": []
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Cordless Power Tools",
+                  "item": "https://younexpower.com/products/cordless/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_generators": {
+        "title": "Electric Generators | Younex Power Center",
+        "description": "Electric Generators | Younex Power Center. Explore Younex products, equipment and sourcing services in Syria.",
+        "ogTitle": "Electric Generators | Younex Power Center",
+        "ogDescription": "Electric Generators | Younex Power Center. Explore Younex products, equipment and sourcing services in Syria.",
+        "imageAlt": "Electric Generators | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://younexpower.com/products/generators/",
+              "url": "https://younexpower.com/products/generators/",
+              "name": "| Electric Generators",
+              "inLanguage": [
+                "ar",
+                "en"
+              ],
+              "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": 3,
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "https://younexpower.com/products/younex-3kw/",
+                    "name": "Younex 3 kW"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "url": "https://younexpower.com/products/younex-4kw/",
+                    "name": "Younex 4 kW"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "url": "https://younexpower.com/products/younex-5kw/",
+                    "name": "Younex 5 kW"
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Electric Generators",
+                  "item": "https://younexpower.com/products/generators/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products": {
+        "title": "Our Products | Younex Power Center",
+        "description": "Choose a category, then explore its products, specifications and detailed images.",
+        "ogTitle": "Our Products | Younex Power Center",
+        "ogDescription": "Choose a category, then explore its products, specifications and detailed images.",
+        "imageAlt": "Our Products | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://younexpower.com/products/",
+              "url": "https://younexpower.com/products/",
+              "name": "| Younex Products",
+              "inLanguage": [
+                "ar",
+                "en"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_jet-100": {
+        "title": "JET-100 Jet Pump | Younex Power Center",
+        "description": "A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+        "ogTitle": "JET-100 Jet Pump | Younex Power Center",
+        "ogDescription": "A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+        "imageAlt": "JET-100 Jet Pump | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/jet-100/#product",
+              "url": "https://younexpower.com/products/jet-100/",
+              "name": "JET-100 Jet Pump",
+              "alternateName": "JET-100",
+              "sku": "JET-100",
+              "model": "JET-100",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/jet-100/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-100/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-100/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-100/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-100/5.webp"
+              ],
+              "description": ". A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "JET-100",
+                  "item": "https://younexpower.com/products/jet-100/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_jet-60": {
+        "title": "JET-60 Jet Pump | Younex Power Center",
+        "description": "A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+        "ogTitle": "JET-60 Jet Pump | Younex Power Center",
+        "ogDescription": "A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+        "imageAlt": "JET-60 Jet Pump | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/jet-60/#product",
+              "url": "https://younexpower.com/products/jet-60/",
+              "name": "JET-60 Jet Pump",
+              "alternateName": "JET-60",
+              "sku": "JET-60",
+              "model": "JET-60",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/jet-60/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-60/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-60/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-60/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-60/5.webp"
+              ],
+              "description": ". A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "JET-60",
+                  "item": "https://younexpower.com/products/jet-60/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_jet-80": {
+        "title": "JET-80 Jet Pump | Younex Power Center",
+        "description": "A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+        "ogTitle": "JET-80 Jet Pump | Younex Power Center",
+        "ogDescription": "A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+        "imageAlt": "JET-80 Jet Pump | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/jet-80/#product",
+              "url": "https://younexpower.com/products/jet-80/",
+              "name": "JET-80 Jet Pump",
+              "alternateName": "JET-80",
+              "sku": "JET-80",
+              "model": "JET-80",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/jet-80/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-80/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-80/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-80/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-80/5.webp"
+              ],
+              "description": ". A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "JET-80",
+                  "item": "https://younexpower.com/products/jet-80/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_qb60": {
+        "title": "QB60 Professional Vortex Water Pump | Younex Power Center",
+        "description": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "ogTitle": "QB60 Professional Vortex Water Pump | Younex Power Center",
+        "ogDescription": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "imageAlt": "QB60 Professional Vortex Water Pump | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/qb60/#product",
+              "url": "https://younexpower.com/products/qb60/",
+              "name": "QB60 Professional Vortex Water Pump",
+              "alternateName": "QB60",
+              "sku": "QB60",
+              "model": "QB60",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/qb60/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb60/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb60/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb60/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb60/5.webp"
+              ],
+              "description": ". A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "QB60",
+                  "item": "https://younexpower.com/products/qb60/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_qb70": {
+        "title": "QB70 Professional Vortex Water Pump | Younex Power Center",
+        "description": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "ogTitle": "QB70 Professional Vortex Water Pump | Younex Power Center",
+        "ogDescription": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "imageAlt": "QB70 Professional Vortex Water Pump | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/qb70/#product",
+              "url": "https://younexpower.com/products/qb70/",
+              "name": "QB70 Professional Vortex Water Pump",
+              "alternateName": "QB70",
+              "sku": "QB70",
+              "model": "QB70",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/qb70/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb70/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb70/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb70/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb70/5.webp"
+              ],
+              "description": ". A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "QB70",
+                  "item": "https://younexpower.com/products/qb70/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_qb80": {
+        "title": "QB80 Professional Vortex Water Pump | Younex Power Center",
+        "description": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "ogTitle": "QB80 Professional Vortex Water Pump | Younex Power Center",
+        "ogDescription": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "imageAlt": "QB80 Professional Vortex Water Pump | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/qb80/#product",
+              "url": "https://younexpower.com/products/qb80/",
+              "name": "QB80 Professional Vortex Water Pump",
+              "alternateName": "QB80",
+              "sku": "QB80",
+              "model": "QB80",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/qb80/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb80/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb80/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb80/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb80/5.webp"
+              ],
+              "description": ". A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "QB80",
+                  "item": "https://younexpower.com/products/qb80/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_water-pumps": {
+        "title": "Water Pumps | Younex Power Center",
+        "description": "Water Pumps | Younex Power Center. Explore Younex products, equipment and sourcing services in Syria.",
+        "ogTitle": "Water Pumps | Younex Power Center",
+        "ogDescription": "Water Pumps | Younex Power Center. Explore Younex products, equipment and sourcing services in Syria.",
+        "imageAlt": "Water Pumps | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://younexpower.com/products/water-pumps/",
+              "url": "https://younexpower.com/products/water-pumps/",
+              "name": "| Water Pumps",
+              "inLanguage": [
+                "ar",
+                "en"
+              ],
+              "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": 9,
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "https://younexpower.com/products/wzb-400a/",
+                    "name": "WZB-400A"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "url": "https://younexpower.com/products/wzb-600a/",
+                    "name": "WZB-600A"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "url": "https://younexpower.com/products/wzb-800a/",
+                    "name": "WZB-800A"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "url": "https://younexpower.com/products/qb60/",
+                    "name": "QB60"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "url": "https://younexpower.com/products/qb70/",
+                    "name": "QB70"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "url": "https://younexpower.com/products/qb80/",
+                    "name": "QB80"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "url": "https://younexpower.com/products/jet-60/",
+                    "name": "JET-60"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 8,
+                    "url": "https://younexpower.com/products/jet-80/",
+                    "name": "JET-80"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 9,
+                    "url": "https://younexpower.com/products/jet-100/",
+                    "name": "JET-100"
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_wzb-400a": {
+        "title": "WZB-400A Self-Priming Booster Pump | Younex Power Center",
+        "description": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "ogTitle": "WZB-400A Self-Priming Booster Pump | Younex Power Center",
+        "ogDescription": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "imageAlt": "WZB-400A Self-Priming Booster Pump | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/wzb-400a/#product",
+              "url": "https://younexpower.com/products/wzb-400a/",
+              "name": "WZB-400A Self-Priming Booster Pump",
+              "alternateName": "WZB-400A",
+              "sku": "WZB-400A",
+              "model": "WZB-400A",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/5.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/6.webp"
+              ],
+              "description": ". A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "WZB-400A",
+                  "item": "https://younexpower.com/products/wzb-400a/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_wzb-600a": {
+        "title": "WZB-600A Self-Priming Booster Pump | Younex Power Center",
+        "description": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "ogTitle": "WZB-600A Self-Priming Booster Pump | Younex Power Center",
+        "ogDescription": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "imageAlt": "WZB-600A Self-Priming Booster Pump | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/wzb-600a/#product",
+              "url": "https://younexpower.com/products/wzb-600a/",
+              "name": "WZB-600A Self-Priming Booster Pump",
+              "alternateName": "WZB-600A",
+              "sku": "WZB-600A",
+              "model": "WZB-600A",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/5.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/6.webp"
+              ],
+              "description": ". A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "WZB-600A",
+                  "item": "https://younexpower.com/products/wzb-600a/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_wzb-800a": {
+        "title": "WZB-800A Self-Priming Booster Pump | Younex Power Center",
+        "description": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "ogTitle": "WZB-800A Self-Priming Booster Pump | Younex Power Center",
+        "ogDescription": "A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+        "imageAlt": "WZB-800A Self-Priming Booster Pump | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/wzb-800a/#product",
+              "url": "https://younexpower.com/products/wzb-800a/",
+              "name": "WZB-800A Self-Priming Booster Pump",
+              "alternateName": "WZB-800A",
+              "sku": "WZB-800A",
+              "model": "WZB-800A",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/5.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/6.webp"
+              ],
+              "description": ". A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "WZB-800A",
+                  "item": "https://younexpower.com/products/wzb-800a/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_younex-3kw": {
+        "title": "Younex 3 kW Open Gasoline Generator | Younex Power Center",
+        "description": "An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+        "ogTitle": "Younex 3 kW Open Gasoline Generator | Younex Power Center",
+        "ogDescription": "An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+        "imageAlt": "Younex 3 kW Open Gasoline Generator | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/younex-3kw/#product",
+              "url": "https://younexpower.com/products/younex-3kw/",
+              "name": "Younex 3 kW Open Gasoline Generator",
+              "alternateName": "Younex 3 kW",
+              "sku": "Younex 3 kW",
+              "model": "Younex 3 kW",
+              "image": [
+                "https://younexpower.com/assets/products/generators/younex-3kw/1.webp",
+                "https://younexpower.com/assets/products/generators/younex-3kw/2.webp",
+                "https://younexpower.com/assets/products/generators/younex-3kw/3.webp",
+                "https://younexpower.com/assets/products/generators/younex-3kw/4.webp",
+                "https://younexpower.com/assets/products/generators/younex-3kw/5.webp"
+              ],
+              "description": ". An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+              "category": "Electric Generators",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Electric Generators",
+                  "item": "https://younexpower.com/products/generators/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Younex 3 kW",
+                  "item": "https://younexpower.com/products/younex-3kw/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_younex-4kw": {
+        "title": "Younex 4 kW Open Gasoline Generator | Younex Power Center",
+        "description": "An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+        "ogTitle": "Younex 4 kW Open Gasoline Generator | Younex Power Center",
+        "ogDescription": "An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+        "imageAlt": "Younex 4 kW Open Gasoline Generator | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/younex-4kw/#product",
+              "url": "https://younexpower.com/products/younex-4kw/",
+              "name": "Younex 4 kW Open Gasoline Generator",
+              "alternateName": "Younex 4 kW",
+              "sku": "Younex 4 kW",
+              "model": "Younex 4 kW",
+              "image": [
+                "https://younexpower.com/assets/products/generators/younex-4kw/1.webp",
+                "https://younexpower.com/assets/products/generators/younex-4kw/2.webp",
+                "https://younexpower.com/assets/products/generators/younex-4kw/3.webp",
+                "https://younexpower.com/assets/products/generators/younex-4kw/4.webp",
+                "https://younexpower.com/assets/products/generators/younex-4kw/5.webp"
+              ],
+              "description": ". An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+              "category": "Electric Generators",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Electric Generators",
+                  "item": "https://younexpower.com/products/generators/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Younex 4 kW",
+                  "item": "https://younexpower.com/products/younex-4kw/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_younex-5kw": {
+        "title": "Younex 5 kW Open Gasoline Generator | Younex Power Center",
+        "description": "An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+        "ogTitle": "Younex 5 kW Open Gasoline Generator | Younex Power Center",
+        "ogDescription": "An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+        "imageAlt": "Younex 5 kW Open Gasoline Generator | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/younex-5kw/#product",
+              "url": "https://younexpower.com/products/younex-5kw/",
+              "name": "Younex 5 kW Open Gasoline Generator",
+              "alternateName": "Younex 5 kW",
+              "sku": "Younex 5 kW",
+              "model": "Younex 5 kW",
+              "image": [
+                "https://younexpower.com/assets/products/generators/younex-5kw/1.webp",
+                "https://younexpower.com/assets/products/generators/younex-5kw/2.webp",
+                "https://younexpower.com/assets/products/generators/younex-5kw/3.webp",
+                "https://younexpower.com/assets/products/generators/younex-5kw/4.webp",
+                "https://younexpower.com/assets/products/generators/younex-5kw/6.webp"
+              ],
+              "description": ". An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+              "category": "Electric Generators",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Electric Generators",
+                  "item": "https://younexpower.com/products/generators/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Younex 5 kW",
+                  "item": "https://younexpower.com/products/younex-5kw/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "services": {
+        "title": "Sourcing & Customization Services | Younex Power Center",
+        "description": "We help companies and project owners source the equipment and machinery needed to launch and equip their projects, from essential equipment to specialized solutions.",
+        "ogTitle": "Sourcing & Customization Services | Younex Power Center",
+        "ogDescription": "We help companies and project owners source the equipment and machinery needed to launch and equip their projects, from essential equipment to specialized solutions.",
+        "imageAlt": "Sourcing & Customization Services | Younex Power Center — Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Service",
+              "@id": "https://younexpower.com/services/#service",
+              "alternateName": "Business Sourcing and Product Customization",
+              "url": "https://younexpower.com/services/",
+              "provider": {
+                "@type": "HardwareStore",
+                "@id": "https://younexpower.com/#business",
+                "name": "Younex Power Center"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Syria"
+              },
+              "serviceType": [
+                "Bulk sourcing",
+                "Project equipment sourcing",
+                "Product customization",
+                "Private labeling",
+                "International shipping",
+                "Customs clearance",
+                "Commercial delivery"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Sourcing services",
+                  "item": "https://younexpower.com/services/"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
   }
 }

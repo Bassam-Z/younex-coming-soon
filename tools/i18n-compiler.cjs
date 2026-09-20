@@ -83,10 +83,11 @@ function enhanceDocument(html) {
   let output = html;
   output = output.replace(/(<div class="i18n-loader"[^>]*)(>)/, (match, opening, close) => opening.includes('data-i18n-aria=') ? match : `${opening} data-i18n-aria="loader.aria"${close}`);
   if (!output.includes('/locales/ar.json')) {
-    output = output.replace('</head>', '  <link rel="preload" href="/locales/ar.json?v=29" as="fetch" crossorigin>\n</head>');
+    output = output.replace('</head>', '  <link rel="preload" href="/locales/ar.json?v=30" as="fetch" crossorigin>\n</head>');
   }
-  if (!output.includes('/locales/en.json')) output = output.replace('</head>', '  <link rel="preload" href="/locales/en.json?v=29" as="fetch" crossorigin>\n</head>');
-  if (!output.includes('/i18n.js')) output = output.replace('</head>', '  <script src="/i18n.js?v=1" defer></script>\n</head>');
+  if (!output.includes('/locales/en.json')) output = output.replace('</head>', '  <link rel="preload" href="/locales/en.json?v=30" as="fetch" crossorigin>\n</head>');
+  if (!output.includes('/i18n.js')) output = output.replace('</head>', '  <script src="/i18n.js?v=2" defer></script>\n</head>');
+  output = output.replaceAll('/locales/ar.json?v=29', '/locales/ar.json?v=30').replaceAll('/locales/en.json?v=29', '/locales/en.json?v=30').replaceAll('/i18n.js?v=1', '/i18n.js?v=2');
   output = output.replace(/<link rel="stylesheet" href="([^"?]+)(?:\?v=\d+)?"\s*\/?\s*>/, '<link rel="stylesheet" href="$1?v=22">');
   if (!output.includes('class="i18n-loader"')) {
     output = output.replace(/<body([^>]*)>/, (match, attributes) => {

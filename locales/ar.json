@@ -3,6 +3,10 @@
     "loading": "جارٍ تجهيز الموقع...",
     "aria": "جارٍ تحميل موقع يونكس"
   },
+  "language": {
+    "toggleLabel": "EN",
+    "toggleAria": "Switch to English"
+  },
   "content": {
     "home_c2133d3": "الرئيسية",
     "products_1d94cee": "منتجاتنا",
@@ -215,7 +219,8 @@
     "the_link_may_be_old_or_the_25329c3": "قد يكون الرابط قديمًا أو تم تغيير الصفحة. يمكنك العودة إلى الصفحة الرئيسية أو تصفح منتجاتنا الحالية.",
     "this_product_is_no_longer_available_b07aff0": "هذا المنتج لم يعد متوفرًا",
     "this_model_may_have_been_discontinued_or_7a831fb": "قد يكون هذا الموديل قد تم إيقافه أو استبداله بموديل أحدث. تصفح منتجاتنا الحالية أو تواصل معنا وسنساعدك في إيجاد البديل المناسب.",
-    "view_product_f8ca65f": "عرض المنتج"
+    "view_product_f8ca65f": "عرض المنتج",
+    "runtime_48518ea": "موقع مركز يونكس للمعدات والطاقة على الخريطة"
   },
   "aria": {
     "open_menu_d74f57d": "فتح القائمة",
@@ -224,7 +229,15 @@
     "previous_image_01c3e35": "الصورة السابقة",
     "next_image_c8c1fe3": "الصورة التالية",
     "back_to_the_previous_page_3458463": "الرجوع إلى الصفحة السابقة",
-    "start_a_custom_sourcing_request_b904c76": "ابدأ طلب توريد خاص"
+    "start_a_custom_sourcing_request_b904c76": "ابدأ طلب توريد خاص",
+    "runtime_01c3e35": "الصورة السابقة",
+    "runtime_c8c1fe3": "الصورة التالية",
+    "runtime_703c2ea": "عرض الصورة 1",
+    "runtime_51b392c": "عرض الصورة 2",
+    "runtime_80765e5": "عرض الصورة 3",
+    "runtime_9738aea": "عرض الصورة 4",
+    "runtime_9813bd8": "عرض الصورة 5",
+    "runtime_3f4bb21": "عرض الصورة 6"
   },
   "alt": {
     "a_large_younex_commercial_equipment_order_6a8acc5": "تجهيز طلبية معدات يونكس بكميات تجارية",
@@ -237,7 +250,178 @@
     "industrial_construction_and_workshop_equipment_54ee62f": "معدات صناعية وبناء وورشات",
     "garden_and_agricultural_equipment_50d1c74": "معدات حدائق وزراعة",
     "energy_water_and_specialized_equipment_83fa1f2": "أنظمة طاقة ومياه ومعدات متخصصة",
-    "equipment_machinery_scaffolding_and_sourcing_solutions_for_9f68e32": "تجهيز المشاريع بالمعدات والآلات والسقالات وخدمات التوريد"
+    "equipment_machinery_scaffolding_and_sourcing_solutions_for_9f68e32": "تجهيز المشاريع بالمعدات والآلات والسقالات وخدمات التوريد",
+    "runtime_1f76e0e": "AL-2601 — مطرقة دورانية",
+    "runtime_3824ef3": "AL-2601 — صورة 1",
+    "runtime_a9c5022": "AL-2601 — صورة 2",
+    "runtime_26d2af9": "AL-2601 — صورة 3",
+    "runtime_879c549": "AL-2601 — صورة 4",
+    "runtime_131fe1a": "AL-2601 — صورة 5",
+    "runtime_c7e4de4": "AL-26G — مطرقة دورانية",
+    "runtime_647a8dc": "AL-26G — صورة 1",
+    "runtime_b02ee71": "AL-26G — صورة 2",
+    "runtime_9cef5e1": "AL-26G — صورة 3",
+    "runtime_968dc22": "AL-26G — صورة 4",
+    "runtime_8376087": "AL-26G — صورة 5",
+    "runtime_3e5fb30": "AL-26G — صورة 6",
+    "runtime_2934d86": "AL-32G — مطرقة دورانية",
+    "runtime_262915d": "AL-32G — صورة 1",
+    "runtime_995ad27": "AL-32G — صورة 2",
+    "runtime_d66f2f5": "AL-32G — صورة 3",
+    "runtime_6ba58f6": "AL-32G — صورة 4",
+    "runtime_281b78b": "AL-32G — صورة 5",
+    "runtime_f570757": "AL-32G — صورة 6",
+    "runtime_6daa4ea": "AL-42HH — مطرقة دورانية",
+    "runtime_721dc8a": "AL-42HH — صورة 1",
+    "runtime_1d7f01c": "AL-42HH — صورة 2",
+    "runtime_f18b82b": "AL-42HH — صورة 3",
+    "runtime_c098ce8": "AL-42HH — صورة 4",
+    "runtime_c30e6ff": "AL-42HH — صورة 5",
+    "runtime_a933b76": "AL-42HH — صورة 6",
+    "runtime_0800f19": "AL-61186 — جلّاخة زاوية",
+    "runtime_e8cf90c": "AL-61186 — صورة 1",
+    "runtime_5b204b9": "AL-61186 — صورة 2",
+    "runtime_04ffcab": "AL-61186 — صورة 3",
+    "runtime_34e0a8d": "AL-61186 — صورة 4",
+    "runtime_bbdf0fc": "AL-61186 — صورة 5",
+    "runtime_722111d": "AL-61186 — صورة 6",
+    "runtime_a01d108": "AL-61188 — جلّاخة زاوية",
+    "runtime_66c0abf": "AL-61188 — صورة 1",
+    "runtime_bd92808": "AL-61188 — صورة 2",
+    "runtime_48039ce": "AL-61188 — صورة 3",
+    "runtime_12a96c6": "AL-61188 — صورة 4",
+    "runtime_0e57990": "AL-61188 — صورة 5",
+    "runtime_3a4beb6": "AL-61188 — صورة 6",
+    "runtime_e5acbfe": "AL-95A — مطرقة هدم",
+    "runtime_ad1f2b8": "AL-95A — صورة 1",
+    "runtime_f2680eb": "AL-95A — صورة 2",
+    "runtime_52eab4a": "AL-95A — صورة 3",
+    "runtime_ed90eb8": "AL-95A — صورة 4",
+    "runtime_260a85e": "AL-95A — صورة 5",
+    "runtime_55f1420": "AL-95A — صورة 6",
+    "runtime_4fd71ec": "AL-A61167 — جلّاخة زاوية",
+    "runtime_c455075": "AL-A61167 — صورة 1",
+    "runtime_9c364e3": "AL-A61167 — صورة 2",
+    "runtime_b3be6aa": "AL-A61167 — صورة 3",
+    "runtime_f7b9d55": "AL-A61167 — صورة 4",
+    "runtime_869eac1": "AL-A61167 — صورة 5",
+    "runtime_76853a7": "AL-A61167 — صورة 6",
+    "runtime_7a87aab": "AL-A62705A — جلّاخة زاوية",
+    "runtime_e4ec7c1": "AL-A62705A — صورة 1",
+    "runtime_e49d772": "AL-A62705A — صورة 2",
+    "runtime_45438f8": "AL-A62705A — صورة 3",
+    "runtime_eddf518": "AL-A62705A — صورة 4",
+    "runtime_b34393c": "AL-A62705A — صورة 5",
+    "runtime_4f0832a": "AL-AK198 — قاطع معدني",
+    "runtime_17c3eac": "AL-AK198 — صورة 1",
+    "runtime_2f4921c": "AL-AK198 — صورة 2",
+    "runtime_a187322": "AL-AK198 — صورة 3",
+    "runtime_85a30d6": "AL-AK198 — صورة 4",
+    "runtime_cd73c59": "AL-AK198 — صورة 5",
+    "runtime_5c70013": "AL-AK911 — مطرقة هدم",
+    "runtime_0160ddb": "AL-AK911 — صورة 1",
+    "runtime_1ef34b5": "AL-AK911 — صورة 2",
+    "runtime_9d332c2": "AL-AK911 — صورة 3",
+    "runtime_763c42e": "AL-AK911 — صورة 4",
+    "runtime_4156cad": "AL-AK911 — صورة 5",
+    "runtime_1415dd0": "AL-AK958 — مطرقة هدم احترافية",
+    "runtime_cf35a6b": "AL-AK958 — صورة 1",
+    "runtime_4d204a1": "AL-AK958 — صورة 2",
+    "runtime_e17a81e": "AL-AK958 — صورة 3",
+    "runtime_415e08a": "AL-AK958 — صورة 4",
+    "runtime_5b36255": "AL-AK958 — صورة 5",
+    "runtime_ed5eeec": "AL-G40 — مطرقة هدم",
+    "runtime_bcf1820": "AL-G40 — صورة 1",
+    "runtime_dbeccef": "AL-G40 — صورة 2",
+    "runtime_f9f3713": "AL-G40 — صورة 3",
+    "runtime_dfd97b9": "AL-G40 — صورة 4",
+    "runtime_2120463": "AL-G40 — صورة 5",
+    "runtime_ad95ad8": "AL-G40 — صورة 6",
+    "runtime_b301d11": "AL-G500 — مطرقة هدم",
+    "runtime_a0e023b": "AL-G500 — صورة 1",
+    "runtime_d6cc537": "AL-G500 — صورة 2",
+    "runtime_ade2e23": "AL-G500 — صورة 3",
+    "runtime_438c1cd": "AL-G500 — صورة 4",
+    "runtime_dbf3198": "AL-G500 — صورة 5",
+    "runtime_d70cf01": "AL-G500 — صورة 6",
+    "runtime_0bd2581": "Younex 3 kW — مولد بنزين مفتوح",
+    "runtime_1368380": "Younex 4 kW — مولد بنزين مفتوح",
+    "runtime_4cc9597": "Younex 5 kW — مولد بنزين مفتوح",
+    "runtime_f959f50": "معدات كهربائية سلكية — Corded Power Tools",
+    "runtime_5c0ec50": "مولدات كهربائية — Electric Generators",
+    "runtime_8e4633b": "مضخات مياه — Water Pumps",
+    "runtime_bd24065": "JET-100 — مضخة نفاثة",
+    "runtime_2d67e42": "JET-100 — صورة 1",
+    "runtime_15ded64": "JET-100 — صورة 2",
+    "runtime_c86a7c2": "JET-100 — صورة 3",
+    "runtime_9d3c516": "JET-100 — صورة 4",
+    "runtime_f4efdcb": "JET-100 — صورة 5",
+    "runtime_4aa4ded": "JET-60 — مضخة نفاثة",
+    "runtime_f7d57cc": "JET-60 — صورة 1",
+    "runtime_407c052": "JET-60 — صورة 2",
+    "runtime_6a8194c": "JET-60 — صورة 3",
+    "runtime_7557faf": "JET-60 — صورة 4",
+    "runtime_cb5b087": "JET-60 — صورة 5",
+    "runtime_becacd9": "JET-80 — مضخة نفاثة",
+    "runtime_f7e6656": "JET-80 — صورة 1",
+    "runtime_5c782d1": "JET-80 — صورة 2",
+    "runtime_1f39ed0": "JET-80 — صورة 3",
+    "runtime_4bf2adc": "JET-80 — صورة 4",
+    "runtime_a2fb541": "JET-80 — صورة 5",
+    "runtime_c34cb5a": "QB60 — مضخة مياه دوّامية احترافية",
+    "runtime_2443609": "QB60 — صورة 1",
+    "runtime_f664b43": "QB60 — صورة 2",
+    "runtime_bd32cb8": "QB60 — صورة 3",
+    "runtime_3239422": "QB60 — صورة 4",
+    "runtime_13db1d6": "QB60 — صورة 5",
+    "runtime_41afb5c": "QB70 — مضخة مياه دوّامية احترافية",
+    "runtime_a6bb510": "QB70 — صورة 1",
+    "runtime_9df9793": "QB70 — صورة 2",
+    "runtime_9b446d5": "QB70 — صورة 3",
+    "runtime_bbd5bfc": "QB70 — صورة 4",
+    "runtime_f29f236": "QB70 — صورة 5",
+    "runtime_371d0d2": "QB80 — مضخة مياه دوّامية احترافية",
+    "runtime_af2f2c2": "QB80 — صورة 1",
+    "runtime_d3a503b": "QB80 — صورة 2",
+    "runtime_623e8b3": "QB80 — صورة 3",
+    "runtime_869fa77": "QB80 — صورة 4",
+    "runtime_4f2d0a2": "QB80 — صورة 5",
+    "runtime_2ec881f": "WZB-400A — مضخة تعزيز ذاتية التحضير",
+    "runtime_f3eefb7": "WZB-600A — مضخة تعزيز ذاتية التحضير",
+    "runtime_7722f8d": "WZB-800A — مضخة تعزيز ذاتية التحضير",
+    "runtime_8b4e72e": "WZB-400A — صورة 1",
+    "runtime_a59c40a": "WZB-400A — صورة 2",
+    "runtime_2bbac8e": "WZB-400A — صورة 3",
+    "runtime_695645e": "WZB-400A — صورة 4",
+    "runtime_83cc14c": "WZB-400A — صورة 5",
+    "runtime_b815238": "WZB-400A — صورة 6",
+    "runtime_3046b3f": "WZB-600A — صورة 1",
+    "runtime_73f5867": "WZB-600A — صورة 2",
+    "runtime_a639bfe": "WZB-600A — صورة 3",
+    "runtime_a8f8d5e": "WZB-600A — صورة 4",
+    "runtime_fff710c": "WZB-600A — صورة 5",
+    "runtime_5f0237c": "WZB-600A — صورة 6",
+    "runtime_8e2d06e": "WZB-800A — صورة 1",
+    "runtime_60e6696": "WZB-800A — صورة 2",
+    "runtime_eff3075": "WZB-800A — صورة 3",
+    "runtime_f026562": "WZB-800A — صورة 4",
+    "runtime_45281b7": "WZB-800A — صورة 5",
+    "runtime_31636bd": "WZB-800A — صورة 6",
+    "runtime_79a7655": "Younex 3 kW — صورة 1",
+    "runtime_c1eaee2": "Younex 3 kW — صورة 2",
+    "runtime_a17212a": "Younex 3 kW — صورة 3",
+    "runtime_1a7dc5e": "Younex 3 kW — صورة 4",
+    "runtime_688afa4": "Younex 3 kW — صورة 5",
+    "runtime_a459560": "Younex 4 kW — صورة 1",
+    "runtime_13e461c": "Younex 4 kW — صورة 2",
+    "runtime_df9a242": "Younex 4 kW — صورة 3",
+    "runtime_16bc2d2": "Younex 4 kW — صورة 4",
+    "runtime_e208dfb": "Younex 4 kW — صورة 5",
+    "runtime_d85e1e9": "Younex 5 kW — صورة 1",
+    "runtime_9d33da6": "Younex 5 kW — صورة 2",
+    "runtime_3c3b2e3": "Younex 5 kW — صورة 3",
+    "runtime_686c333": "Younex 5 kW — صورة 4",
+    "runtime_35415eb": "Younex 5 kW — صورة 5"
   },
   "title": {
     "page_not_found_younex_power_center_c96eaa8": "الصفحة غير موجودة | Younex Power Center",
@@ -276,5 +460,2251 @@
     "younex_4_kw_open_gasoline_generator_younex_8e22f9f": "Younex 4 kW مولد بنزين مفتوح | مركز يونكس",
     "younex_5_kw_open_gasoline_generator_younex_d09bf84": "Younex 5 kW مولد بنزين مفتوح | مركز يونكس",
     "sourcing_customization_services_younex_power_center_97b5f8a": "خدمات التوريد والتخصيص | مركز يونكس"
+  },
+  "seo": {
+    "pages": {
+      "404": {
+        "title": "الصفحة غير موجودة | Younex Power Center",
+        "description": "",
+        "ogTitle": "الصفحة غير موجودة | Younex Power Center",
+        "ogDescription": "",
+        "imageAlt": "الصفحة غير موجودة | Younex Power Center",
+        "schema": null
+      },
+      "about": {
+        "title": "من نحن | مركز يونكس للمعدات والطاقة",
+        "description": "مركز يونكس للمعدات والطاقة في الطيبة، درعا: معدات كهربائية ومولدات ومضخات مياه، وخدمات توريد وتخصيص وشحن وتخليص جمركي للتجار والمشاريع.",
+        "ogTitle": "من نحن | مركز يونكس للمعدات والطاقة في درعا",
+        "ogDescription": "مركز يونكس للمعدات والطاقة في الطيبة، درعا: معدات كهربائية ومولدات ومضخات مياه، وخدمات توريد وتخصيص وشحن وتخليص جمركي للتجار والمشاريع.",
+        "imageAlt": "من نحن | مركز يونكس للمعدات والطاقة في درعا",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "@id": "https://younexpower.com/about/",
+          "url": "https://younexpower.com/about/",
+          "name": "عن مركز يونكس للمعدات والطاقة",
+          "inLanguage": [
+            "ar",
+            "en"
+          ],
+          "about": {
+            "@type": "HardwareStore",
+            "name": "Younex Power Center",
+            "telephone": "+963953728253",
+            "email": "info@younexpower.com",
+            "hasMap": "https://maps.app.goo.gl/1JqNdXCCJAQ686aG9",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 32.565238,
+              "longitude": 36.239266
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "خلف المخفر",
+              "addressLocality": "الطيبة",
+              "addressRegion": "درعا",
+              "addressCountry": "SY"
+            }
+          }
+        }
+      },
+      "index": {
+        "title": "مركز يونكس للمعدات والطاقة في درعا",
+        "description": "مركز يونكس للمعدات والطاقة في الطيبة، درعا. معدات كهربائية، مولدات، مضخات مياه، معدات بناء، قطع غيار، صيانة وكفالة. Younex Power Center in Daraa, Syria.",
+        "ogTitle": "مركز يونكس للمعدات والطاقة | Younex Power Center",
+        "ogDescription": "معدات كهربائية ومولدات ومضخات مياه ومعدات بناء في الطيبة، درعا.",
+        "imageAlt": "شعار Younex Power Center",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "HardwareStore",
+              "@id": "https://younexpower.com/#business",
+              "name": "مركز يونكس للمعدات والطاقة",
+              "alternateName": "Younex Power Center",
+              "url": "https://younexpower.com/",
+              "logo": "https://younexpower.com/assets/images/logo-younex.png",
+              "image": "https://younexpower.com/assets/images/logo-younex.png",
+              "telephone": "+963953728253",
+              "email": "info@younexpower.com",
+              "hasMap": "https://maps.app.goo.gl/1JqNdXCCJAQ686aG9",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 32.565238,
+                "longitude": 36.239266
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "خلف المخفر",
+                "addressLocality": "الطيبة",
+                "addressRegion": "درعا",
+                "addressCountry": "SY"
+              },
+              "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "درعا، سورية"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Saturday",
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                  ],
+                  "opens": "09:00",
+                  "closes": "13:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Saturday",
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                  ],
+                  "opens": "14:00",
+                  "closes": "17:00"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://younexpower.com/#website",
+              "url": "https://younexpower.com/",
+              "name": "Younex Power Center",
+              "inLanguage": [
+                "ar",
+                "en"
+              ],
+              "publisher": {
+                "@id": "https://younexpower.com/#business"
+              }
+            }
+          ]
+        }
+      },
+      "product-unavailable": {
+        "title": "المنتج غير متوفر | Younex Power Center",
+        "description": "",
+        "ogTitle": "المنتج غير متوفر | Younex Power Center",
+        "ogDescription": "",
+        "imageAlt": "المنتج غير متوفر | Younex Power Center",
+        "schema": null
+      },
+      "products_al-2601": {
+        "title": "AL-2601 مطرقة دورانية | مركز يونكس",
+        "description": "AL-2601: مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-2601 مطرقة دورانية | Younex Rotary Hammer",
+        "ogDescription": "AL-2601: مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-2601 مطرقة دورانية | Younex Rotary Hammer",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-2601/#product",
+              "url": "https://younexpower.com/products/al-2601/",
+              "name": "AL-2601 Rotary Hammer",
+              "alternateName": "AL-2601 مطرقة دورانية",
+              "sku": "AL-2601",
+              "model": "AL-2601",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-2601/1.webp",
+                "https://younexpower.com/assets/products/corded/al-2601/2.webp",
+                "https://younexpower.com/assets/products/corded/al-2601/3.webp",
+                "https://younexpower.com/assets/products/corded/al-2601/4.webp",
+                "https://younexpower.com/assets/products/corded/al-2601/5.webp"
+              ],
+              "description": "مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-2601",
+                  "item": "https://younexpower.com/products/al-2601/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-26g": {
+        "title": "AL-26G مطرقة دورانية | مركز يونكس",
+        "description": "AL-26G: مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-26G مطرقة دورانية | Younex Rotary Hammer",
+        "ogDescription": "AL-26G: مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-26G مطرقة دورانية | Younex Rotary Hammer",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-26g/#product",
+              "url": "https://younexpower.com/products/al-26g/",
+              "name": "AL-26G Rotary Hammer",
+              "alternateName": "AL-26G مطرقة دورانية",
+              "sku": "AL-26G",
+              "model": "AL-26G",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-26g/1.webp",
+                "https://younexpower.com/assets/products/corded/al-26g/2.webp",
+                "https://younexpower.com/assets/products/corded/al-26g/3.webp",
+                "https://younexpower.com/assets/products/corded/al-26g/4.webp",
+                "https://younexpower.com/assets/products/corded/al-26g/5.webp",
+                "https://younexpower.com/assets/products/corded/al-26g/6.webp"
+              ],
+              "description": "مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-26G",
+                  "item": "https://younexpower.com/products/al-26g/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-32g": {
+        "title": "AL-32G مطرقة دورانية | مركز يونكس",
+        "description": "AL-32G: مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-32G مطرقة دورانية | Younex Rotary Hammer",
+        "ogDescription": "AL-32G: مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-32G مطرقة دورانية | Younex Rotary Hammer",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-32g/#product",
+              "url": "https://younexpower.com/products/al-32g/",
+              "name": "AL-32G Rotary Hammer",
+              "alternateName": "AL-32G مطرقة دورانية",
+              "sku": "AL-32G",
+              "model": "AL-32G",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-32g/1.webp",
+                "https://younexpower.com/assets/products/corded/al-32g/2.webp",
+                "https://younexpower.com/assets/products/corded/al-32g/3.webp",
+                "https://younexpower.com/assets/products/corded/al-32g/4.webp",
+                "https://younexpower.com/assets/products/corded/al-32g/5.webp",
+                "https://younexpower.com/assets/products/corded/al-32g/6.webp"
+              ],
+              "description": "مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-32G",
+                  "item": "https://younexpower.com/products/al-32g/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-42hh": {
+        "title": "AL-42HH مطرقة دورانية | مركز يونكس",
+        "description": "AL-42HH: مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-42HH مطرقة دورانية | Younex Rotary Hammer",
+        "ogDescription": "AL-42HH: مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-42HH مطرقة دورانية | Younex Rotary Hammer",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-42hh/#product",
+              "url": "https://younexpower.com/products/al-42hh/",
+              "name": "AL-42HH Rotary Hammer",
+              "alternateName": "AL-42HH مطرقة دورانية",
+              "sku": "AL-42HH",
+              "model": "AL-42HH",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-42hh/1.webp",
+                "https://younexpower.com/assets/products/corded/al-42hh/2.webp",
+                "https://younexpower.com/assets/products/corded/al-42hh/3.webp",
+                "https://younexpower.com/assets/products/corded/al-42hh/4.webp",
+                "https://younexpower.com/assets/products/corded/al-42hh/5.webp",
+                "https://younexpower.com/assets/products/corded/al-42hh/6.webp"
+              ],
+              "description": "مطرقة دورانية سلكية للاستخدام المهني في أعمال الحفر والطرق، مصممة لأداء ثابت وتحكم عملي في مواقع العمل. A corded rotary hammer for professional drilling and hammering work, designed for consistent performance and practical jobsite control.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-42HH",
+                  "item": "https://younexpower.com/products/al-42hh/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-61186": {
+        "title": "AL-61186 جلّاخة زاوية | مركز يونكس",
+        "description": "AL-61186: جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-61186 جلّاخة زاوية | Younex Angle Grinder",
+        "ogDescription": "AL-61186: جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-61186 جلّاخة زاوية | Younex Angle Grinder",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-61186/#product",
+              "url": "https://younexpower.com/products/al-61186/",
+              "name": "AL-61186 Angle Grinder",
+              "alternateName": "AL-61186 جلّاخة زاوية",
+              "sku": "AL-61186",
+              "model": "AL-61186",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-61186/1.webp",
+                "https://younexpower.com/assets/products/corded/al-61186/2.webp",
+                "https://younexpower.com/assets/products/corded/al-61186/3.webp",
+                "https://younexpower.com/assets/products/corded/al-61186/4.webp",
+                "https://younexpower.com/assets/products/corded/al-61186/5.webp",
+                "https://younexpower.com/assets/products/corded/al-61186/6.webp"
+              ],
+              "description": "جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-61186",
+                  "item": "https://younexpower.com/products/al-61186/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-61188": {
+        "title": "AL-61188 جلّاخة زاوية | مركز يونكس",
+        "description": "AL-61188: جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-61188 جلّاخة زاوية | Younex Angle Grinder",
+        "ogDescription": "AL-61188: جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-61188 جلّاخة زاوية | Younex Angle Grinder",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-61188/#product",
+              "url": "https://younexpower.com/products/al-61188/",
+              "name": "AL-61188 Angle Grinder",
+              "alternateName": "AL-61188 جلّاخة زاوية",
+              "sku": "AL-61188",
+              "model": "AL-61188",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-61188/1.webp",
+                "https://younexpower.com/assets/products/corded/al-61188/2.webp",
+                "https://younexpower.com/assets/products/corded/al-61188/3.webp",
+                "https://younexpower.com/assets/products/corded/al-61188/4.webp",
+                "https://younexpower.com/assets/products/corded/al-61188/5.webp",
+                "https://younexpower.com/assets/products/corded/al-61188/6.webp"
+              ],
+              "description": "جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-61188",
+                  "item": "https://younexpower.com/products/al-61188/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-95a": {
+        "title": "AL-95A مطرقة هدم | مركز يونكس",
+        "description": "AL-95A: مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-95A مطرقة هدم | Younex Demolition Hammer",
+        "ogDescription": "AL-95A: مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-95A مطرقة هدم | Younex Demolition Hammer",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-95a/#product",
+              "url": "https://younexpower.com/products/al-95a/",
+              "name": "AL-95A Demolition Hammer",
+              "alternateName": "AL-95A مطرقة هدم",
+              "sku": "AL-95A",
+              "model": "AL-95A",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-95a/1.webp",
+                "https://younexpower.com/assets/products/corded/al-95a/2.webp",
+                "https://younexpower.com/assets/products/corded/al-95a/3.webp",
+                "https://younexpower.com/assets/products/corded/al-95a/4.webp",
+                "https://younexpower.com/assets/products/corded/al-95a/5.webp",
+                "https://younexpower.com/assets/products/corded/al-95a/6.webp"
+              ],
+              "description": "مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-95A",
+                  "item": "https://younexpower.com/products/al-95a/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-a61167": {
+        "title": "AL-A61167 جلّاخة زاوية | مركز يونكس",
+        "description": "AL-A61167: جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-A61167 جلّاخة زاوية | Younex Angle Grinder",
+        "ogDescription": "AL-A61167: جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-A61167 جلّاخة زاوية | Younex Angle Grinder",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-a61167/#product",
+              "url": "https://younexpower.com/products/al-a61167/",
+              "name": "AL-A61167 Angle Grinder",
+              "alternateName": "AL-A61167 جلّاخة زاوية",
+              "sku": "AL-A61167",
+              "model": "AL-A61167",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-a61167/1.webp",
+                "https://younexpower.com/assets/products/corded/al-a61167/2.webp",
+                "https://younexpower.com/assets/products/corded/al-a61167/3.webp",
+                "https://younexpower.com/assets/products/corded/al-a61167/4.webp",
+                "https://younexpower.com/assets/products/corded/al-a61167/5.webp",
+                "https://younexpower.com/assets/products/corded/al-a61167/6.webp"
+              ],
+              "description": "جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-A61167",
+                  "item": "https://younexpower.com/products/al-a61167/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-a62705a": {
+        "title": "AL-A62705A جلّاخة زاوية | مركز يونكس",
+        "description": "AL-A62705A: جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-A62705A جلّاخة زاوية | Younex Angle Grinder",
+        "ogDescription": "AL-A62705A: جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-A62705A جلّاخة زاوية | Younex Angle Grinder",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-a62705a/#product",
+              "url": "https://younexpower.com/products/al-a62705a/",
+              "name": "AL-A62705A Angle Grinder",
+              "alternateName": "AL-A62705A جلّاخة زاوية",
+              "sku": "AL-A62705A",
+              "model": "AL-A62705A",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-a62705a/1.webp",
+                "https://younexpower.com/assets/products/corded/al-a62705a/2.webp",
+                "https://younexpower.com/assets/products/corded/al-a62705a/3.webp",
+                "https://younexpower.com/assets/products/corded/al-a62705a/4.webp",
+                "https://younexpower.com/assets/products/corded/al-a62705a/5.webp"
+              ],
+              "description": "جلّاخة زاوية كهربائية سلكية للقص والتجليخ في الورش ومواقع العمل، بسرعة عالية وتصميم عملي. A corded angle grinder for cutting and grinding in workshops and jobsites, with high speed and a practical design.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-A62705A",
+                  "item": "https://younexpower.com/products/al-a62705a/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-ak198": {
+        "title": "AL-AK198 قاطع معدني | مركز يونكس",
+        "description": "AL-AK198: قاطع معدني كهربائي سلكي لعمليات القص المهنية، مزود بقرص كبير وقدرة مناسبة لأعمال الورش. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-AK198 قاطع معدني | Younex Cut-off Saw",
+        "ogDescription": "AL-AK198: قاطع معدني كهربائي سلكي لعمليات القص المهنية، مزود بقرص كبير وقدرة مناسبة لأعمال الورش. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-AK198 قاطع معدني | Younex Cut-off Saw",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-ak198/#product",
+              "url": "https://younexpower.com/products/al-ak198/",
+              "name": "AL-AK198 Cut-off Saw",
+              "alternateName": "AL-AK198 قاطع معدني",
+              "sku": "AL-AK198",
+              "model": "AL-AK198",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-ak198/1.webp",
+                "https://younexpower.com/assets/products/corded/al-ak198/2.webp",
+                "https://younexpower.com/assets/products/corded/al-ak198/3.webp",
+                "https://younexpower.com/assets/products/corded/al-ak198/4.webp",
+                "https://younexpower.com/assets/products/corded/al-ak198/5.webp"
+              ],
+              "description": "قاطع معدني كهربائي سلكي لعمليات القص المهنية، مزود بقرص كبير وقدرة مناسبة لأعمال الورش. A corded cut-off saw for professional metal cutting, equipped with a large blade and workshop-ready power.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-AK198",
+                  "item": "https://younexpower.com/products/al-ak198/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-ak911": {
+        "title": "AL-AK911 مطرقة هدم | مركز يونكس",
+        "description": "AL-AK911: مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-AK911 مطرقة هدم | Younex Demolition Hammer",
+        "ogDescription": "AL-AK911: مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-AK911 مطرقة هدم | Younex Demolition Hammer",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-ak911/#product",
+              "url": "https://younexpower.com/products/al-ak911/",
+              "name": "AL-AK911 Demolition Hammer",
+              "alternateName": "AL-AK911 مطرقة هدم",
+              "sku": "AL-AK911",
+              "model": "AL-AK911",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-ak911/1.webp",
+                "https://younexpower.com/assets/products/corded/al-ak911/2.webp",
+                "https://younexpower.com/assets/products/corded/al-ak911/3.webp",
+                "https://younexpower.com/assets/products/corded/al-ak911/4.webp",
+                "https://younexpower.com/assets/products/corded/al-ak911/5.webp"
+              ],
+              "description": "مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-AK911",
+                  "item": "https://younexpower.com/products/al-ak911/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-ak958": {
+        "title": "AL-AK958 مطرقة هدم احترافية | مركز يونكس",
+        "description": "AL-AK958: مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-AK958 مطرقة هدم احترافية | Younex Professional Demolition Hammer",
+        "ogDescription": "AL-AK958: مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-AK958 مطرقة هدم احترافية | Younex Professional Demolition Hammer",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-ak958/#product",
+              "url": "https://younexpower.com/products/al-ak958/",
+              "name": "AL-AK958 Professional Demolition Hammer",
+              "alternateName": "AL-AK958 مطرقة هدم احترافية",
+              "sku": "AL-AK958",
+              "model": "AL-AK958",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-ak958/1.webp",
+                "https://younexpower.com/assets/products/corded/al-ak958/2.webp",
+                "https://younexpower.com/assets/products/corded/al-ak958/3.webp",
+                "https://younexpower.com/assets/products/corded/al-ak958/4.webp",
+                "https://younexpower.com/assets/products/corded/al-ak958/5.webp"
+              ],
+              "description": "مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-AK958",
+                  "item": "https://younexpower.com/products/al-ak958/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-g40": {
+        "title": "AL-G40 مطرقة هدم | مركز يونكس",
+        "description": "AL-G40: مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-G40 مطرقة هدم | Younex Demolition Hammer",
+        "ogDescription": "AL-G40: مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-G40 مطرقة هدم | Younex Demolition Hammer",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-g40/#product",
+              "url": "https://younexpower.com/products/al-g40/",
+              "name": "AL-G40 Demolition Hammer",
+              "alternateName": "AL-G40 مطرقة هدم",
+              "sku": "AL-G40",
+              "model": "AL-G40",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-g40/1.webp",
+                "https://younexpower.com/assets/products/corded/al-g40/2.webp",
+                "https://younexpower.com/assets/products/corded/al-g40/3.webp",
+                "https://younexpower.com/assets/products/corded/al-g40/4.webp",
+                "https://younexpower.com/assets/products/corded/al-g40/5.webp",
+                "https://younexpower.com/assets/products/corded/al-g40/6.webp"
+              ],
+              "description": "مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-G40",
+                  "item": "https://younexpower.com/products/al-g40/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_al-g500": {
+        "title": "AL-G500 مطرقة هدم | مركز يونكس",
+        "description": "AL-G500: مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "AL-G500 مطرقة هدم | Younex Demolition Hammer",
+        "ogDescription": "AL-G500: مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "AL-G500 مطرقة هدم | Younex Demolition Hammer",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/al-g500/#product",
+              "url": "https://younexpower.com/products/al-g500/",
+              "name": "AL-G500 Demolition Hammer",
+              "alternateName": "AL-G500 مطرقة هدم",
+              "sku": "AL-G500",
+              "model": "AL-G500",
+              "image": [
+                "https://younexpower.com/assets/products/corded/al-g500/1.webp",
+                "https://younexpower.com/assets/products/corded/al-g500/2.webp",
+                "https://younexpower.com/assets/products/corded/al-g500/3.webp",
+                "https://younexpower.com/assets/products/corded/al-g500/4.webp",
+                "https://younexpower.com/assets/products/corded/al-g500/5.webp",
+                "https://younexpower.com/assets/products/corded/al-g500/6.webp"
+              ],
+              "description": "مطرقة هدم كهربائية سلكية للأعمال الشاقة وإزالة الخرسانة والبناء، بهيكل متين وطاقة طرق عالية. A heavy-duty corded demolition hammer for concrete and construction removal, with a durable build and high impact energy.",
+              "category": "Corded Power Tools",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "AL-G500",
+                  "item": "https://younexpower.com/products/al-g500/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_corded": {
+        "title": "معدات كهربائية سلكية | مركز يونكس",
+        "description": "معدات احترافية تعمل على الكهرباء بجهد 220–230 فولت. استعرض موديلات يونكس والصور والمواصفات الفنية وتواصل معنا عبر واتساب.",
+        "ogTitle": "معدات كهربائية سلكية في درعا | Corded Power Tools — Younex",
+        "ogDescription": "معدات احترافية تعمل على الكهرباء بجهد 220–230 فولت. استعرض موديلات يونكس والصور والمواصفات الفنية وتواصل معنا عبر واتساب.",
+        "imageAlt": "معدات كهربائية سلكية في درعا | Corded Power Tools — Younex",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://younexpower.com/products/corded/",
+              "url": "https://younexpower.com/products/corded/",
+              "name": "معدات كهربائية سلكية | Corded Power Tools",
+              "description": "معدات احترافية تعمل على الكهرباء بجهد 220–230 فولت.",
+              "inLanguage": [
+                "ar",
+                "en"
+              ],
+              "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": 14,
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "https://younexpower.com/products/al-2601/",
+                    "name": "AL-2601"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "url": "https://younexpower.com/products/al-26g/",
+                    "name": "AL-26G"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "url": "https://younexpower.com/products/al-32g/",
+                    "name": "AL-32G"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "url": "https://younexpower.com/products/al-42hh/",
+                    "name": "AL-42HH"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "url": "https://younexpower.com/products/al-95a/",
+                    "name": "AL-95A"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "url": "https://younexpower.com/products/al-ak198/",
+                    "name": "AL-AK198"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "url": "https://younexpower.com/products/al-ak911/",
+                    "name": "AL-AK911"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 8,
+                    "url": "https://younexpower.com/products/al-ak958/",
+                    "name": "AL-AK958"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 9,
+                    "url": "https://younexpower.com/products/al-g40/",
+                    "name": "AL-G40"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 10,
+                    "url": "https://younexpower.com/products/al-g500/",
+                    "name": "AL-G500"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 11,
+                    "url": "https://younexpower.com/products/al-61186/",
+                    "name": "AL-61186"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 12,
+                    "url": "https://younexpower.com/products/al-61188/",
+                    "name": "AL-61188"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 13,
+                    "url": "https://younexpower.com/products/al-a61167/",
+                    "name": "AL-A61167"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 14,
+                    "url": "https://younexpower.com/products/al-a62705a/",
+                    "name": "AL-A62705A"
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Corded Power Tools",
+                  "item": "https://younexpower.com/products/corded/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_cordless": {
+        "title": "معدات تعمل على البطاريات | مركز يونكس",
+        "description": "تشكيلة أدوات بطارية عملية ومرنة ستتوفر قريبًا. استعرض موديلات يونكس والصور والمواصفات الفنية وتواصل معنا عبر واتساب.",
+        "ogTitle": "معدات تعمل على البطاريات في درعا | Cordless Power Tools — Younex",
+        "ogDescription": "تشكيلة أدوات بطارية عملية ومرنة ستتوفر قريبًا. استعرض موديلات يونكس والصور والمواصفات الفنية وتواصل معنا عبر واتساب.",
+        "imageAlt": "معدات تعمل على البطاريات في درعا | Cordless Power Tools — Younex",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://younexpower.com/products/cordless/",
+              "url": "https://younexpower.com/products/cordless/",
+              "name": "معدات تعمل على البطاريات | Cordless Power Tools",
+              "description": "تشكيلة أدوات بطارية عملية ومرنة ستتوفر قريبًا.",
+              "inLanguage": [
+                "ar",
+                "en"
+              ],
+              "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": 0,
+                "itemListElement": []
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Cordless Power Tools",
+                  "item": "https://younexpower.com/products/cordless/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_generators": {
+        "title": "مولدات كهربائية | مركز يونكس",
+        "description": "مولدات بنزين للاستخدام الاحتياطي ومواقع العمل. استعرض موديلات يونكس والصور والمواصفات الفنية وتواصل معنا عبر واتساب.",
+        "ogTitle": "مولدات كهربائية في درعا | Electric Generators — Younex",
+        "ogDescription": "مولدات بنزين للاستخدام الاحتياطي ومواقع العمل. استعرض موديلات يونكس والصور والمواصفات الفنية وتواصل معنا عبر واتساب.",
+        "imageAlt": "مولدات كهربائية في درعا | Electric Generators — Younex",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://younexpower.com/products/generators/",
+              "url": "https://younexpower.com/products/generators/",
+              "name": "مولدات كهربائية | Electric Generators",
+              "description": "مولدات بنزين للاستخدام الاحتياطي ومواقع العمل.",
+              "inLanguage": [
+                "ar",
+                "en"
+              ],
+              "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": 3,
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "https://younexpower.com/products/younex-3kw/",
+                    "name": "Younex 3 kW"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "url": "https://younexpower.com/products/younex-4kw/",
+                    "name": "Younex 4 kW"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "url": "https://younexpower.com/products/younex-5kw/",
+                    "name": "Younex 5 kW"
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Electric Generators",
+                  "item": "https://younexpower.com/products/generators/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products": {
+        "title": "منتجاتنا | مركز يونكس للمعدات والطاقة",
+        "description": "استعرض معدات يونكس الكهربائية السلكية والمولدات ومضخات المياه، مع الصور والمواصفات الفنية والتواصل المباشر عبر واتساب.",
+        "ogTitle": "منتجات يونكس: معدات كهربائية ومولدات ومضخات مياه",
+        "ogDescription": "استعرض معدات يونكس الكهربائية السلكية والمولدات ومضخات المياه، مع الصور والمواصفات الفنية والتواصل المباشر عبر واتساب.",
+        "imageAlt": "منتجات يونكس: معدات كهربائية ومولدات ومضخات مياه",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://younexpower.com/products/",
+              "url": "https://younexpower.com/products/",
+              "name": "منتجات يونكس | Younex Products",
+              "description": "معدات كهربائية ومولدات ومضخات مياه من مركز يونكس للمعدات والطاقة.",
+              "inLanguage": [
+                "ar",
+                "en"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_jet-100": {
+        "title": "JET-100 مضخة نفاثة | مركز يونكس",
+        "description": "JET-100: مضخة نفاثة برأس من الحديد الزهر ومحرك نحاسي أحادي الطور، مناسبة لضخ المياه للاستخدامات المنزلية والمهنية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "JET-100 مضخة نفاثة | Younex Jet Pump",
+        "ogDescription": "JET-100: مضخة نفاثة برأس من الحديد الزهر ومحرك نحاسي أحادي الطور، مناسبة لضخ المياه للاستخدامات المنزلية والمهنية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "JET-100 مضخة نفاثة | Younex Jet Pump",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/jet-100/#product",
+              "url": "https://younexpower.com/products/jet-100/",
+              "name": "JET-100 Jet Pump",
+              "alternateName": "JET-100 مضخة نفاثة",
+              "sku": "JET-100",
+              "model": "JET-100",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/jet-100/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-100/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-100/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-100/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-100/5.webp"
+              ],
+              "description": "مضخة نفاثة برأس من الحديد الزهر ومحرك نحاسي أحادي الطور، مناسبة لضخ المياه للاستخدامات المنزلية والمهنية. A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "JET-100",
+                  "item": "https://younexpower.com/products/jet-100/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_jet-60": {
+        "title": "JET-60 مضخة نفاثة | مركز يونكس",
+        "description": "JET-60: مضخة نفاثة برأس من الحديد الزهر ومحرك نحاسي أحادي الطور، مناسبة لضخ المياه للاستخدامات المنزلية والمهنية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "JET-60 مضخة نفاثة | Younex Jet Pump",
+        "ogDescription": "JET-60: مضخة نفاثة برأس من الحديد الزهر ومحرك نحاسي أحادي الطور، مناسبة لضخ المياه للاستخدامات المنزلية والمهنية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "JET-60 مضخة نفاثة | Younex Jet Pump",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/jet-60/#product",
+              "url": "https://younexpower.com/products/jet-60/",
+              "name": "JET-60 Jet Pump",
+              "alternateName": "JET-60 مضخة نفاثة",
+              "sku": "JET-60",
+              "model": "JET-60",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/jet-60/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-60/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-60/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-60/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-60/5.webp"
+              ],
+              "description": "مضخة نفاثة برأس من الحديد الزهر ومحرك نحاسي أحادي الطور، مناسبة لضخ المياه للاستخدامات المنزلية والمهنية. A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "JET-60",
+                  "item": "https://younexpower.com/products/jet-60/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_jet-80": {
+        "title": "JET-80 مضخة نفاثة | مركز يونكس",
+        "description": "JET-80: مضخة نفاثة برأس من الحديد الزهر ومحرك نحاسي أحادي الطور، مناسبة لضخ المياه للاستخدامات المنزلية والمهنية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "JET-80 مضخة نفاثة | Younex Jet Pump",
+        "ogDescription": "JET-80: مضخة نفاثة برأس من الحديد الزهر ومحرك نحاسي أحادي الطور، مناسبة لضخ المياه للاستخدامات المنزلية والمهنية. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "JET-80 مضخة نفاثة | Younex Jet Pump",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/jet-80/#product",
+              "url": "https://younexpower.com/products/jet-80/",
+              "name": "JET-80 Jet Pump",
+              "alternateName": "JET-80 مضخة نفاثة",
+              "sku": "JET-80",
+              "model": "JET-80",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/jet-80/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-80/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-80/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-80/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/jet-80/5.webp"
+              ],
+              "description": "مضخة نفاثة برأس من الحديد الزهر ومحرك نحاسي أحادي الطور، مناسبة لضخ المياه للاستخدامات المنزلية والمهنية. A jet pump with a cast-iron pump head and single-phase copper-wire motor, suitable for domestic and professional water pumping.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "JET-80",
+                  "item": "https://younexpower.com/products/jet-80/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_qb60": {
+        "title": "QB60 مضخة مياه دوّامية احترافية | مركز يونكس",
+        "description": "QB60: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "QB60 مضخة مياه دوّامية احترافية | Younex Professional Vortex Water Pump",
+        "ogDescription": "QB60: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "QB60 مضخة مياه دوّامية احترافية | Younex Professional Vortex Water Pump",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/qb60/#product",
+              "url": "https://younexpower.com/products/qb60/",
+              "name": "QB60 Professional Vortex Water Pump",
+              "alternateName": "QB60 مضخة مياه دوّامية احترافية",
+              "sku": "QB60",
+              "model": "QB60",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/qb60/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb60/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb60/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb60/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb60/5.webp"
+              ],
+              "description": "مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "QB60",
+                  "item": "https://younexpower.com/products/qb60/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_qb70": {
+        "title": "QB70 مضخة مياه دوّامية احترافية | مركز يونكس",
+        "description": "QB70: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "QB70 مضخة مياه دوّامية احترافية | Younex Professional Vortex Water Pump",
+        "ogDescription": "QB70: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "QB70 مضخة مياه دوّامية احترافية | Younex Professional Vortex Water Pump",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/qb70/#product",
+              "url": "https://younexpower.com/products/qb70/",
+              "name": "QB70 Professional Vortex Water Pump",
+              "alternateName": "QB70 مضخة مياه دوّامية احترافية",
+              "sku": "QB70",
+              "model": "QB70",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/qb70/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb70/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb70/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb70/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb70/5.webp"
+              ],
+              "description": "مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "QB70",
+                  "item": "https://younexpower.com/products/qb70/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_qb80": {
+        "title": "QB80 مضخة مياه دوّامية احترافية | مركز يونكس",
+        "description": "QB80: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "QB80 مضخة مياه دوّامية احترافية | Younex Professional Vortex Water Pump",
+        "ogDescription": "QB80: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "QB80 مضخة مياه دوّامية احترافية | Younex Professional Vortex Water Pump",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/qb80/#product",
+              "url": "https://younexpower.com/products/qb80/",
+              "name": "QB80 Professional Vortex Water Pump",
+              "alternateName": "QB80 مضخة مياه دوّامية احترافية",
+              "sku": "QB80",
+              "model": "QB80",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/qb80/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb80/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb80/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb80/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/qb80/5.webp"
+              ],
+              "description": "مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "QB80",
+                  "item": "https://younexpower.com/products/qb80/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_water-pumps": {
+        "title": "مضخات مياه | مركز يونكس",
+        "description": "مضخات نفاثة ومضخات تعزيز لمختلف احتياجات المياه. استعرض موديلات يونكس والصور والمواصفات الفنية وتواصل معنا عبر واتساب.",
+        "ogTitle": "مضخات مياه في درعا | Water Pumps — Younex",
+        "ogDescription": "مضخات نفاثة ومضخات تعزيز لمختلف احتياجات المياه. استعرض موديلات يونكس والصور والمواصفات الفنية وتواصل معنا عبر واتساب.",
+        "imageAlt": "مضخات مياه في درعا | Water Pumps — Younex",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://younexpower.com/products/water-pumps/",
+              "url": "https://younexpower.com/products/water-pumps/",
+              "name": "مضخات مياه | Water Pumps",
+              "description": "مضخات نفاثة ومضخات تعزيز لمختلف احتياجات المياه.",
+              "inLanguage": [
+                "ar",
+                "en"
+              ],
+              "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": 9,
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "https://younexpower.com/products/wzb-400a/",
+                    "name": "WZB-400A"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "url": "https://younexpower.com/products/wzb-600a/",
+                    "name": "WZB-600A"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "url": "https://younexpower.com/products/wzb-800a/",
+                    "name": "WZB-800A"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "url": "https://younexpower.com/products/qb60/",
+                    "name": "QB60"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "url": "https://younexpower.com/products/qb70/",
+                    "name": "QB70"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "url": "https://younexpower.com/products/qb80/",
+                    "name": "QB80"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "url": "https://younexpower.com/products/jet-60/",
+                    "name": "JET-60"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 8,
+                    "url": "https://younexpower.com/products/jet-80/",
+                    "name": "JET-80"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 9,
+                    "url": "https://younexpower.com/products/jet-100/",
+                    "name": "JET-100"
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_wzb-400a": {
+        "title": "WZB-400A مضخة تعزيز ذاتية التحضير | مركز يونكس",
+        "description": "WZB-400A: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "WZB-400A مضخة تعزيز ذاتية التحضير | Younex Self-Priming Booster Pump",
+        "ogDescription": "WZB-400A: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "WZB-400A مضخة تعزيز ذاتية التحضير | Younex Self-Priming Booster Pump",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/wzb-400a/#product",
+              "url": "https://younexpower.com/products/wzb-400a/",
+              "name": "WZB-400A Self-Priming Booster Pump",
+              "alternateName": "WZB-400A مضخة تعزيز ذاتية التحضير",
+              "sku": "WZB-400A",
+              "model": "WZB-400A",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/5.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-400a/6.webp"
+              ],
+              "description": "مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "WZB-400A",
+                  "item": "https://younexpower.com/products/wzb-400a/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_wzb-600a": {
+        "title": "WZB-600A مضخة تعزيز ذاتية التحضير | مركز يونكس",
+        "description": "WZB-600A: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "WZB-600A مضخة تعزيز ذاتية التحضير | Younex Self-Priming Booster Pump",
+        "ogDescription": "WZB-600A: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "WZB-600A مضخة تعزيز ذاتية التحضير | Younex Self-Priming Booster Pump",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/wzb-600a/#product",
+              "url": "https://younexpower.com/products/wzb-600a/",
+              "name": "WZB-600A Self-Priming Booster Pump",
+              "alternateName": "WZB-600A مضخة تعزيز ذاتية التحضير",
+              "sku": "WZB-600A",
+              "model": "WZB-600A",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/5.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-600a/6.webp"
+              ],
+              "description": "مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "WZB-600A",
+                  "item": "https://younexpower.com/products/wzb-600a/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_wzb-800a": {
+        "title": "WZB-800A مضخة تعزيز ذاتية التحضير | مركز يونكس",
+        "description": "WZB-800A: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "WZB-800A مضخة تعزيز ذاتية التحضير | Younex Self-Priming Booster Pump",
+        "ogDescription": "WZB-800A: مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "WZB-800A مضخة تعزيز ذاتية التحضير | Younex Self-Priming Booster Pump",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/wzb-800a/#product",
+              "url": "https://younexpower.com/products/wzb-800a/",
+              "name": "WZB-800A Self-Priming Booster Pump",
+              "alternateName": "WZB-800A مضخة تعزيز ذاتية التحضير",
+              "sku": "WZB-800A",
+              "model": "WZB-800A",
+              "image": [
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/1.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/2.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/3.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/4.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/5.webp",
+                "https://younexpower.com/assets/products/water-pumps/wzb-800a/6.webp"
+              ],
+              "description": "مضخة تعزيز ذاتية التحضير بمحرك نحاسي وحماية حرارية مدمجة، مناسبة لضخ المياه ورفع الضغط. A self-priming booster pump with a copper-wire motor and built-in thermal protection, suitable for water transfer and pressure boosting.",
+              "category": "Water Pumps",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Water Pumps",
+                  "item": "https://younexpower.com/products/water-pumps/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "WZB-800A",
+                  "item": "https://younexpower.com/products/wzb-800a/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_younex-3kw": {
+        "title": "Younex 3 kW مولد بنزين مفتوح | مركز يونكس",
+        "description": "Younex 3 kW: مولد بنزين مفتوح أحادي الطور لتوفير الطاقة الاحتياطية والاستخدام في مواقع العمل، مع تشغيل يدوي وخزان وقود عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "Younex 3 kW مولد بنزين مفتوح | Younex Open Gasoline Generator",
+        "ogDescription": "Younex 3 kW: مولد بنزين مفتوح أحادي الطور لتوفير الطاقة الاحتياطية والاستخدام في مواقع العمل، مع تشغيل يدوي وخزان وقود عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "Younex 3 kW مولد بنزين مفتوح | Younex Open Gasoline Generator",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/younex-3kw/#product",
+              "url": "https://younexpower.com/products/younex-3kw/",
+              "name": "Younex 3 kW Open Gasoline Generator",
+              "alternateName": "Younex 3 kW مولد بنزين مفتوح",
+              "sku": "Younex 3 kW",
+              "model": "Younex 3 kW",
+              "image": [
+                "https://younexpower.com/assets/products/generators/younex-3kw/1.webp",
+                "https://younexpower.com/assets/products/generators/younex-3kw/2.webp",
+                "https://younexpower.com/assets/products/generators/younex-3kw/3.webp",
+                "https://younexpower.com/assets/products/generators/younex-3kw/4.webp",
+                "https://younexpower.com/assets/products/generators/younex-3kw/5.webp"
+              ],
+              "description": "مولد بنزين مفتوح أحادي الطور لتوفير الطاقة الاحتياطية والاستخدام في مواقع العمل، مع تشغيل يدوي وخزان وقود عملي. An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+              "category": "Electric Generators",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Electric Generators",
+                  "item": "https://younexpower.com/products/generators/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Younex 3 kW",
+                  "item": "https://younexpower.com/products/younex-3kw/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_younex-4kw": {
+        "title": "Younex 4 kW مولد بنزين مفتوح | مركز يونكس",
+        "description": "Younex 4 kW: مولد بنزين مفتوح أحادي الطور لتوفير الطاقة الاحتياطية والاستخدام في مواقع العمل، مع تشغيل يدوي وخزان وقود عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "Younex 4 kW مولد بنزين مفتوح | Younex Open Gasoline Generator",
+        "ogDescription": "Younex 4 kW: مولد بنزين مفتوح أحادي الطور لتوفير الطاقة الاحتياطية والاستخدام في مواقع العمل، مع تشغيل يدوي وخزان وقود عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "Younex 4 kW مولد بنزين مفتوح | Younex Open Gasoline Generator",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/younex-4kw/#product",
+              "url": "https://younexpower.com/products/younex-4kw/",
+              "name": "Younex 4 kW Open Gasoline Generator",
+              "alternateName": "Younex 4 kW مولد بنزين مفتوح",
+              "sku": "Younex 4 kW",
+              "model": "Younex 4 kW",
+              "image": [
+                "https://younexpower.com/assets/products/generators/younex-4kw/1.webp",
+                "https://younexpower.com/assets/products/generators/younex-4kw/2.webp",
+                "https://younexpower.com/assets/products/generators/younex-4kw/3.webp",
+                "https://younexpower.com/assets/products/generators/younex-4kw/4.webp",
+                "https://younexpower.com/assets/products/generators/younex-4kw/5.webp"
+              ],
+              "description": "مولد بنزين مفتوح أحادي الطور لتوفير الطاقة الاحتياطية والاستخدام في مواقع العمل، مع تشغيل يدوي وخزان وقود عملي. An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+              "category": "Electric Generators",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Electric Generators",
+                  "item": "https://younexpower.com/products/generators/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Younex 4 kW",
+                  "item": "https://younexpower.com/products/younex-4kw/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "products_younex-5kw": {
+        "title": "Younex 5 kW مولد بنزين مفتوح | مركز يونكس",
+        "description": "Younex 5 kW: مولد بنزين مفتوح أحادي الطور لتوفير الطاقة الاحتياطية والاستخدام في مواقع العمل، مع تشغيل يدوي وخزان وقود عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "ogTitle": "Younex 5 kW مولد بنزين مفتوح | Younex Open Gasoline Generator",
+        "ogDescription": "Younex 5 kW: مولد بنزين مفتوح أحادي الطور لتوفير الطاقة الاحتياطية والاستخدام في مواقع العمل، مع تشغيل يدوي وخزان وقود عملي. شاهد الصور والمواصفات واستفسر عن السعر والتوفر عبر واتساب.",
+        "imageAlt": "Younex 5 kW مولد بنزين مفتوح | Younex Open Gasoline Generator",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              "@id": "https://younexpower.com/products/younex-5kw/#product",
+              "url": "https://younexpower.com/products/younex-5kw/",
+              "name": "Younex 5 kW Open Gasoline Generator",
+              "alternateName": "Younex 5 kW مولد بنزين مفتوح",
+              "sku": "Younex 5 kW",
+              "model": "Younex 5 kW",
+              "image": [
+                "https://younexpower.com/assets/products/generators/younex-5kw/1.webp",
+                "https://younexpower.com/assets/products/generators/younex-5kw/2.webp",
+                "https://younexpower.com/assets/products/generators/younex-5kw/3.webp",
+                "https://younexpower.com/assets/products/generators/younex-5kw/4.webp",
+                "https://younexpower.com/assets/products/generators/younex-5kw/6.webp"
+              ],
+              "description": "مولد بنزين مفتوح أحادي الطور لتوفير الطاقة الاحتياطية والاستخدام في مواقع العمل، مع تشغيل يدوي وخزان وقود عملي. An open-type single-phase gasoline generator for backup power and jobsite use, with hand start and a practical fuel tank.",
+              "category": "Electric Generators",
+              "brand": {
+                "@type": "Brand",
+                "name": "Younex"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://younexpower.com/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Electric Generators",
+                  "item": "https://younexpower.com/products/generators/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Younex 5 kW",
+                  "item": "https://younexpower.com/products/younex-5kw/"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "services": {
+        "title": "خدمات التوريد والتخصيص | مركز يونكس",
+        "description": "تأمين المعدات والأدوات وتجهيز المشاريع في سوريا، مع تخصيص المنتجات والشحن والتخليص الجمركي والتوصيل إلى موقع العميل.",
+        "ogTitle": "خدمات توريد وتجهيز المشاريع والمعدات في سوريا | Younex",
+        "ogDescription": "تأمين المعدات والأدوات وتجهيز المشاريع في سوريا، مع تخصيص المنتجات والشحن والتخليص الجمركي والتوصيل إلى موقع العميل.",
+        "imageAlt": "خدمات توريد وتجهيز المشاريع والمعدات في سوريا | Younex",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Service",
+              "@id": "https://younexpower.com/services/#service",
+              "name": "خدمات التوريد والتخصيص للشركات",
+              "alternateName": "Business Sourcing and Product Customization",
+              "description": "تأمين المعدات والأدوات وتجهيز المشاريع في سوريا، مع تخصيص المنتجات والشحن والتخليص الجمركي والتوصيل إلى موقع العميل.",
+              "url": "https://younexpower.com/services/",
+              "provider": {
+                "@type": "HardwareStore",
+                "@id": "https://younexpower.com/#business",
+                "name": "Younex Power Center"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Syria"
+              },
+              "serviceType": [
+                "Bulk sourcing",
+                "Project equipment sourcing",
+                "Product customization",
+                "Private labeling",
+                "International shipping",
+                "Customs clearance",
+                "Commercial delivery"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Younex Power Center",
+                  "item": "https://younexpower.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Sourcing services",
+                  "item": "https://younexpower.com/services/"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
   }
 }

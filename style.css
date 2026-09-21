@@ -578,6 +578,20 @@ html[dir="rtl"] .inquiry-toast.visible { transform: translate(50%, 0); }
 .static-intro-en { max-width: 760px; margin-top: 8px; color: #627587; font-family: "Inter", system-ui, sans-serif; direction: ltr; }
 .seo-home-link { color: inherit; }
 .seo-category-empty { margin-top: 24px; }
+
+/* Inquiry and bulk-order button text contrast. */
+.purchase-box .button-inquiry-add span {
+  margin-top: 0;
+  color: #fff;
+}
+.purchase-box .button-inquiry-add.is-added span {
+  color: #06361d;
+}
+.bulk-order-box .button-service,
+.bulk-order-box .button-service:hover {
+  color: #07111f;
+}
+
 @media (max-width: 700px) {
   .static-page-main { padding-block: 28px 64px; }
   .static-page-main > .services-page { margin-block: -28px -64px; }

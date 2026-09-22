@@ -119,6 +119,25 @@
     return product.name && product.name[language] ? product.name[language] : product.model;
   }
 
+  function syncProductWhatsAppLinks() {
+    document.querySelectorAll('[data-product-whatsapp]').forEach(function (link) {
+      var slug = link.getAttribute('data-product-whatsapp');
+      var product = productBySlug(slug);
+      if (!product) return;
+      var productUrl = 'https://younexpower.com/products/' + product.slug + '/';
+      var message = [
+        t('directMessageGreeting'),
+        product.model + ' — ' + localizedName(product),
+        t('messageProductLink') + ': ' + productUrl,
+        t('messageClosing')
+      ].join('\n');
+      var label = t('askOnWhatsApp') + ': ' + product.model;
+      link.href = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(message);
+      link.setAttribute('aria-label', label);
+      link.setAttribute('title', label);
+    });
+  }
+
   function itemMarkup(item) {
     var product = productBySlug(item.slug);
     if (!product) return '';
@@ -255,6 +274,7 @@
     createHeaderLink();
     updateBadge(readList());
     renderInquiryPage(readList());
+    syncProductWhatsAppLinks();
     document.addEventListener('click', handleClicks);
     document.addEventListener('change', function (event) {
       if (event.target.matches('[data-inquiry-quantity]')) setQuantity(event.target.getAttribute('data-inquiry-quantity'), event.target.value);
@@ -267,6 +287,7 @@
         window.YounexI18n.apply(document);
         updateBadge(readList());
         renderInquiryPage(readList());
+        syncProductWhatsAppLinks();
       });
     });
   }

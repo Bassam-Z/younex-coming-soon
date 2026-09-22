@@ -83,17 +83,17 @@ function enhanceDocument(html) {
   let output = html;
   output = output.replace(/(<div class="i18n-loader"[^>]*)(>)/, (match, opening, close) => opening.includes('data-i18n-aria=') ? match : `${opening} data-i18n-aria="loader.aria"${close}`);
   if (!output.includes('/locales/ar.json')) {
-    output = output.replace('</head>', '  <link rel="preload" href="/locales/ar.json?v=31" as="fetch" crossorigin>\n</head>');
+    output = output.replace('</head>', '  <link rel="preload" href="/locales/ar.json?v=32" as="fetch" crossorigin>\n</head>');
   }
-  if (!output.includes('/locales/en.json')) output = output.replace('</head>', '  <link rel="preload" href="/locales/en.json?v=31" as="fetch" crossorigin>\n</head>');
+  if (!output.includes('/locales/en.json')) output = output.replace('</head>', '  <link rel="preload" href="/locales/en.json?v=32" as="fetch" crossorigin>\n</head>');
   if (!output.includes('products-data.js')) output = output.replace('</head>', '  <script src="/products-data.js?v=5" defer></script>\n</head>');
-  if (!output.includes('/i18n.js')) output = output.replace('</head>', '  <script src="/i18n.js?v=4" defer></script>\n</head>');
-  if (!output.includes('/inquiry-cart.js')) output = output.replace('</head>', '  <script src="/inquiry-cart.js?v=1" defer></script>\n</head>');
-  output = output.replace(/\/locales\/(ar|en)\.json\?v=\d+/g, '/locales/$1.json?v=31');
+  if (!output.includes('/i18n.js')) output = output.replace('</head>', '  <script src="/i18n.js?v=5" defer></script>\n</head>');
+  if (!output.includes('/inquiry-cart.js')) output = output.replace('</head>', '  <script src="/inquiry-cart.js?v=2" defer></script>\n</head>');
+  output = output.replace(/\/locales\/(ar|en)\.json\?v=\d+/g, '/locales/$1.json?v=32');
   output = output.replace(/\/?products-data\.js\?v=\d+/g, '/products-data.js?v=5');
-  output = output.replace(/\/i18n\.js\?v=\d+/g, '/i18n.js?v=4');
-  output = output.replace(/\/inquiry-cart\.js\?v=\d+/g, '/inquiry-cart.js?v=1');
-  output = output.replace(/<link rel="stylesheet" href="([^"?]+)(?:\?v=\d+)?"\s*\/?\s*>/, '<link rel="stylesheet" href="$1?v=28">');
+  output = output.replace(/\/i18n\.js\?v=\d+/g, '/i18n.js?v=5');
+  output = output.replace(/\/inquiry-cart\.js\?v=\d+/g, '/inquiry-cart.js?v=2');
+  output = output.replace(/<link rel="stylesheet" href="([^"?]+)(?:\?v=\d+)?"\s*\/?\s*>/, '<link rel="stylesheet" href="$1?v=29">');
   if (!output.includes('class="i18n-loader"')) {
     output = output.replace(/<body([^>]*)>/, (match, attributes) => {
       if (/\bclass=/.test(attributes)) {

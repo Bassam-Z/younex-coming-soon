@@ -24,7 +24,7 @@
 
   function load(language) {
     if (cache[language]) return Promise.resolve(cache[language]);
-    return fetch('/locales/' + language + '.json?v=32', { credentials: 'same-origin' })
+    return fetch('/locales/' + language + '.json?v=33', { credentials: 'same-origin' })
       .then(function (response) {
         if (!response.ok) throw new Error('Translation request failed: ' + response.status);
         return response.json();

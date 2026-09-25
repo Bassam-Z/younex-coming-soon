@@ -7,6 +7,9 @@
     "toggleLabel": "EN",
     "toggleAria": "Switch to English"
   },
+  "productActions": {
+    "viewDetails": "عرض تفاصيل المنتج"
+  },
   "inquiry": {
     "documentTitle": "قائمة الاستفسار | مركز يونكس",
     "navLabel": "قائمة الاستفسار",

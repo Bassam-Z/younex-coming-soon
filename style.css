@@ -270,14 +270,18 @@ html[dir="rtl"] .product-back-button svg { transform: scaleX(-1); }
 .product-card-media { overflow: hidden; aspect-ratio: 1/1; background: #f4f7f9; }
 .product-card-media img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: contain; transition: transform .45s; }
 .product-card:hover .product-card-media img { transform: scale(1.025); }
-.product-card-copy { padding: 18px 20px 15px; border-top: 1px solid var(--line); }
+.product-card-copy { padding: 18px 20px 16px; border-top: 1px solid var(--line); }
 .product-card-copy span { color: var(--sky-500); font-size: .8rem; font-weight: 800; }
-.product-card-copy h2 { margin: 3px 0 12px; color: var(--navy-900); font-family: "Inter", system-ui, sans-serif; font-size: 1.15rem; }
-.product-card-copy b { color: #52697a; font-size: .82rem; }
-.product-card-copy i { margin-inline-start: 5px; color: var(--sky-500); font-size: 1rem; font-style: normal; }
-html[dir="ltr"] .product-card-copy i { display: inline-block; transform: scaleX(-1); }
+.product-card-copy h2 { margin: 3px 0 0; color: var(--navy-900); font-family: "Inter", system-ui, sans-serif; font-size: 1.15rem; }
 .product-card-actions { display: grid; grid-template-columns: minmax(0, 1fr) 46px; gap: 9px; margin-top: auto; padding: 0 20px 20px; }
 .product-card-actions .button { min-width: 0; min-height: 44px; padding: 9px 12px; border: 0; cursor: pointer; font-size: .76rem; line-height: 1.35; }
+.product-card-actions .product-card-details { grid-column: 1 / -1; border: 1px solid #b9ddea; color: #163b50; background: #f3fbfe; box-shadow: none; font-size: .82rem; }
+.product-card-actions .product-card-details:hover { border-color: var(--sky-500); color: #062e43; background: #e5f7fd; box-shadow: 0 9px 22px rgba(0,174,234,.12); }
+.product-card-details span { font-weight: 800; }
+.product-card-details i { color: var(--sky-500); font-size: 1rem; font-style: normal; transition: transform .2s; }
+.product-card-details:hover i { transform: translateX(-3px); }
+html[dir="ltr"] .product-card-details i { transform: scaleX(-1); }
+html[dir="ltr"] .product-card-details:hover i { transform: scaleX(-1) translateX(-3px); }
 .product-card-actions .button-inquiry-add span { margin: 0; color: #fff; font-size: inherit; font-weight: 800; }
 .product-card-actions .button-inquiry-add.is-added span { color: #06361d; }
 .product-card-actions .button-inquiry-add svg { flex: 0 0 auto; }

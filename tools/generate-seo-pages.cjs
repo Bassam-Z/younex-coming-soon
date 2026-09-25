@@ -54,7 +54,7 @@ function head({ title, description, canonical, image, type = 'website', schema, 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=29">
+  <link rel="stylesheet" href="/style.css?v=30">
   <script type="application/ld+json">${json(schema)}</script>
   <script>window.goatcounter = { no_onload: true };</script>
   <script data-goatcounter="https://younexpower.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -110,9 +110,10 @@ function productCard(product) {
   return `<article class="product-card">
     <a class="product-card-main" href="/products/${product.slug}/">
       <div class="product-card-media"><img src="/${product.images[0]}" alt="${esc(product.model)} — ${esc(product.name.ar)}" loading="lazy" width="700" height="700"></div>
-      <div class="product-card-copy">${localizedTag('span', product.name)}<h2>${esc(product.model)}</h2><b data-ar="عرض التفاصيل" data-en="View details">عرض التفاصيل <i aria-hidden="true">←</i></b></div>
+      <div class="product-card-copy">${localizedTag('span', product.name)}<h2>${esc(product.model)}</h2></div>
     </a>
     <div class="product-card-actions">
+      <a class="button product-card-details" href="/products/${product.slug}/"><span data-i18n="productActions.viewDetails"></span><i aria-hidden="true">←</i></a>
       <button class="button button-inquiry-add product-card-inquiry" type="button" data-inquiry-add data-product-slug="${esc(product.slug)}" data-i18n-aria="inquiry.addToList"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.4 12H5.4L4 7Z"></path><path d="M8 7a4 4 0 0 1 8 0"></path><path d="M12 10v6M9 13h6"></path></svg><span data-inquiry-add-text data-i18n="inquiry.addToList"></span></button>
       <a class="button button-whatsapp product-card-whatsapp" href="https://wa.me/963953728253" target="_blank" rel="noopener" data-product-whatsapp="${esc(product.slug)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.5 0 .2 5.3.2 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9 0-3.1-1.3-6.1-3.5-8.3ZM12.1 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 1 1 8.4 4.7Zm5.4-7.4c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.7-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2 2.2.9 3.1 1 4.2.8.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.2-.3-.3-.6-.4Z"></path></svg></a>
     </div>

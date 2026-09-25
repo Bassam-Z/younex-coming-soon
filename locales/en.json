@@ -7,6 +7,9 @@
     "toggleLabel": "عربي",
     "toggleAria": "التبديل إلى العربية"
   },
+  "productActions": {
+    "viewDetails": "View product details"
+  },
   "inquiry": {
     "documentTitle": "Inquiry List | Younex Power Center",
     "navLabel": "Inquiry list",

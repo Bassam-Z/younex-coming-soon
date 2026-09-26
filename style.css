@@ -235,11 +235,13 @@ html[dir="rtl"] .services-hero-overlay { background: linear-gradient(270deg, rgb
 .category-copy { display: flex; flex-direction: column; justify-content: center; padding: 30px; }
 .category-copy h2 { margin: 0; font-size: clamp(1.45rem, 2.2vw, 2rem); line-height: 1.35; }
 .category-copy p { margin: 12px 0 22px; color: var(--muted); line-height: 1.8; }
-.category-link { color: var(--sky-500); font-weight: 800; }
-.category-link b { display: inline-block; margin-inline-start: 6px; font-size: 1.2rem; transition: transform .2s; }
-html[dir="ltr"] .category-link b { transform: scaleX(-1); }
-.category-card:hover .category-link b { transform: translateX(-4px); }
-html[dir="ltr"] .category-card:hover .category-link b { transform: scaleX(-1) translateX(-4px); }
+.category-link { display: inline-flex; align-items: center; justify-content: center; align-self: flex-start; gap: 7px; min-height: 44px; padding: 10px 17px; border: 1px solid rgba(0,174,234,.72); border-radius: 12px; color: white; background: linear-gradient(135deg, var(--sky-500), #078ab9); box-shadow: 0 9px 22px rgba(0,174,234,.2); font-weight: 800; transition: transform .2s, box-shadow .2s, background .2s; }
+.category-link b { display: inline-block; margin: 0; font-size: 1.2rem; line-height: 1; animation: category-arrow-rtl 1.8s ease-in-out infinite; }
+html[dir="ltr"] .category-link b { animation-name: category-arrow-ltr; }
+.category-card:hover .category-link, .category-card:focus-visible .category-link { transform: translateY(-2px); background: linear-gradient(135deg, #08b9f4, #067da9); box-shadow: 0 13px 28px rgba(0,174,234,.3); }
+.category-card:focus-visible { outline: 3px solid rgba(43,196,243,.38); outline-offset: 4px; }
+@keyframes category-arrow-rtl { 0%, 45%, 100% { transform: translateX(0); } 15% { transform: translateX(-5px); } 30% { transform: translateX(-2px); } }
+@keyframes category-arrow-ltr { 0%, 45%, 100% { transform: scaleX(-1) translateX(0); } 15% { transform: scaleX(-1) translateX(-5px); } 30% { transform: scaleX(-1) translateX(-2px); } }
 
 .catalog-breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; padding: 32px 0 25px; color: #7a8b9d; font-size: .88rem; }
 .catalog-breadcrumb a { color: var(--sky-500); font-weight: 700; }

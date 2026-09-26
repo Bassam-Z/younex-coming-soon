@@ -148,10 +148,10 @@
 
   window.YOUNEX_CATALOG = {
     categories: [
-      { id: 'corded', name: t('معدات كهربائية سلكية', 'Corded Power Tools'), description: t('معدات احترافية تعمل على الكهرباء بجهد 220–230 فولت.', 'Professional power tools operating on 220–230 V mains power.'), cover: 'assets/category-covers/corded-tools.webp', status: 'available' },
-      { id: 'cordless', name: t('معدات تعمل على البطاريات', 'Cordless Power Tools'), description: t('تشكيلة أدوات بطارية عملية ومرنة ستتوفر قريبًا.', 'A practical and flexible cordless tool range arriving soon.'), cover: 'assets/category-covers/cordless-tools.webp', status: 'soon' },
-      { id: 'generators', name: t('مولدات كهربائية', 'Electric Generators'), description: t('مولدات بنزين للاستخدام الاحتياطي ومواقع العمل.', 'Gasoline generators for backup power and jobsites.'), cover: 'assets/category-covers/generators.webp', status: 'available' },
-      { id: 'water-pumps', name: t('مضخات مياه', 'Water Pumps'), description: t('مضخات نفاثة ومضخات تعزيز لمختلف احتياجات المياه.', 'Jet and booster pumps for a variety of water applications.'), cover: 'assets/category-covers/water-pumps.webp', status: 'available' }
+      { id: 'corded', name: t('معدات كهربائية سلكية', 'Corded Power Tools'), description: t('معدات احترافية تعمل على الكهرباء بجهد 220–230 فولت.', 'Professional power tools operating on 220–230 V mains power.'), cover: 'assets/category-covers/corded-tools-warehouse.webp', status: 'available' },
+      { id: 'cordless', name: t('معدات تعمل على البطاريات', 'Cordless Power Tools'), description: t('تشكيلة أدوات بطارية عملية ومرنة ستتوفر قريبًا.', 'A practical and flexible cordless tool range arriving soon.'), cover: 'assets/category-covers/cordless-tools-warehouse.webp', status: 'soon' },
+      { id: 'generators', name: t('مولدات كهربائية', 'Electric Generators'), description: t('مولدات بنزين للاستخدام الاحتياطي ومواقع العمل.', 'Gasoline generators for backup power and jobsites.'), cover: 'assets/category-covers/generators-warehouse.webp', status: 'available' },
+      { id: 'water-pumps', name: t('مضخات مياه', 'Water Pumps'), description: t('مضخات نفاثة ومضخات تعزيز لمختلف احتياجات المياه.', 'Jet and booster pumps for a variety of water applications.'), cover: 'assets/category-covers/water-pumps-warehouse.webp', status: 'available' }
     ],
     products
   };

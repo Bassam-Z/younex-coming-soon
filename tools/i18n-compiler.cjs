@@ -93,7 +93,7 @@ function enhanceDocument(html) {
   output = output.replace(/\/?products-data\.js\?v=\d+/g, '/products-data.js?v=5');
   output = output.replace(/\/i18n\.js\?v=\d+/g, '/i18n.js?v=6');
   output = output.replace(/\/inquiry-cart\.js\?v=\d+/g, '/inquiry-cart.js?v=2');
-  output = output.replace(/<link rel="stylesheet" href="([^"?]+)(?:\?v=\d+)?"\s*\/?\s*>/, '<link rel="stylesheet" href="$1?v=30">');
+  output = output.replace(/<link rel="stylesheet" href="([^"?]+)(?:\?v=\d+)?"\s*\/?\s*>/, '<link rel="stylesheet" href="$1?v=31">');
   if (!output.includes('class="i18n-loader"')) {
     output = output.replace(/<body([^>]*)>/, (match, attributes) => {
       if (/\bclass=/.test(attributes)) {

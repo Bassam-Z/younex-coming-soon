@@ -54,7 +54,7 @@ function head({ title, description, canonical, image, type = 'website', schema, 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=31">
+  <link rel="stylesheet" href="/style.css?v=32">
   <script type="application/ld+json">${json(schema)}</script>
   <script>window.goatcounter = { no_onload: true };</script>
   <script data-goatcounter="https://younexpower.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -85,7 +85,7 @@ function footer() {
   <div class="container footer-grid">
     <div class="footer-brand"><img src="/assets/images/logo-younex.png" alt="Younex Power Center" width="512" height="512"><p data-ar="قوة تثق بها، وخدمة قريبة منك." data-en="Power you can trust, service close to you.">قوة تثق بها، وخدمة قريبة منك.</p></div>
     <div class="footer-links"><strong data-ar="روابط سريعة" data-en="Quick links">روابط سريعة</strong><a href="/" data-ar="الرئيسية" data-en="Home">الرئيسية</a><a href="/products/" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a><a href="/services/" data-ar="خدمات التوريد" data-en="Sourcing services">خدمات التوريد</a><a href="/about/" data-ar="من نحن" data-en="About us">من نحن</a></div>
-    <div class="footer-contact"><strong data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</strong><a href="tel:+963953728253" dir="ltr">+963 953 728 253</a><a href="mailto:info@younexpower.com">info@younexpower.com</a><span>www.younexpower.com</span></div>
+    <div class="footer-contact"><strong data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</strong><a href="tel:+963953728253" dir="ltr">+963 953 728 253</a><a href="mailto:info@younexpower.com">info@younexpower.com</a><span>www.younexpower.com</span><div class="footer-credit"><span data-ar="تصميم وبرمجة الموقع بواسطة" data-en="Designed &amp; developed by">تصميم وبرمجة الموقع بواسطة</span><a href="https://younexsoftware.com/" target="_blank" rel="noopener" aria-label="Younex Software">Younex Software<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 6l-4 12"></path></svg></a></div></div>
   </div>
   <div class="footer-bottom container"><span>© <span id="current-year"></span> Younex Power Center.</span><span data-ar="جميع الحقوق محفوظة." data-en="All rights reserved.">جميع الحقوق محفوظة.</span></div>
 </footer>

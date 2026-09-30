@@ -434,6 +434,11 @@ html[dir="rtl"] .inquiry-toast.visible { transform: translate(50%, 0); }
 .footer-links, .footer-contact { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .footer-grid strong { margin-bottom: 7px; color: white; }
 .footer-grid a:hover { color: var(--sky-400); }
+.footer-credit { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 13px; }
+.footer-credit > span { color: #8498ab; font-size: .73rem; }
+.footer-credit > a { display: inline-flex; align-items: center; gap: 6px; color: var(--sky-400); font-size: .88rem; font-weight: 800; transition: color .2s, transform .2s; }
+.footer-credit > a:hover { color: white; transform: translateY(-1px); }
+.footer-credit svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-block: 20px; border-top: 1px solid rgba(255,255,255,.08); color: #71869a; font-size: .78rem; }
 .whatsapp-float { position: fixed; z-index: 90; inset-inline-end: 22px; bottom: 22px; display: inline-flex; align-items: center; gap: 9px; min-height: 52px; padding: 11px 16px; border-radius: 999px; color: white; background: #16b957; box-shadow: 0 16px 35px rgba(22,185,87,.32); font-weight: 700; transition: transform .2s, background .2s; }
 .whatsapp-float:hover { transform: translateY(-3px); background: #0fa54a; }

@@ -3,13 +3,6 @@
 
   var cache = {};
   var activeLanguage = savedLanguage();
-  var initialLoad = true;
-  var loaderShownAt = 0;
-  var loaderDelay = window.setTimeout(function () {
-    if (!initialLoad || !document.body || !document.body.classList.contains('i18n-pending')) return;
-    loaderShownAt = performance.now();
-    document.body.classList.add('i18n-loader-visible');
-  }, 220);
 
   function savedLanguage() {
     try { return localStorage.getItem('younex-language') === 'en' ? 'en' : 'ar'; }
@@ -100,56 +93,19 @@
     if (schema && seo.schema) schema.textContent = JSON.stringify(seo.schema);
   }
 
-  function waitForCriticalMedia() {
-    var image = document.querySelector('img[fetchpriority="high"], img[loading="eager"]');
-    if (!image || image.complete) return Promise.resolve();
-    return new Promise(function (resolve) {
-      var settled = false;
-      var timeout = window.setTimeout(done, 2500);
-      function done() {
-        if (settled) return;
-        settled = true;
-        window.clearTimeout(timeout);
-        image.removeEventListener('load', done);
-        image.removeEventListener('error', done);
-        resolve();
-      }
-      image.addEventListener('load', done, { once: true });
-      image.addEventListener('error', done, { once: true });
-    });
-  }
-
-  function finishLoading() {
-    if (!initialLoad || !document.body) return;
-    initialLoad = false;
-    window.clearTimeout(loaderDelay);
-    var remaining = loaderShownAt ? Math.max(0, 240 - (performance.now() - loaderShownAt)) : 0;
-    window.setTimeout(function () {
-      window.requestAnimationFrame(function () {
-        document.body.classList.remove('i18n-pending');
-        document.body.classList.remove('i18n-loader-visible');
-        document.body.classList.add('i18n-ready');
-        window.setTimeout(function () {
-          var loader = document.getElementById('i18n-loader');
-          if (loader) loader.hidden = true;
-        }, 550);
-      });
-    }, remaining);
-  }
-
   function setLanguage(language) {
     activeLanguage = language === 'en' ? 'en' : 'ar';
     return load(activeLanguage).then(function (locale) {
       apply(locale, activeLanguage);
       try { localStorage.setItem('younex-language', activeLanguage); } catch (error) { /* Optional preference. */ }
       document.dispatchEvent(new CustomEvent('younex:languagechange', { detail: { language: activeLanguage } }));
-      return initialLoad ? waitForCriticalMedia().then(function () { return locale; }) : locale;
+      return locale;
     }).catch(function (error) {
       console.error(error);
       document.documentElement.lang = 'ar';
       document.documentElement.dir = 'rtl';
       return null;
-    }).finally(finishLoading);
+    });
   }
 
   window.YounexI18n = {

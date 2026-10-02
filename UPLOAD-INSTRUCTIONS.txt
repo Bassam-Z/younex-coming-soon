@@ -1,0 +1,19 @@
+Younex Power Center — Performance update
+
+This package is based on the latest main commit:
+00c8d74 feat: improve Google search titles and SEO descriptions
+
+Recommended Git commit message:
+perf: improve LCP and initial page rendering
+
+Manual upload steps:
+1. Extract younex-coming-soon-performance-v42.zip.
+2. Copy all extracted files into your local younex-coming-soon repository, replacing matching files.
+3. Run:
+   git add -A
+   git commit -m "perf: improve LCP and initial page rendering"
+   git push origin main
+
+The update removes the blocking language loader, prerenders Arabic fallback
+content, makes the homepage LCP image discoverable immediately, optimizes key
+images, defers analytics, and loads fonts without blocking first render.

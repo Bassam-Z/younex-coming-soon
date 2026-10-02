@@ -113,26 +113,11 @@ function localizeArabicAttributes(html, arLocale, enLocale, collect) {
         }
         tag = tag.replace(/\s*\/?\s*>$/, (ending) => ` ${marker}="${key}"${ending}`);
       }
-      tag = tag.replace(new RegExp(`(\\s${attribute}=)"[^"]*"`), `$1""`);
+      // Keep the Arabic value as a fast, crawlable fallback. i18n.js replaces it
+      // after the selected locale loads.
     }
     return tag;
   });
-}
-
-function stripTranslatedText(html) {
-  const blocks = [];
-  let safe = html.replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, (block) => `@@YOUNEX_BLOCK_${blocks.push(block) - 1}@@`);
-  const stack = [];
-  safe = safe.replace(/<!--[\s\S]*?-->|<![^>]*>|<[^>]+>|[^<]+/g, (token) => {
-    if (!token.startsWith('<')) return stack.length && stack[stack.length - 1].translated && token.trim() ? '' : token;
-    const closing = token.match(/^<\/\s*([\w-]+)/);
-    if (closing) { stack.pop(); return token; }
-    const opening = token.match(/^<\s*([\w-]+)/);
-    if (!opening || /\/\s*>$/.test(token) || /^(?:area|base|br|col|embed|hr|img|input|link|meta|param|source|track|wbr)$/i.test(opening[1])) return token;
-    stack.push({ translated: /\sdata-i18n="/.test(token) });
-    return token;
-  });
-  return safe.replace(/@@YOUNEX_BLOCK_(\d+)@@/g, (match, index) => blocks[Number(index)]);
 }
 
 function strictCompileHtml(html, relativePath, options = {}) {
@@ -157,15 +142,10 @@ function strictCompileHtml(html, relativePath, options = {}) {
     }
     return block;
   });
-  output = stripTranslatedText(output);
-  output = output.replace(/<title>[\s\S]*?<\/title>/, '<title></title>');
-  output = output.replace(/(<meta\s+(?:name|property)="(?:description|og:title|og:description|og:image:alt|twitter:title|twitter:description)"\s+content=")([^"]*)(")/g, '$1$3');
-  output = output.replace(/<script\s+type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/, `<script type="application/ld+json" data-i18n-schema="seo.pages.${id}.schema"></script>`);
+  output = output.replace(/<script\s+type="application\/ld\+json"([^>]*)>/, (match, attributes) => {
+    return attributes.includes('data-i18n-schema=') ? match : `<script type="application/ld+json"${attributes} data-i18n-schema="seo.pages.${id}.schema">`;
+  });
   output = output.replace(/<body([^>]*)>/, (match, attributes) => attributes.includes('data-i18n-page=') ? match : `<body${attributes} data-i18n-page="${id}">`);
-  if (arabic.test(output)) {
-    const position = output.search(arabic);
-    throw new Error(`Arabic text remains in ${relativePath}: ${output.slice(Math.max(0, position - 80), position + 180)}`);
-  }
   return output;
 }
 

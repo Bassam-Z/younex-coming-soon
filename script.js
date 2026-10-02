@@ -133,7 +133,10 @@ function restartAutoplay() {
 }
 
 if (carouselFrame && catalog.products.length) {
-  carouselFrame.innerHTML = selectCarouselProducts(catalog.products).map(homepageSlideMarkup).join('');
+  const initialSlide = carouselFrame.querySelector('.slide');
+  const initialSlug = initialSlide?.dataset.productSlug;
+  const remainingProducts = catalog.products.filter((product) => product.slug !== initialSlug);
+  carouselFrame.insertAdjacentHTML('beforeend', selectCarouselProducts(remainingProducts, 7).map((product, index) => homepageSlideMarkup(product, index + 1)).join(''));
   slides = [...carouselFrame.querySelectorAll('.slide')];
   slides.forEach((_, index) => {
     const dot = document.createElement('button');

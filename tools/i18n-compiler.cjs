@@ -66,42 +66,16 @@ function compileHtml(html, options = {}) {
   return enhanceDocument(output);
 }
 
-function loaderMarkup() {
-  return `<div class="i18n-loader" id="i18n-loader" role="status" aria-live="polite" aria-label="جارٍ تحميل موقع يونكس" data-i18n-aria="loader.aria">
-  <div class="i18n-loader-visual" aria-hidden="true">
-    <span class="i18n-loader-ring"></span>
-    <svg viewBox="0 0 64 64"><path d="M35 3 14 36h16l-2 25 22-36H34z"></path></svg>
-  </div>
-  <strong>YOUNEX</strong>
-  <span data-i18n="loader.loading">جارٍ تجهيز الموقع...</span>
-  <i aria-hidden="true"><b></b></i>
-</div>
-<script>window.setTimeout(function(){var b=document.body;if(b&&b.classList.contains('i18n-pending')){b.classList.remove('i18n-pending','i18n-loader-visible');b.classList.add('i18n-ready');}},4000);</script>`;
-}
-
 function enhanceDocument(html) {
   let output = html;
-  output = output.replace(/(<div class="i18n-loader"[^>]*)(>)/, (match, opening, close) => opening.includes('data-i18n-aria=') ? match : `${opening} data-i18n-aria="loader.aria"${close}`);
-  if (!output.includes('/locales/ar.json')) {
-    output = output.replace('</head>', '  <link rel="preload" href="/locales/ar.json?v=34" as="fetch" crossorigin>\n</head>');
-  }
-  if (!output.includes('/locales/en.json')) output = output.replace('</head>', '  <link rel="preload" href="/locales/en.json?v=34" as="fetch" crossorigin>\n</head>');
+  output = output.replace(/\s*<link rel="preload" href="\/locales\/(?:ar|en)\.json\?v=\d+" as="fetch" crossorigin>\s*/g, '\n');
   if (!output.includes('products-data.js')) output = output.replace('</head>', '  <script src="/products-data.js?v=5" defer></script>\n</head>');
-  if (!output.includes('/i18n.js')) output = output.replace('</head>', '  <script src="/i18n.js?v=7" defer></script>\n</head>');
+  if (!output.includes('/i18n.js')) output = output.replace('</head>', '  <script src="/i18n.js?v=9" defer></script>\n</head>');
   if (!output.includes('/inquiry-cart.js')) output = output.replace('</head>', '  <script src="/inquiry-cart.js?v=2" defer></script>\n</head>');
-  output = output.replace(/\/locales\/(ar|en)\.json\?v=\d+/g, '/locales/$1.json?v=34');
   output = output.replace(/\/?products-data\.js\?v=\d+/g, '/products-data.js?v=5');
-  output = output.replace(/\/i18n\.js\?v=\d+/g, '/i18n.js?v=7');
+  output = output.replace(/\/i18n\.js\?v=\d+/g, '/i18n.js?v=9');
   output = output.replace(/\/inquiry-cart\.js\?v=\d+/g, '/inquiry-cart.js?v=2');
-  output = output.replace(/<link rel="stylesheet" href="([^"?]+)(?:\?v=\d+)?"\s*\/?\s*>/, '<link rel="stylesheet" href="$1?v=32">');
-  if (!output.includes('class="i18n-loader"')) {
-    output = output.replace(/<body([^>]*)>/, (match, attributes) => {
-      if (/\bclass=/.test(attributes)) {
-        return `<body${attributes.replace(/class="([^"]*)"/, 'class="$1 i18n-pending"')}>${loaderMarkup()}`;
-      }
-      return `<body${attributes} class="i18n-pending">${loaderMarkup()}`;
-    });
-  }
+  output = output.replace(/<link rel="stylesheet" href="([^"?]+)(?:\?v=\d+)?"\s*\/?\s*>/, '<link rel="stylesheet" href="$1?v=33">');
   return output;
 }
 

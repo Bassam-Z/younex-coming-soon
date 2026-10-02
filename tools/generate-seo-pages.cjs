@@ -53,12 +53,11 @@ function head({ title, description, canonical, image, type = 'website', schema, 
   <meta name="twitter:image" content="${image}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=32">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="/style.css?v=33">
   <script type="application/ld+json">${json(schema)}</script>
-  <script>window.goatcounter = { no_onload: true };</script>
-  <script data-goatcounter="https://younexpower.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-  <script src="/analytics.js?v=2" defer></script>
+  <script src="/analytics.js?v=3" defer></script>
   <script src="/seo-pages.js?v=6" defer></script>
 ${servicesScript ? '  <script src="/services.js?v=4" defer></script>\n' : ''}</head>`;
 }
@@ -67,7 +66,7 @@ function header(active) {
   return `<a class="skip-link" href="#main-content" data-ar="انتقل إلى المحتوى" data-en="Skip to content">انتقل إلى المحتوى</a>
 <header class="site-header">
   <div class="header-inner container">
-    <a class="brand" href="/" aria-label="Younex Power Center - Home"><img src="/assets/images/logo-younex.png" alt="Younex Power Center" width="512" height="512"></a>
+    <a class="brand" href="/" aria-label="Younex Power Center - Home"><img src="/assets/images/logo-younex-192.webp" alt="Younex Power Center" width="192" height="192"></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-aria-ar="فتح القائمة" data-aria-en="Open menu"><span></span><span></span><span></span></button>
     <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
       <a href="/" class="nav-link${active === 'home' ? ' active' : ''}" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
@@ -83,7 +82,7 @@ function header(active) {
 function footer() {
   return `<footer class="site-footer">
   <div class="container footer-grid">
-    <div class="footer-brand"><img src="/assets/images/logo-younex.png" alt="Younex Power Center" width="512" height="512"><p data-ar="قوة تثق بها، وخدمة قريبة منك." data-en="Power you can trust, service close to you.">قوة تثق بها، وخدمة قريبة منك.</p></div>
+    <div class="footer-brand"><img src="/assets/images/logo-younex-192.webp" alt="Younex Power Center" width="192" height="192" loading="lazy" decoding="async"><p data-ar="قوة تثق بها، وخدمة قريبة منك." data-en="Power you can trust, service close to you.">قوة تثق بها، وخدمة قريبة منك.</p></div>
     <div class="footer-links"><strong data-ar="روابط سريعة" data-en="Quick links">روابط سريعة</strong><a href="/" data-ar="الرئيسية" data-en="Home">الرئيسية</a><a href="/products/" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a><a href="/services/" data-ar="خدمات التوريد" data-en="Sourcing services">خدمات التوريد</a><a href="/about/" data-ar="من نحن" data-en="About us">من نحن</a></div>
     <div class="footer-contact"><strong data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</strong><a href="tel:+963953728253" dir="ltr">+963 953 728 253</a><a href="mailto:info@younexpower.com">info@younexpower.com</a><span>www.younexpower.com</span><div class="footer-credit"><span data-ar="تصميم وبرمجة الموقع بواسطة" data-en="Designed &amp; developed by">تصميم وبرمجة الموقع بواسطة</span><a href="https://younexsoftware.com/" target="_blank" rel="noopener" aria-label="Younex Software">Younex Software<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 6l-4 12"></path></svg></a></div></div>
   </div>
@@ -167,8 +166,8 @@ const productsSchema = {
 write('products/index.html', page({
   titleAr: 'منتجاتنا | مركز يونكس للمعدات والطاقة',
   titleEn: 'Our Products | Younex Power Center',
-  headTitle: 'منتجات يونكس: معدات كهربائية ومولدات ومضخات مياه',
-  description: 'استعرض معدات يونكس الكهربائية السلكية والمولدات ومضخات المياه، مع الصور والمواصفات الفنية والتواصل المباشر عبر واتساب.',
+  headTitle: 'منتجاتنا | معدات كهربائية ومولدات ومضخات مياه',
+  description: 'استعرض معدات يونكس الكهربائية ومعدات الصيانة والبناء والمولدات ومضخات المياه، مع الصور والمواصفات وطلب الأسعار عبر واتساب.',
   canonical: productsCanonical,
   image: `${origin}/assets/products/corded/al-42hh/1.webp`,
   schema: productsSchema,
@@ -272,8 +271,8 @@ const aboutCanonical = `${origin}/about/`;
 write('about/index.html', page({
   titleAr: 'من نحن | مركز يونكس للمعدات والطاقة',
   titleEn: 'About Younex Power Center',
-  headTitle: 'من نحن | مركز يونكس للمعدات والطاقة في درعا',
-  description: 'مركز يونكس للمعدات والطاقة في الطيبة، درعا: معدات كهربائية ومولدات ومضخات مياه، وخدمات توريد وتخصيص وشحن وتخليص جمركي للتجار والمشاريع.',
+  headTitle: 'من نحن | مركز يونكس للمعدات والطاقة',
+  description: 'تعرف على مركز يونكس للمعدات والطاقة في الطيبة، درعا، وخدمات بيع المعدات والتوريد والاستيراد وتجهيز التجار والمشاريع.',
   canonical: aboutCanonical,
   image: `${origin}/assets/images/logo-younex.png`,
   active: 'about',

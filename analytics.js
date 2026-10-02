@@ -5,6 +5,7 @@
   var queue = [];
   var retryTimer;
   var retryCount = 0;
+  var goatCounterRequested = false;
 
   if (allowedHosts.indexOf(window.location.hostname) === -1) return;
 
@@ -36,6 +37,18 @@
         return;
       }
     }
+  }
+
+  function loadGoatCounter() {
+    if (goatCounterRequested || (window.goatcounter && typeof window.goatcounter.count === 'function')) return;
+    goatCounterRequested = true;
+    window.goatcounter = window.goatcounter || { no_onload: true };
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://gc.zgo.at/count.js';
+    script.setAttribute('data-goatcounter', 'https://younexpower.goatcounter.com/count');
+    script.addEventListener('load', flushQueue, { once: true });
+    document.head.appendChild(script);
   }
 
   function send(payload) {
@@ -79,4 +92,8 @@
   });
 
   trackPage();
+  window.addEventListener('load', function () {
+    if ('requestIdleCallback' in window) window.requestIdleCallback(loadGoatCounter, { timeout: 2500 });
+    else window.setTimeout(loadGoatCounter, 1200);
+  }, { once: true });
 }());

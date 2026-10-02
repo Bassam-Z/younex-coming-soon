@@ -548,9 +548,9 @@
       },
       "about": {
         "title": "About Younex Power Center",
-        "description": "We also help traders, shop owners and new businesses source products and equipment in commercial quantities at competitive prices, with options for custom colors, logos and private labeling. We also source specialized equipment on request and manage sourcing, shipping, customs clearance and delivery across Syria.",
+        "description": "Learn about Younex Power Center in Al-Taybah, Daraa, and our equipment sales, sourcing, importing and project supply services.",
         "ogTitle": "About Younex Power Center",
-        "ogDescription": "We also help traders, shop owners and new businesses source products and equipment in commercial quantities at competitive prices, with options for custom colors, logos and private labeling. We also source specialized equipment on request and manage sourcing, shipping, customs clearance and delivery across Syria.",
+        "ogDescription": "Learn about Younex Power Center and our equipment sales, sourcing, importing and project supply services.",
         "imageAlt": "About Younex Power Center — Younex Power Center",
         "schema": {
           "@context": "https://schema.org",
@@ -583,10 +583,10 @@
         }
       },
       "index": {
-        "title": "Younex Power Center in Daraa",
-        "description": "You can now browse most of our products on the website and contact us directly to ask about prices and availability. We are also happy to welcome you daily at our store in Al-Taybah, while online purchasing and payment are coming soon.",
-        "ogTitle": "Younex Power Center in Daraa",
-        "ogDescription": "You can now browse most of our products on the website and contact us directly to ask about prices and availability. We are also happy to welcome you daily at our store in Al-Taybah, while online purchasing and payment are coming soon.",
+        "title": "Younex Power Center | مركز يونكس للمعدات والطاقة",
+        "description": "Power tools, maintenance and construction equipment, water pumps and generators for retail and wholesale, with sourcing, importing and quotation services.",
+        "ogTitle": "Younex Power Center | مركز يونكس للمعدات والطاقة",
+        "ogDescription": "Power tools, maintenance and construction equipment, water pumps and generators for retail and wholesale, with sourcing and importing services.",
         "imageAlt": "Younex Power Center in Daraa — Younex Power Center",
         "schema": {
           "@context": "https://schema.org",
@@ -1817,10 +1817,10 @@
         }
       },
       "products": {
-        "title": "Our Products | Younex Power Center",
-        "description": "Choose a category, then explore its products, specifications and detailed images.",
-        "ogTitle": "Our Products | Younex Power Center",
-        "ogDescription": "Choose a category, then explore its products, specifications and detailed images.",
+        "title": "Our Products | Power Tools, Generators & Water Pumps",
+        "description": "Explore Younex power tools, maintenance and construction equipment, generators and water pumps with images, specifications and WhatsApp inquiries.",
+        "ogTitle": "Our Products | Power Tools, Generators & Water Pumps",
+        "ogDescription": "Explore Younex power tools, maintenance and construction equipment, generators and water pumps with images and specifications.",
         "imageAlt": "Our Products | Younex Power Center — Younex Power Center",
         "schema": {
           "@context": "https://schema.org",

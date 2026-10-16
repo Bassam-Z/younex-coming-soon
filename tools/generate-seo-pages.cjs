@@ -41,7 +41,7 @@ function head({ title, description, canonical, image, type = 'website', schema, 
   <meta property="og:type" content="${type}">
   <meta property="og:locale" content="ar_SY">
   <meta property="og:locale:alternate" content="en_US">
-  <meta property="og:site_name" content="Younex Power Center">
+  <meta property="og:site_name" content="مركز يونكس للمعدات والطاقة | Younex Power Center">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:url" content="${canonical}">

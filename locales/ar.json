@@ -652,14 +652,19 @@
               "@type": "WebSite",
               "@id": "https://younexpower.com/#website",
               "url": "https://younexpower.com/",
-              "name": "Younex Power Center",
+              "name": "مركز يونكس للمعدات والطاقة | Younex Power Center",
               "inLanguage": [
                 "ar",
                 "en"
               ],
               "publisher": {
                 "@id": "https://younexpower.com/#business"
-              }
+              },
+              "alternateName": [
+                "Younex Power Center",
+                "مركز يونكس للمعدات والطاقة",
+                "يونكس باور سنتر"
+              ]
             }
           ]
         }
